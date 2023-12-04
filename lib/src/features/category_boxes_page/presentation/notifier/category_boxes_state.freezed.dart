@@ -121,11 +121,11 @@ class _$CategoryBoxesStateCopyWithImpl<$Res, $Val extends CategoryBoxesState>
 }
 
 /// @nodoc
-abstract class _$$_CategoryBoxesStateCopyWith<$Res>
+abstract class _$$CategoryBoxesStateImplCopyWith<$Res>
     implements $CategoryBoxesStateCopyWith<$Res> {
-  factory _$$_CategoryBoxesStateCopyWith(_$_CategoryBoxesState value,
-          $Res Function(_$_CategoryBoxesState) then) =
-      __$$_CategoryBoxesStateCopyWithImpl<$Res>;
+  factory _$$CategoryBoxesStateImplCopyWith(_$CategoryBoxesStateImpl value,
+          $Res Function(_$CategoryBoxesStateImpl) then) =
+      __$$CategoryBoxesStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -141,11 +141,11 @@ abstract class _$$_CategoryBoxesStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_CategoryBoxesStateCopyWithImpl<$Res>
-    extends _$CategoryBoxesStateCopyWithImpl<$Res, _$_CategoryBoxesState>
-    implements _$$_CategoryBoxesStateCopyWith<$Res> {
-  __$$_CategoryBoxesStateCopyWithImpl(
-      _$_CategoryBoxesState _value, $Res Function(_$_CategoryBoxesState) _then)
+class __$$CategoryBoxesStateImplCopyWithImpl<$Res>
+    extends _$CategoryBoxesStateCopyWithImpl<$Res, _$CategoryBoxesStateImpl>
+    implements _$$CategoryBoxesStateImplCopyWith<$Res> {
+  __$$CategoryBoxesStateImplCopyWithImpl(_$CategoryBoxesStateImpl _value,
+      $Res Function(_$CategoryBoxesStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -161,7 +161,7 @@ class __$$_CategoryBoxesStateCopyWithImpl<$Res>
     Object? additionalService = freezed,
     Object? barTitle = null,
   }) {
-    return _then(_$_CategoryBoxesState(
+    return _then(_$CategoryBoxesStateImpl(
       isLoading: null == isLoading
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
@@ -204,8 +204,8 @@ class __$$_CategoryBoxesStateCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_CategoryBoxesState implements _CategoryBoxesState {
-  _$_CategoryBoxesState(
+class _$CategoryBoxesStateImpl implements _CategoryBoxesState {
+  _$CategoryBoxesStateImpl(
       {this.isLoading = false,
       final List<ProductEntity> products = const [],
       final List<String> categories = const [],
@@ -218,8 +218,8 @@ class _$_CategoryBoxesState implements _CategoryBoxesState {
       : _products = products,
         _categories = categories;
 
-  factory _$_CategoryBoxesState.fromJson(Map<String, dynamic> json) =>
-      _$$_CategoryBoxesStateFromJson(json);
+  factory _$CategoryBoxesStateImpl.fromJson(Map<String, dynamic> json) =>
+      _$$CategoryBoxesStateImplFromJson(json);
 
   @override
   @JsonKey()
@@ -265,7 +265,7 @@ class _$_CategoryBoxesState implements _CategoryBoxesState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_CategoryBoxesState &&
+            other is _$CategoryBoxesStateImpl &&
             (identical(other.isLoading, isLoading) ||
                 other.isLoading == isLoading) &&
             const DeepCollectionEquality().equals(other._products, _products) &&
@@ -302,13 +302,13 @@ class _$_CategoryBoxesState implements _CategoryBoxesState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_CategoryBoxesStateCopyWith<_$_CategoryBoxesState> get copyWith =>
-      __$$_CategoryBoxesStateCopyWithImpl<_$_CategoryBoxesState>(
+  _$$CategoryBoxesStateImplCopyWith<_$CategoryBoxesStateImpl> get copyWith =>
+      __$$CategoryBoxesStateImplCopyWithImpl<_$CategoryBoxesStateImpl>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CategoryBoxesStateToJson(
+    return _$$CategoryBoxesStateImplToJson(
       this,
     );
   }
@@ -324,10 +324,10 @@ abstract class _CategoryBoxesState implements CategoryBoxesState {
       final ProductCategory? productCategory,
       final ProductSubCategory? productSubCategory,
       final AdditionalService? additionalService,
-      final String barTitle}) = _$_CategoryBoxesState;
+      final String barTitle}) = _$CategoryBoxesStateImpl;
 
   factory _CategoryBoxesState.fromJson(Map<String, dynamic> json) =
-      _$_CategoryBoxesState.fromJson;
+      _$CategoryBoxesStateImpl.fromJson;
 
   @override
   bool get isLoading;
@@ -349,6 +349,6 @@ abstract class _CategoryBoxesState implements CategoryBoxesState {
   String get barTitle;
   @override
   @JsonKey(ignore: true)
-  _$$_CategoryBoxesStateCopyWith<_$_CategoryBoxesState> get copyWith =>
+  _$$CategoryBoxesStateImplCopyWith<_$CategoryBoxesStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -69,22 +69,22 @@ class _$SignUpStateCopyWithImpl<$Res, $Val extends SignUpState>
 }
 
 /// @nodoc
-abstract class _$$_SignUpStateCopyWith<$Res>
+abstract class _$$SignUpStateImplCopyWith<$Res>
     implements $SignUpStateCopyWith<$Res> {
-  factory _$$_SignUpStateCopyWith(
-          _$_SignUpState value, $Res Function(_$_SignUpState) then) =
-      __$$_SignUpStateCopyWithImpl<$Res>;
+  factory _$$SignUpStateImplCopyWith(
+          _$SignUpStateImpl value, $Res Function(_$SignUpStateImpl) then) =
+      __$$SignUpStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({bool isBtnPressed, List<CountryCodeEntity> countryCodeList});
 }
 
 /// @nodoc
-class __$$_SignUpStateCopyWithImpl<$Res>
-    extends _$SignUpStateCopyWithImpl<$Res, _$_SignUpState>
-    implements _$$_SignUpStateCopyWith<$Res> {
-  __$$_SignUpStateCopyWithImpl(
-      _$_SignUpState _value, $Res Function(_$_SignUpState) _then)
+class __$$SignUpStateImplCopyWithImpl<$Res>
+    extends _$SignUpStateCopyWithImpl<$Res, _$SignUpStateImpl>
+    implements _$$SignUpStateImplCopyWith<$Res> {
+  __$$SignUpStateImplCopyWithImpl(
+      _$SignUpStateImpl _value, $Res Function(_$SignUpStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -93,7 +93,7 @@ class __$$_SignUpStateCopyWithImpl<$Res>
     Object? isBtnPressed = null,
     Object? countryCodeList = null,
   }) {
-    return _then(_$_SignUpState(
+    return _then(_$SignUpStateImpl(
       isBtnPressed: null == isBtnPressed
           ? _value.isBtnPressed
           : isBtnPressed // ignore: cast_nullable_to_non_nullable
@@ -108,14 +108,14 @@ class __$$_SignUpStateCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_SignUpState implements _SignUpState {
-  _$_SignUpState(
+class _$SignUpStateImpl implements _SignUpState {
+  _$SignUpStateImpl(
       {this.isBtnPressed = false,
       final List<CountryCodeEntity> countryCodeList = const []})
       : _countryCodeList = countryCodeList;
 
-  factory _$_SignUpState.fromJson(Map<String, dynamic> json) =>
-      _$$_SignUpStateFromJson(json);
+  factory _$SignUpStateImpl.fromJson(Map<String, dynamic> json) =>
+      _$$SignUpStateImplFromJson(json);
 
   @override
   @JsonKey()
@@ -138,7 +138,7 @@ class _$_SignUpState implements _SignUpState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_SignUpState &&
+            other is _$SignUpStateImpl &&
             (identical(other.isBtnPressed, isBtnPressed) ||
                 other.isBtnPressed == isBtnPressed) &&
             const DeepCollectionEquality()
@@ -153,12 +153,12 @@ class _$_SignUpState implements _SignUpState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_SignUpStateCopyWith<_$_SignUpState> get copyWith =>
-      __$$_SignUpStateCopyWithImpl<_$_SignUpState>(this, _$identity);
+  _$$SignUpStateImplCopyWith<_$SignUpStateImpl> get copyWith =>
+      __$$SignUpStateImplCopyWithImpl<_$SignUpStateImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_SignUpStateToJson(
+    return _$$SignUpStateImplToJson(
       this,
     );
   }
@@ -167,10 +167,10 @@ class _$_SignUpState implements _SignUpState {
 abstract class _SignUpState implements SignUpState {
   factory _SignUpState(
       {final bool isBtnPressed,
-      final List<CountryCodeEntity> countryCodeList}) = _$_SignUpState;
+      final List<CountryCodeEntity> countryCodeList}) = _$SignUpStateImpl;
 
   factory _SignUpState.fromJson(Map<String, dynamic> json) =
-      _$_SignUpState.fromJson;
+      _$SignUpStateImpl.fromJson;
 
   @override
   bool get isBtnPressed;
@@ -178,6 +178,6 @@ abstract class _SignUpState implements SignUpState {
   List<CountryCodeEntity> get countryCodeList;
   @override
   @JsonKey(ignore: true)
-  _$$_SignUpStateCopyWith<_$_SignUpState> get copyWith =>
+  _$$SignUpStateImplCopyWith<_$SignUpStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

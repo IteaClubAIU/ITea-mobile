@@ -6,8 +6,8 @@ part of 'product_entity.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ProductEntity _$$_ProductEntityFromJson(Map<String, dynamic> json) =>
-    _$_ProductEntity(
+_$ProductEntityImpl _$$ProductEntityImplFromJson(Map<String, dynamic> json) =>
+    _$ProductEntityImpl(
       id: json['id'] as String,
       title: json['title'] as String,
       description: json['description'] as String,
@@ -48,7 +48,7 @@ _$_ProductEntity _$$_ProductEntityFromJson(Map<String, dynamic> json) =>
           $enumDecodeNullable(_$SpecializationEnumMap, json['specialization']),
     );
 
-Map<String, dynamic> _$$_ProductEntityToJson(_$_ProductEntity instance) =>
+Map<String, dynamic> _$$ProductEntityImplToJson(_$ProductEntityImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'title': instance.title,

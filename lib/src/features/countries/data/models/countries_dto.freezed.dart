@@ -68,22 +68,22 @@ class _$CountriesDtoCopyWithImpl<$Res, $Val extends CountriesDto>
 }
 
 /// @nodoc
-abstract class _$$_CountriesDtoCopyWith<$Res>
+abstract class _$$CountriesDtoImplCopyWith<$Res>
     implements $CountriesDtoCopyWith<$Res> {
-  factory _$$_CountriesDtoCopyWith(
-          _$_CountriesDto value, $Res Function(_$_CountriesDto) then) =
-      __$$_CountriesDtoCopyWithImpl<$Res>;
+  factory _$$CountriesDtoImplCopyWith(
+          _$CountriesDtoImpl value, $Res Function(_$CountriesDtoImpl) then) =
+      __$$CountriesDtoImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String code, String name});
 }
 
 /// @nodoc
-class __$$_CountriesDtoCopyWithImpl<$Res>
-    extends _$CountriesDtoCopyWithImpl<$Res, _$_CountriesDto>
-    implements _$$_CountriesDtoCopyWith<$Res> {
-  __$$_CountriesDtoCopyWithImpl(
-      _$_CountriesDto _value, $Res Function(_$_CountriesDto) _then)
+class __$$CountriesDtoImplCopyWithImpl<$Res>
+    extends _$CountriesDtoCopyWithImpl<$Res, _$CountriesDtoImpl>
+    implements _$$CountriesDtoImplCopyWith<$Res> {
+  __$$CountriesDtoImplCopyWithImpl(
+      _$CountriesDtoImpl _value, $Res Function(_$CountriesDtoImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -92,7 +92,7 @@ class __$$_CountriesDtoCopyWithImpl<$Res>
     Object? code = null,
     Object? name = null,
   }) {
-    return _then(_$_CountriesDto(
+    return _then(_$CountriesDtoImpl(
       code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
@@ -107,11 +107,11 @@ class __$$_CountriesDtoCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_CountriesDto implements _CountriesDto {
-  _$_CountriesDto({required this.code, required this.name});
+class _$CountriesDtoImpl implements _CountriesDto {
+  _$CountriesDtoImpl({required this.code, required this.name});
 
-  factory _$_CountriesDto.fromJson(Map<String, dynamic> json) =>
-      _$$_CountriesDtoFromJson(json);
+  factory _$CountriesDtoImpl.fromJson(Map<String, dynamic> json) =>
+      _$$CountriesDtoImplFromJson(json);
 
   @override
   final String code;
@@ -127,7 +127,7 @@ class _$_CountriesDto implements _CountriesDto {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_CountriesDto &&
+            other is _$CountriesDtoImpl &&
             (identical(other.code, code) || other.code == code) &&
             (identical(other.name, name) || other.name == name));
   }
@@ -139,12 +139,12 @@ class _$_CountriesDto implements _CountriesDto {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_CountriesDtoCopyWith<_$_CountriesDto> get copyWith =>
-      __$$_CountriesDtoCopyWithImpl<_$_CountriesDto>(this, _$identity);
+  _$$CountriesDtoImplCopyWith<_$CountriesDtoImpl> get copyWith =>
+      __$$CountriesDtoImplCopyWithImpl<_$CountriesDtoImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CountriesDtoToJson(
+    return _$$CountriesDtoImplToJson(
       this,
     );
   }
@@ -153,10 +153,10 @@ class _$_CountriesDto implements _CountriesDto {
 abstract class _CountriesDto implements CountriesDto {
   factory _CountriesDto(
       {required final String code,
-      required final String name}) = _$_CountriesDto;
+      required final String name}) = _$CountriesDtoImpl;
 
   factory _CountriesDto.fromJson(Map<String, dynamic> json) =
-      _$_CountriesDto.fromJson;
+      _$CountriesDtoImpl.fromJson;
 
   @override
   String get code;
@@ -164,6 +164,6 @@ abstract class _CountriesDto implements CountriesDto {
   String get name;
   @override
   @JsonKey(ignore: true)
-  _$$_CountriesDtoCopyWith<_$_CountriesDto> get copyWith =>
+  _$$CountriesDtoImplCopyWith<_$CountriesDtoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

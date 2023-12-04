@@ -65,23 +65,25 @@ class _$ProductSubCategoriesDtoCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_ProductSubCategoriesDtoCopyWith<$Res>
+abstract class _$$ProductSubCategoriesDtoImplCopyWith<$Res>
     implements $ProductSubCategoriesDtoCopyWith<$Res> {
-  factory _$$_ProductSubCategoriesDtoCopyWith(_$_ProductSubCategoriesDto value,
-          $Res Function(_$_ProductSubCategoriesDto) then) =
-      __$$_ProductSubCategoriesDtoCopyWithImpl<$Res>;
+  factory _$$ProductSubCategoriesDtoImplCopyWith(
+          _$ProductSubCategoriesDtoImpl value,
+          $Res Function(_$ProductSubCategoriesDtoImpl) then) =
+      __$$ProductSubCategoriesDtoImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({List<ProductSubCategory> productSubCategories});
 }
 
 /// @nodoc
-class __$$_ProductSubCategoriesDtoCopyWithImpl<$Res>
+class __$$ProductSubCategoriesDtoImplCopyWithImpl<$Res>
     extends _$ProductSubCategoriesDtoCopyWithImpl<$Res,
-        _$_ProductSubCategoriesDto>
-    implements _$$_ProductSubCategoriesDtoCopyWith<$Res> {
-  __$$_ProductSubCategoriesDtoCopyWithImpl(_$_ProductSubCategoriesDto _value,
-      $Res Function(_$_ProductSubCategoriesDto) _then)
+        _$ProductSubCategoriesDtoImpl>
+    implements _$$ProductSubCategoriesDtoImplCopyWith<$Res> {
+  __$$ProductSubCategoriesDtoImplCopyWithImpl(
+      _$ProductSubCategoriesDtoImpl _value,
+      $Res Function(_$ProductSubCategoriesDtoImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -89,7 +91,7 @@ class __$$_ProductSubCategoriesDtoCopyWithImpl<$Res>
   $Res call({
     Object? productSubCategories = null,
   }) {
-    return _then(_$_ProductSubCategoriesDto(
+    return _then(_$ProductSubCategoriesDtoImpl(
       productSubCategories: null == productSubCategories
           ? _value._productSubCategories
           : productSubCategories // ignore: cast_nullable_to_non_nullable
@@ -100,13 +102,13 @@ class __$$_ProductSubCategoriesDtoCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ProductSubCategoriesDto implements _ProductSubCategoriesDto {
-  _$_ProductSubCategoriesDto(
+class _$ProductSubCategoriesDtoImpl implements _ProductSubCategoriesDto {
+  _$ProductSubCategoriesDtoImpl(
       {final List<ProductSubCategory> productSubCategories = const []})
       : _productSubCategories = productSubCategories;
 
-  factory _$_ProductSubCategoriesDto.fromJson(Map<String, dynamic> json) =>
-      _$$_ProductSubCategoriesDtoFromJson(json);
+  factory _$ProductSubCategoriesDtoImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ProductSubCategoriesDtoImplFromJson(json);
 
   final List<ProductSubCategory> _productSubCategories;
   @override
@@ -127,7 +129,7 @@ class _$_ProductSubCategoriesDto implements _ProductSubCategoriesDto {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ProductSubCategoriesDto &&
+            other is _$ProductSubCategoriesDtoImpl &&
             const DeepCollectionEquality()
                 .equals(other._productSubCategories, _productSubCategories));
   }
@@ -140,14 +142,13 @@ class _$_ProductSubCategoriesDto implements _ProductSubCategoriesDto {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ProductSubCategoriesDtoCopyWith<_$_ProductSubCategoriesDto>
-      get copyWith =>
-          __$$_ProductSubCategoriesDtoCopyWithImpl<_$_ProductSubCategoriesDto>(
-              this, _$identity);
+  _$$ProductSubCategoriesDtoImplCopyWith<_$ProductSubCategoriesDtoImpl>
+      get copyWith => __$$ProductSubCategoriesDtoImplCopyWithImpl<
+          _$ProductSubCategoriesDtoImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ProductSubCategoriesDtoToJson(
+    return _$$ProductSubCategoriesDtoImplToJson(
       this,
     );
   }
@@ -156,15 +157,15 @@ class _$_ProductSubCategoriesDto implements _ProductSubCategoriesDto {
 abstract class _ProductSubCategoriesDto implements ProductSubCategoriesDto {
   factory _ProductSubCategoriesDto(
           {final List<ProductSubCategory> productSubCategories}) =
-      _$_ProductSubCategoriesDto;
+      _$ProductSubCategoriesDtoImpl;
 
   factory _ProductSubCategoriesDto.fromJson(Map<String, dynamic> json) =
-      _$_ProductSubCategoriesDto.fromJson;
+      _$ProductSubCategoriesDtoImpl.fromJson;
 
   @override
   List<ProductSubCategory> get productSubCategories;
   @override
   @JsonKey(ignore: true)
-  _$$_ProductSubCategoriesDtoCopyWith<_$_ProductSubCategoriesDto>
+  _$$ProductSubCategoriesDtoImplCopyWith<_$ProductSubCategoriesDtoImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -92,11 +92,11 @@ class _$ProductsPageStateCopyWithImpl<$Res, $Val extends ProductsPageState>
 }
 
 /// @nodoc
-abstract class _$$_ProductsPageStateCopyWith<$Res>
+abstract class _$$ProductsPageStateImplCopyWith<$Res>
     implements $ProductsPageStateCopyWith<$Res> {
-  factory _$$_ProductsPageStateCopyWith(_$_ProductsPageState value,
-          $Res Function(_$_ProductsPageState) then) =
-      __$$_ProductsPageStateCopyWithImpl<$Res>;
+  factory _$$ProductsPageStateImplCopyWith(_$ProductsPageStateImpl value,
+          $Res Function(_$ProductsPageStateImpl) then) =
+      __$$ProductsPageStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -108,11 +108,11 @@ abstract class _$$_ProductsPageStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_ProductsPageStateCopyWithImpl<$Res>
-    extends _$ProductsPageStateCopyWithImpl<$Res, _$_ProductsPageState>
-    implements _$$_ProductsPageStateCopyWith<$Res> {
-  __$$_ProductsPageStateCopyWithImpl(
-      _$_ProductsPageState _value, $Res Function(_$_ProductsPageState) _then)
+class __$$ProductsPageStateImplCopyWithImpl<$Res>
+    extends _$ProductsPageStateCopyWithImpl<$Res, _$ProductsPageStateImpl>
+    implements _$$ProductsPageStateImplCopyWith<$Res> {
+  __$$ProductsPageStateImplCopyWithImpl(_$ProductsPageStateImpl _value,
+      $Res Function(_$ProductsPageStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -124,7 +124,7 @@ class __$$_ProductsPageStateCopyWithImpl<$Res>
     Object? faqs = null,
     Object? selectedProductCategory = null,
   }) {
-    return _then(_$_ProductsPageState(
+    return _then(_$ProductsPageStateImpl(
       isLoading: null == isLoading
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
@@ -151,8 +151,8 @@ class __$$_ProductsPageStateCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ProductsPageState implements _ProductsPageState {
-  _$_ProductsPageState(
+class _$ProductsPageStateImpl implements _ProductsPageState {
+  _$ProductsPageStateImpl(
       {this.isLoading = false,
       final List<ProductEntity> products = const [],
       this.selectedCategory = Category.none,
@@ -161,8 +161,8 @@ class _$_ProductsPageState implements _ProductsPageState {
       : _products = products,
         _faqs = faqs;
 
-  factory _$_ProductsPageState.fromJson(Map<String, dynamic> json) =>
-      _$$_ProductsPageStateFromJson(json);
+  factory _$ProductsPageStateImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ProductsPageStateImplFromJson(json);
 
   @override
   @JsonKey()
@@ -201,7 +201,7 @@ class _$_ProductsPageState implements _ProductsPageState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ProductsPageState &&
+            other is _$ProductsPageStateImpl &&
             (identical(other.isLoading, isLoading) ||
                 other.isLoading == isLoading) &&
             const DeepCollectionEquality().equals(other._products, _products) &&
@@ -226,13 +226,13 @@ class _$_ProductsPageState implements _ProductsPageState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ProductsPageStateCopyWith<_$_ProductsPageState> get copyWith =>
-      __$$_ProductsPageStateCopyWithImpl<_$_ProductsPageState>(
+  _$$ProductsPageStateImplCopyWith<_$ProductsPageStateImpl> get copyWith =>
+      __$$ProductsPageStateImplCopyWithImpl<_$ProductsPageStateImpl>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ProductsPageStateToJson(
+    return _$$ProductsPageStateImplToJson(
       this,
     );
   }
@@ -244,10 +244,10 @@ abstract class _ProductsPageState implements ProductsPageState {
       final List<ProductEntity> products,
       final Category selectedCategory,
       final List<FaqEntity> faqs,
-      final ProductCategory selectedProductCategory}) = _$_ProductsPageState;
+      final ProductCategory selectedProductCategory}) = _$ProductsPageStateImpl;
 
   factory _ProductsPageState.fromJson(Map<String, dynamic> json) =
-      _$_ProductsPageState.fromJson;
+      _$ProductsPageStateImpl.fromJson;
 
   @override
   bool get isLoading;
@@ -261,6 +261,6 @@ abstract class _ProductsPageState implements ProductsPageState {
   ProductCategory get selectedProductCategory;
   @override
   @JsonKey(ignore: true)
-  _$$_ProductsPageStateCopyWith<_$_ProductsPageState> get copyWith =>
+  _$$ProductsPageStateImplCopyWith<_$ProductsPageStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

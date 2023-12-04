@@ -82,11 +82,11 @@ class _$ProfileStateCopyWithImpl<$Res, $Val extends ProfileState>
 }
 
 /// @nodoc
-abstract class _$$_ProfileStateCopyWith<$Res>
+abstract class _$$ProfileStateImplCopyWith<$Res>
     implements $ProfileStateCopyWith<$Res> {
-  factory _$$_ProfileStateCopyWith(
-          _$_ProfileState value, $Res Function(_$_ProfileState) then) =
-      __$$_ProfileStateCopyWithImpl<$Res>;
+  factory _$$ProfileStateImplCopyWith(
+          _$ProfileStateImpl value, $Res Function(_$ProfileStateImpl) then) =
+      __$$ProfileStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({bool isBtnPressed, UserEntity? userInfo});
@@ -96,11 +96,11 @@ abstract class _$$_ProfileStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_ProfileStateCopyWithImpl<$Res>
-    extends _$ProfileStateCopyWithImpl<$Res, _$_ProfileState>
-    implements _$$_ProfileStateCopyWith<$Res> {
-  __$$_ProfileStateCopyWithImpl(
-      _$_ProfileState _value, $Res Function(_$_ProfileState) _then)
+class __$$ProfileStateImplCopyWithImpl<$Res>
+    extends _$ProfileStateCopyWithImpl<$Res, _$ProfileStateImpl>
+    implements _$$ProfileStateImplCopyWith<$Res> {
+  __$$ProfileStateImplCopyWithImpl(
+      _$ProfileStateImpl _value, $Res Function(_$ProfileStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -109,7 +109,7 @@ class __$$_ProfileStateCopyWithImpl<$Res>
     Object? isBtnPressed = null,
     Object? userInfo = freezed,
   }) {
-    return _then(_$_ProfileState(
+    return _then(_$ProfileStateImpl(
       isBtnPressed: null == isBtnPressed
           ? _value.isBtnPressed
           : isBtnPressed // ignore: cast_nullable_to_non_nullable
@@ -124,11 +124,11 @@ class __$$_ProfileStateCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ProfileState implements _ProfileState {
-  _$_ProfileState({this.isBtnPressed = false, this.userInfo});
+class _$ProfileStateImpl implements _ProfileState {
+  _$ProfileStateImpl({this.isBtnPressed = false, this.userInfo});
 
-  factory _$_ProfileState.fromJson(Map<String, dynamic> json) =>
-      _$$_ProfileStateFromJson(json);
+  factory _$ProfileStateImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ProfileStateImplFromJson(json);
 
   @override
   @JsonKey()
@@ -145,7 +145,7 @@ class _$_ProfileState implements _ProfileState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ProfileState &&
+            other is _$ProfileStateImpl &&
             (identical(other.isBtnPressed, isBtnPressed) ||
                 other.isBtnPressed == isBtnPressed) &&
             (identical(other.userInfo, userInfo) ||
@@ -159,12 +159,12 @@ class _$_ProfileState implements _ProfileState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ProfileStateCopyWith<_$_ProfileState> get copyWith =>
-      __$$_ProfileStateCopyWithImpl<_$_ProfileState>(this, _$identity);
+  _$$ProfileStateImplCopyWith<_$ProfileStateImpl> get copyWith =>
+      __$$ProfileStateImplCopyWithImpl<_$ProfileStateImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ProfileStateToJson(
+    return _$$ProfileStateImplToJson(
       this,
     );
   }
@@ -172,10 +172,10 @@ class _$_ProfileState implements _ProfileState {
 
 abstract class _ProfileState implements ProfileState {
   factory _ProfileState({final bool isBtnPressed, final UserEntity? userInfo}) =
-      _$_ProfileState;
+      _$ProfileStateImpl;
 
   factory _ProfileState.fromJson(Map<String, dynamic> json) =
-      _$_ProfileState.fromJson;
+      _$ProfileStateImpl.fromJson;
 
   @override
   bool get isBtnPressed;
@@ -183,6 +183,6 @@ abstract class _ProfileState implements ProfileState {
   UserEntity? get userInfo;
   @override
   @JsonKey(ignore: true)
-  _$$_ProfileStateCopyWith<_$_ProfileState> get copyWith =>
+  _$$ProfileStateImplCopyWith<_$ProfileStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

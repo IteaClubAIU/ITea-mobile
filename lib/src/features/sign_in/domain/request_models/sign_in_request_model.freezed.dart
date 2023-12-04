@@ -68,22 +68,22 @@ class _$SignInRequestModelCopyWithImpl<$Res, $Val extends SignInRequestModel>
 }
 
 /// @nodoc
-abstract class _$$_SignInRequestModelCopyWith<$Res>
+abstract class _$$SignInRequestModelImplCopyWith<$Res>
     implements $SignInRequestModelCopyWith<$Res> {
-  factory _$$_SignInRequestModelCopyWith(_$_SignInRequestModel value,
-          $Res Function(_$_SignInRequestModel) then) =
-      __$$_SignInRequestModelCopyWithImpl<$Res>;
+  factory _$$SignInRequestModelImplCopyWith(_$SignInRequestModelImpl value,
+          $Res Function(_$SignInRequestModelImpl) then) =
+      __$$SignInRequestModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String username, String password});
 }
 
 /// @nodoc
-class __$$_SignInRequestModelCopyWithImpl<$Res>
-    extends _$SignInRequestModelCopyWithImpl<$Res, _$_SignInRequestModel>
-    implements _$$_SignInRequestModelCopyWith<$Res> {
-  __$$_SignInRequestModelCopyWithImpl(
-      _$_SignInRequestModel _value, $Res Function(_$_SignInRequestModel) _then)
+class __$$SignInRequestModelImplCopyWithImpl<$Res>
+    extends _$SignInRequestModelCopyWithImpl<$Res, _$SignInRequestModelImpl>
+    implements _$$SignInRequestModelImplCopyWith<$Res> {
+  __$$SignInRequestModelImplCopyWithImpl(_$SignInRequestModelImpl _value,
+      $Res Function(_$SignInRequestModelImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -92,7 +92,7 @@ class __$$_SignInRequestModelCopyWithImpl<$Res>
     Object? username = null,
     Object? password = null,
   }) {
-    return _then(_$_SignInRequestModel(
+    return _then(_$SignInRequestModelImpl(
       username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
@@ -107,11 +107,12 @@ class __$$_SignInRequestModelCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_SignInRequestModel implements _SignInRequestModel {
-  const _$_SignInRequestModel({required this.username, required this.password});
+class _$SignInRequestModelImpl implements _SignInRequestModel {
+  const _$SignInRequestModelImpl(
+      {required this.username, required this.password});
 
-  factory _$_SignInRequestModel.fromJson(Map<String, dynamic> json) =>
-      _$$_SignInRequestModelFromJson(json);
+  factory _$SignInRequestModelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$SignInRequestModelImplFromJson(json);
 
   @override
   final String username;
@@ -127,7 +128,7 @@ class _$_SignInRequestModel implements _SignInRequestModel {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_SignInRequestModel &&
+            other is _$SignInRequestModelImpl &&
             (identical(other.username, username) ||
                 other.username == username) &&
             (identical(other.password, password) ||
@@ -141,13 +142,13 @@ class _$_SignInRequestModel implements _SignInRequestModel {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_SignInRequestModelCopyWith<_$_SignInRequestModel> get copyWith =>
-      __$$_SignInRequestModelCopyWithImpl<_$_SignInRequestModel>(
+  _$$SignInRequestModelImplCopyWith<_$SignInRequestModelImpl> get copyWith =>
+      __$$SignInRequestModelImplCopyWithImpl<_$SignInRequestModelImpl>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_SignInRequestModelToJson(
+    return _$$SignInRequestModelImplToJson(
       this,
     );
   }
@@ -156,10 +157,10 @@ class _$_SignInRequestModel implements _SignInRequestModel {
 abstract class _SignInRequestModel implements SignInRequestModel {
   const factory _SignInRequestModel(
       {required final String username,
-      required final String password}) = _$_SignInRequestModel;
+      required final String password}) = _$SignInRequestModelImpl;
 
   factory _SignInRequestModel.fromJson(Map<String, dynamic> json) =
-      _$_SignInRequestModel.fromJson;
+      _$SignInRequestModelImpl.fromJson;
 
   @override
   String get username;
@@ -167,6 +168,6 @@ abstract class _SignInRequestModel implements SignInRequestModel {
   String get password;
   @override
   @JsonKey(ignore: true)
-  _$$_SignInRequestModelCopyWith<_$_SignInRequestModel> get copyWith =>
+  _$$SignInRequestModelImplCopyWith<_$SignInRequestModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

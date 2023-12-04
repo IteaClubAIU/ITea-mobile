@@ -68,22 +68,22 @@ class _$CountryCodeDtoCopyWithImpl<$Res, $Val extends CountryCodeDto>
 }
 
 /// @nodoc
-abstract class _$$_CountryCodeDtoCopyWith<$Res>
+abstract class _$$CountryCodeDtoImplCopyWith<$Res>
     implements $CountryCodeDtoCopyWith<$Res> {
-  factory _$$_CountryCodeDtoCopyWith(
-          _$_CountryCodeDto value, $Res Function(_$_CountryCodeDto) then) =
-      __$$_CountryCodeDtoCopyWithImpl<$Res>;
+  factory _$$CountryCodeDtoImplCopyWith(_$CountryCodeDtoImpl value,
+          $Res Function(_$CountryCodeDtoImpl) then) =
+      __$$CountryCodeDtoImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String countryName, String countryCode});
 }
 
 /// @nodoc
-class __$$_CountryCodeDtoCopyWithImpl<$Res>
-    extends _$CountryCodeDtoCopyWithImpl<$Res, _$_CountryCodeDto>
-    implements _$$_CountryCodeDtoCopyWith<$Res> {
-  __$$_CountryCodeDtoCopyWithImpl(
-      _$_CountryCodeDto _value, $Res Function(_$_CountryCodeDto) _then)
+class __$$CountryCodeDtoImplCopyWithImpl<$Res>
+    extends _$CountryCodeDtoCopyWithImpl<$Res, _$CountryCodeDtoImpl>
+    implements _$$CountryCodeDtoImplCopyWith<$Res> {
+  __$$CountryCodeDtoImplCopyWithImpl(
+      _$CountryCodeDtoImpl _value, $Res Function(_$CountryCodeDtoImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -92,7 +92,7 @@ class __$$_CountryCodeDtoCopyWithImpl<$Res>
     Object? countryName = null,
     Object? countryCode = null,
   }) {
-    return _then(_$_CountryCodeDto(
+    return _then(_$CountryCodeDtoImpl(
       countryName: null == countryName
           ? _value.countryName
           : countryName // ignore: cast_nullable_to_non_nullable
@@ -107,12 +107,12 @@ class __$$_CountryCodeDtoCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_CountryCodeDto implements _CountryCodeDto {
-  const _$_CountryCodeDto(
+class _$CountryCodeDtoImpl implements _CountryCodeDto {
+  const _$CountryCodeDtoImpl(
       {required this.countryName, required this.countryCode});
 
-  factory _$_CountryCodeDto.fromJson(Map<String, dynamic> json) =>
-      _$$_CountryCodeDtoFromJson(json);
+  factory _$CountryCodeDtoImpl.fromJson(Map<String, dynamic> json) =>
+      _$$CountryCodeDtoImplFromJson(json);
 
   @override
   final String countryName;
@@ -128,7 +128,7 @@ class _$_CountryCodeDto implements _CountryCodeDto {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_CountryCodeDto &&
+            other is _$CountryCodeDtoImpl &&
             (identical(other.countryName, countryName) ||
                 other.countryName == countryName) &&
             (identical(other.countryCode, countryCode) ||
@@ -142,12 +142,13 @@ class _$_CountryCodeDto implements _CountryCodeDto {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_CountryCodeDtoCopyWith<_$_CountryCodeDto> get copyWith =>
-      __$$_CountryCodeDtoCopyWithImpl<_$_CountryCodeDto>(this, _$identity);
+  _$$CountryCodeDtoImplCopyWith<_$CountryCodeDtoImpl> get copyWith =>
+      __$$CountryCodeDtoImplCopyWithImpl<_$CountryCodeDtoImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CountryCodeDtoToJson(
+    return _$$CountryCodeDtoImplToJson(
       this,
     );
   }
@@ -156,10 +157,10 @@ class _$_CountryCodeDto implements _CountryCodeDto {
 abstract class _CountryCodeDto implements CountryCodeDto {
   const factory _CountryCodeDto(
       {required final String countryName,
-      required final String countryCode}) = _$_CountryCodeDto;
+      required final String countryCode}) = _$CountryCodeDtoImpl;
 
   factory _CountryCodeDto.fromJson(Map<String, dynamic> json) =
-      _$_CountryCodeDto.fromJson;
+      _$CountryCodeDtoImpl.fromJson;
 
   @override
   String get countryName;
@@ -167,6 +168,6 @@ abstract class _CountryCodeDto implements CountryCodeDto {
   String get countryCode;
   @override
   @JsonKey(ignore: true)
-  _$$_CountryCodeDtoCopyWith<_$_CountryCodeDto> get copyWith =>
+  _$$CountryCodeDtoImplCopyWith<_$CountryCodeDtoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

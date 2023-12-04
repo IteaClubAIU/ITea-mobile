@@ -4,13 +4,12 @@
 // InjectableConfigGenerator
 // **************************************************************************
 
-// ignore_for_file: unnecessary_lambdas
-// ignore_for_file: lines_longer_than_80_chars
+// ignore_for_file: type=lint
 // coverage:ignore-file
 
+// ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:get_it/get_it.dart' as _i1;
 import 'package:injectable/injectable.dart' as _i2;
-// ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:test_project/src/core/api/client/rest/dio_client.dart' as _i3;
 import 'package:test_project/src/features/countries/data/data_sources/remote/countries_remote_impl.dart'
     as _i6;

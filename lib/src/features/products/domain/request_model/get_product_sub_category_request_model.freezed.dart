@@ -66,25 +66,25 @@ class _$GetProductSubCategoryRequestModelCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_GetProductSubCategoryRequestModelCopyWith<$Res>
+abstract class _$$GetProductSubCategoryRequestModelImplCopyWith<$Res>
     implements $GetProductSubCategoryRequestModelCopyWith<$Res> {
-  factory _$$_GetProductSubCategoryRequestModelCopyWith(
-          _$_GetProductSubCategoryRequestModel value,
-          $Res Function(_$_GetProductSubCategoryRequestModel) then) =
-      __$$_GetProductSubCategoryRequestModelCopyWithImpl<$Res>;
+  factory _$$GetProductSubCategoryRequestModelImplCopyWith(
+          _$GetProductSubCategoryRequestModelImpl value,
+          $Res Function(_$GetProductSubCategoryRequestModelImpl) then) =
+      __$$GetProductSubCategoryRequestModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({ProductCategory productCategory});
 }
 
 /// @nodoc
-class __$$_GetProductSubCategoryRequestModelCopyWithImpl<$Res>
+class __$$GetProductSubCategoryRequestModelImplCopyWithImpl<$Res>
     extends _$GetProductSubCategoryRequestModelCopyWithImpl<$Res,
-        _$_GetProductSubCategoryRequestModel>
-    implements _$$_GetProductSubCategoryRequestModelCopyWith<$Res> {
-  __$$_GetProductSubCategoryRequestModelCopyWithImpl(
-      _$_GetProductSubCategoryRequestModel _value,
-      $Res Function(_$_GetProductSubCategoryRequestModel) _then)
+        _$GetProductSubCategoryRequestModelImpl>
+    implements _$$GetProductSubCategoryRequestModelImplCopyWith<$Res> {
+  __$$GetProductSubCategoryRequestModelImplCopyWithImpl(
+      _$GetProductSubCategoryRequestModelImpl _value,
+      $Res Function(_$GetProductSubCategoryRequestModelImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -92,7 +92,7 @@ class __$$_GetProductSubCategoryRequestModelCopyWithImpl<$Res>
   $Res call({
     Object? productCategory = null,
   }) {
-    return _then(_$_GetProductSubCategoryRequestModel(
+    return _then(_$GetProductSubCategoryRequestModelImpl(
       productCategory: null == productCategory
           ? _value.productCategory
           : productCategory // ignore: cast_nullable_to_non_nullable
@@ -103,14 +103,14 @@ class __$$_GetProductSubCategoryRequestModelCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_GetProductSubCategoryRequestModel
+class _$GetProductSubCategoryRequestModelImpl
     extends _GetProductSubCategoryRequestModel {
-  _$_GetProductSubCategoryRequestModel({required this.productCategory})
+  _$GetProductSubCategoryRequestModelImpl({required this.productCategory})
       : super._();
 
-  factory _$_GetProductSubCategoryRequestModel.fromJson(
+  factory _$GetProductSubCategoryRequestModelImpl.fromJson(
           Map<String, dynamic> json) =>
-      _$$_GetProductSubCategoryRequestModelFromJson(json);
+      _$$GetProductSubCategoryRequestModelImplFromJson(json);
 
   @override
   final ProductCategory productCategory;
@@ -124,7 +124,7 @@ class _$_GetProductSubCategoryRequestModel
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_GetProductSubCategoryRequestModel &&
+            other is _$GetProductSubCategoryRequestModelImpl &&
             (identical(other.productCategory, productCategory) ||
                 other.productCategory == productCategory));
   }
@@ -136,14 +136,14 @@ class _$_GetProductSubCategoryRequestModel
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_GetProductSubCategoryRequestModelCopyWith<
-          _$_GetProductSubCategoryRequestModel>
-      get copyWith => __$$_GetProductSubCategoryRequestModelCopyWithImpl<
-          _$_GetProductSubCategoryRequestModel>(this, _$identity);
+  _$$GetProductSubCategoryRequestModelImplCopyWith<
+          _$GetProductSubCategoryRequestModelImpl>
+      get copyWith => __$$GetProductSubCategoryRequestModelImplCopyWithImpl<
+          _$GetProductSubCategoryRequestModelImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_GetProductSubCategoryRequestModelToJson(
+    return _$$GetProductSubCategoryRequestModelImplToJson(
       this,
     );
   }
@@ -153,18 +153,18 @@ abstract class _GetProductSubCategoryRequestModel
     extends GetProductSubCategoryRequestModel {
   factory _GetProductSubCategoryRequestModel(
           {required final ProductCategory productCategory}) =
-      _$_GetProductSubCategoryRequestModel;
+      _$GetProductSubCategoryRequestModelImpl;
   _GetProductSubCategoryRequestModel._() : super._();
 
   factory _GetProductSubCategoryRequestModel.fromJson(
           Map<String, dynamic> json) =
-      _$_GetProductSubCategoryRequestModel.fromJson;
+      _$GetProductSubCategoryRequestModelImpl.fromJson;
 
   @override
   ProductCategory get productCategory;
   @override
   @JsonKey(ignore: true)
-  _$$_GetProductSubCategoryRequestModelCopyWith<
-          _$_GetProductSubCategoryRequestModel>
+  _$$GetProductSubCategoryRequestModelImplCopyWith<
+          _$GetProductSubCategoryRequestModelImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

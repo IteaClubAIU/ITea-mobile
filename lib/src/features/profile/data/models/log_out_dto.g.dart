@@ -6,11 +6,12 @@ part of 'log_out_dto.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_LogOutDto _$$_LogOutDtoFromJson(Map<String, dynamic> json) => _$_LogOutDto(
+_$LogOutDtoImpl _$$LogOutDtoImplFromJson(Map<String, dynamic> json) =>
+    _$LogOutDtoImpl(
       description: json['description'] as String,
     );
 
-Map<String, dynamic> _$$_LogOutDtoToJson(_$_LogOutDto instance) =>
+Map<String, dynamic> _$$LogOutDtoImplToJson(_$LogOutDtoImpl instance) =>
     <String, dynamic>{
       'description': instance.description,
     };

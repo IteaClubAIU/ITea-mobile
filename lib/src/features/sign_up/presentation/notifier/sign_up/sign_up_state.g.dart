@@ -6,8 +6,8 @@ part of 'sign_up_state.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_SignUpState _$$_SignUpStateFromJson(Map<String, dynamic> json) =>
-    _$_SignUpState(
+_$SignUpStateImpl _$$SignUpStateImplFromJson(Map<String, dynamic> json) =>
+    _$SignUpStateImpl(
       isBtnPressed: json['isBtnPressed'] as bool? ?? false,
       countryCodeList: (json['countryCodeList'] as List<dynamic>?)
               ?.map(
@@ -16,7 +16,7 @@ _$_SignUpState _$$_SignUpStateFromJson(Map<String, dynamic> json) =>
           const [],
     );
 
-Map<String, dynamic> _$$_SignUpStateToJson(_$_SignUpState instance) =>
+Map<String, dynamic> _$$SignUpStateImplToJson(_$SignUpStateImpl instance) =>
     <String, dynamic>{
       'isBtnPressed': instance.isBtnPressed,
       'countryCodeList': instance.countryCodeList,

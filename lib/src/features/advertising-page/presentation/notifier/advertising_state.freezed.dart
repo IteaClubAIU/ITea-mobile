@@ -82,11 +82,11 @@ class _$AdvertisingStateCopyWithImpl<$Res, $Val extends AdvertisingState>
 }
 
 /// @nodoc
-abstract class _$$_AdvertisingStateCopyWith<$Res>
+abstract class _$$AdvertisingStateImplCopyWith<$Res>
     implements $AdvertisingStateCopyWith<$Res> {
-  factory _$$_AdvertisingStateCopyWith(
-          _$_AdvertisingState value, $Res Function(_$_AdvertisingState) then) =
-      __$$_AdvertisingStateCopyWithImpl<$Res>;
+  factory _$$AdvertisingStateImplCopyWith(_$AdvertisingStateImpl value,
+          $Res Function(_$AdvertisingStateImpl) then) =
+      __$$AdvertisingStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -99,11 +99,11 @@ abstract class _$$_AdvertisingStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_AdvertisingStateCopyWithImpl<$Res>
-    extends _$AdvertisingStateCopyWithImpl<$Res, _$_AdvertisingState>
-    implements _$$_AdvertisingStateCopyWith<$Res> {
-  __$$_AdvertisingStateCopyWithImpl(
-      _$_AdvertisingState _value, $Res Function(_$_AdvertisingState) _then)
+class __$$AdvertisingStateImplCopyWithImpl<$Res>
+    extends _$AdvertisingStateCopyWithImpl<$Res, _$AdvertisingStateImpl>
+    implements _$$AdvertisingStateImplCopyWith<$Res> {
+  __$$AdvertisingStateImplCopyWithImpl(_$AdvertisingStateImpl _value,
+      $Res Function(_$AdvertisingStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -113,7 +113,7 @@ class __$$_AdvertisingStateCopyWithImpl<$Res>
     Object? isSelectedAds = null,
     Object? advertising = null,
   }) {
-    return _then(_$_AdvertisingState(
+    return _then(_$AdvertisingStateImpl(
       advertisingEntity: null == advertisingEntity
           ? _value.advertisingEntity
           : advertisingEntity // ignore: cast_nullable_to_non_nullable
@@ -132,8 +132,8 @@ class __$$_AdvertisingStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_AdvertisingState implements _AdvertisingState {
-  _$_AdvertisingState(
+class _$AdvertisingStateImpl implements _AdvertisingState {
+  _$AdvertisingStateImpl(
       {required this.advertisingEntity,
       this.isSelectedAds = false,
       final List<AdvertisingEntity> advertising = const []})
@@ -162,7 +162,7 @@ class _$_AdvertisingState implements _AdvertisingState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_AdvertisingState &&
+            other is _$AdvertisingStateImpl &&
             (identical(other.advertisingEntity, advertisingEntity) ||
                 other.advertisingEntity == advertisingEntity) &&
             (identical(other.isSelectedAds, isSelectedAds) ||
@@ -178,15 +178,16 @@ class _$_AdvertisingState implements _AdvertisingState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_AdvertisingStateCopyWith<_$_AdvertisingState> get copyWith =>
-      __$$_AdvertisingStateCopyWithImpl<_$_AdvertisingState>(this, _$identity);
+  _$$AdvertisingStateImplCopyWith<_$AdvertisingStateImpl> get copyWith =>
+      __$$AdvertisingStateImplCopyWithImpl<_$AdvertisingStateImpl>(
+          this, _$identity);
 }
 
 abstract class _AdvertisingState implements AdvertisingState {
   factory _AdvertisingState(
       {required final AdvertisingEntity advertisingEntity,
       final bool isSelectedAds,
-      final List<AdvertisingEntity> advertising}) = _$_AdvertisingState;
+      final List<AdvertisingEntity> advertising}) = _$AdvertisingStateImpl;
 
   @override
   AdvertisingEntity get advertisingEntity;
@@ -196,6 +197,6 @@ abstract class _AdvertisingState implements AdvertisingState {
   List<AdvertisingEntity> get advertising;
   @override
   @JsonKey(ignore: true)
-  _$$_AdvertisingStateCopyWith<_$_AdvertisingState> get copyWith =>
+  _$$AdvertisingStateImplCopyWith<_$AdvertisingStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

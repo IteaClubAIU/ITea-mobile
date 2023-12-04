@@ -66,25 +66,25 @@ class _$ProductSubCategoriesEntityCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_ProductSubCategoriesEntityCopyWith<$Res>
+abstract class _$$ProductSubCategoriesEntityImplCopyWith<$Res>
     implements $ProductSubCategoriesEntityCopyWith<$Res> {
-  factory _$$_ProductSubCategoriesEntityCopyWith(
-          _$_ProductSubCategoriesEntity value,
-          $Res Function(_$_ProductSubCategoriesEntity) then) =
-      __$$_ProductSubCategoriesEntityCopyWithImpl<$Res>;
+  factory _$$ProductSubCategoriesEntityImplCopyWith(
+          _$ProductSubCategoriesEntityImpl value,
+          $Res Function(_$ProductSubCategoriesEntityImpl) then) =
+      __$$ProductSubCategoriesEntityImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({List<ProductSubCategory> productSubCategories});
 }
 
 /// @nodoc
-class __$$_ProductSubCategoriesEntityCopyWithImpl<$Res>
+class __$$ProductSubCategoriesEntityImplCopyWithImpl<$Res>
     extends _$ProductSubCategoriesEntityCopyWithImpl<$Res,
-        _$_ProductSubCategoriesEntity>
-    implements _$$_ProductSubCategoriesEntityCopyWith<$Res> {
-  __$$_ProductSubCategoriesEntityCopyWithImpl(
-      _$_ProductSubCategoriesEntity _value,
-      $Res Function(_$_ProductSubCategoriesEntity) _then)
+        _$ProductSubCategoriesEntityImpl>
+    implements _$$ProductSubCategoriesEntityImplCopyWith<$Res> {
+  __$$ProductSubCategoriesEntityImplCopyWithImpl(
+      _$ProductSubCategoriesEntityImpl _value,
+      $Res Function(_$ProductSubCategoriesEntityImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -92,7 +92,7 @@ class __$$_ProductSubCategoriesEntityCopyWithImpl<$Res>
   $Res call({
     Object? productSubCategories = null,
   }) {
-    return _then(_$_ProductSubCategoriesEntity(
+    return _then(_$ProductSubCategoriesEntityImpl(
       productSubCategories: null == productSubCategories
           ? _value._productSubCategories
           : productSubCategories // ignore: cast_nullable_to_non_nullable
@@ -103,13 +103,14 @@ class __$$_ProductSubCategoriesEntityCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ProductSubCategoriesEntity implements _ProductSubCategoriesEntity {
-  _$_ProductSubCategoriesEntity(
+class _$ProductSubCategoriesEntityImpl implements _ProductSubCategoriesEntity {
+  _$ProductSubCategoriesEntityImpl(
       {required final List<ProductSubCategory> productSubCategories})
       : _productSubCategories = productSubCategories;
 
-  factory _$_ProductSubCategoriesEntity.fromJson(Map<String, dynamic> json) =>
-      _$$_ProductSubCategoriesEntityFromJson(json);
+  factory _$ProductSubCategoriesEntityImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$ProductSubCategoriesEntityImplFromJson(json);
 
   final List<ProductSubCategory> _productSubCategories;
   @override
@@ -129,7 +130,7 @@ class _$_ProductSubCategoriesEntity implements _ProductSubCategoriesEntity {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ProductSubCategoriesEntity &&
+            other is _$ProductSubCategoriesEntityImpl &&
             const DeepCollectionEquality()
                 .equals(other._productSubCategories, _productSubCategories));
   }
@@ -142,13 +143,13 @@ class _$_ProductSubCategoriesEntity implements _ProductSubCategoriesEntity {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ProductSubCategoriesEntityCopyWith<_$_ProductSubCategoriesEntity>
-      get copyWith => __$$_ProductSubCategoriesEntityCopyWithImpl<
-          _$_ProductSubCategoriesEntity>(this, _$identity);
+  _$$ProductSubCategoriesEntityImplCopyWith<_$ProductSubCategoriesEntityImpl>
+      get copyWith => __$$ProductSubCategoriesEntityImplCopyWithImpl<
+          _$ProductSubCategoriesEntityImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ProductSubCategoriesEntityToJson(
+    return _$$ProductSubCategoriesEntityImplToJson(
       this,
     );
   }
@@ -158,15 +159,15 @@ abstract class _ProductSubCategoriesEntity
     implements ProductSubCategoriesEntity {
   factory _ProductSubCategoriesEntity(
           {required final List<ProductSubCategory> productSubCategories}) =
-      _$_ProductSubCategoriesEntity;
+      _$ProductSubCategoriesEntityImpl;
 
   factory _ProductSubCategoriesEntity.fromJson(Map<String, dynamic> json) =
-      _$_ProductSubCategoriesEntity.fromJson;
+      _$ProductSubCategoriesEntityImpl.fromJson;
 
   @override
   List<ProductSubCategory> get productSubCategories;
   @override
   @JsonKey(ignore: true)
-  _$$_ProductSubCategoriesEntityCopyWith<_$_ProductSubCategoriesEntity>
+  _$$ProductSubCategoriesEntityImplCopyWith<_$ProductSubCategoriesEntityImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

@@ -68,22 +68,22 @@ class _$SignInEntityCopyWithImpl<$Res, $Val extends SignInEntity>
 }
 
 /// @nodoc
-abstract class _$$_SignInEntityCopyWith<$Res>
+abstract class _$$SignInEntityImplCopyWith<$Res>
     implements $SignInEntityCopyWith<$Res> {
-  factory _$$_SignInEntityCopyWith(
-          _$_SignInEntity value, $Res Function(_$_SignInEntity) then) =
-      __$$_SignInEntityCopyWithImpl<$Res>;
+  factory _$$SignInEntityImplCopyWith(
+          _$SignInEntityImpl value, $Res Function(_$SignInEntityImpl) then) =
+      __$$SignInEntityImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String accessToken, String refreshToken});
 }
 
 /// @nodoc
-class __$$_SignInEntityCopyWithImpl<$Res>
-    extends _$SignInEntityCopyWithImpl<$Res, _$_SignInEntity>
-    implements _$$_SignInEntityCopyWith<$Res> {
-  __$$_SignInEntityCopyWithImpl(
-      _$_SignInEntity _value, $Res Function(_$_SignInEntity) _then)
+class __$$SignInEntityImplCopyWithImpl<$Res>
+    extends _$SignInEntityCopyWithImpl<$Res, _$SignInEntityImpl>
+    implements _$$SignInEntityImplCopyWith<$Res> {
+  __$$SignInEntityImplCopyWithImpl(
+      _$SignInEntityImpl _value, $Res Function(_$SignInEntityImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -92,7 +92,7 @@ class __$$_SignInEntityCopyWithImpl<$Res>
     Object? accessToken = null,
     Object? refreshToken = null,
   }) {
-    return _then(_$_SignInEntity(
+    return _then(_$SignInEntityImpl(
       accessToken: null == accessToken
           ? _value.accessToken
           : accessToken // ignore: cast_nullable_to_non_nullable
@@ -107,11 +107,11 @@ class __$$_SignInEntityCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_SignInEntity implements _SignInEntity {
-  _$_SignInEntity({required this.accessToken, required this.refreshToken});
+class _$SignInEntityImpl implements _SignInEntity {
+  _$SignInEntityImpl({required this.accessToken, required this.refreshToken});
 
-  factory _$_SignInEntity.fromJson(Map<String, dynamic> json) =>
-      _$$_SignInEntityFromJson(json);
+  factory _$SignInEntityImpl.fromJson(Map<String, dynamic> json) =>
+      _$$SignInEntityImplFromJson(json);
 
   @override
   final String accessToken;
@@ -127,7 +127,7 @@ class _$_SignInEntity implements _SignInEntity {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_SignInEntity &&
+            other is _$SignInEntityImpl &&
             (identical(other.accessToken, accessToken) ||
                 other.accessToken == accessToken) &&
             (identical(other.refreshToken, refreshToken) ||
@@ -141,12 +141,12 @@ class _$_SignInEntity implements _SignInEntity {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_SignInEntityCopyWith<_$_SignInEntity> get copyWith =>
-      __$$_SignInEntityCopyWithImpl<_$_SignInEntity>(this, _$identity);
+  _$$SignInEntityImplCopyWith<_$SignInEntityImpl> get copyWith =>
+      __$$SignInEntityImplCopyWithImpl<_$SignInEntityImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_SignInEntityToJson(
+    return _$$SignInEntityImplToJson(
       this,
     );
   }
@@ -155,10 +155,10 @@ class _$_SignInEntity implements _SignInEntity {
 abstract class _SignInEntity implements SignInEntity {
   factory _SignInEntity(
       {required final String accessToken,
-      required final String refreshToken}) = _$_SignInEntity;
+      required final String refreshToken}) = _$SignInEntityImpl;
 
   factory _SignInEntity.fromJson(Map<String, dynamic> json) =
-      _$_SignInEntity.fromJson;
+      _$SignInEntityImpl.fromJson;
 
   @override
   String get accessToken;
@@ -166,6 +166,6 @@ abstract class _SignInEntity implements SignInEntity {
   String get refreshToken;
   @override
   @JsonKey(ignore: true)
-  _$$_SignInEntityCopyWith<_$_SignInEntity> get copyWith =>
+  _$$SignInEntityImplCopyWith<_$SignInEntityImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

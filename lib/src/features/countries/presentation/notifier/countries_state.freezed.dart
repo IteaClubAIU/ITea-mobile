@@ -70,11 +70,11 @@ class _$CountriesStateCopyWithImpl<$Res, $Val extends CountriesState>
 }
 
 /// @nodoc
-abstract class _$$_CountriesStateCopyWith<$Res>
+abstract class _$$CountriesStateImplCopyWith<$Res>
     implements $CountriesStateCopyWith<$Res> {
-  factory _$$_CountriesStateCopyWith(
-          _$_CountriesState value, $Res Function(_$_CountriesState) then) =
-      __$$_CountriesStateCopyWithImpl<$Res>;
+  factory _$$CountriesStateImplCopyWith(_$CountriesStateImpl value,
+          $Res Function(_$CountriesStateImpl) then) =
+      __$$CountriesStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -82,11 +82,11 @@ abstract class _$$_CountriesStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_CountriesStateCopyWithImpl<$Res>
-    extends _$CountriesStateCopyWithImpl<$Res, _$_CountriesState>
-    implements _$$_CountriesStateCopyWith<$Res> {
-  __$$_CountriesStateCopyWithImpl(
-      _$_CountriesState _value, $Res Function(_$_CountriesState) _then)
+class __$$CountriesStateImplCopyWithImpl<$Res>
+    extends _$CountriesStateCopyWithImpl<$Res, _$CountriesStateImpl>
+    implements _$$CountriesStateImplCopyWith<$Res> {
+  __$$CountriesStateImplCopyWithImpl(
+      _$CountriesStateImpl _value, $Res Function(_$CountriesStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -95,7 +95,7 @@ class __$$_CountriesStateCopyWithImpl<$Res>
     Object? countriesList = freezed,
     Object? citiesList = freezed,
   }) {
-    return _then(_$_CountriesState(
+    return _then(_$CountriesStateImpl(
       countriesList: freezed == countriesList
           ? _value._countriesList
           : countriesList // ignore: cast_nullable_to_non_nullable
@@ -110,15 +110,15 @@ class __$$_CountriesStateCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_CountriesState implements _CountriesState {
-  _$_CountriesState(
+class _$CountriesStateImpl implements _CountriesState {
+  _$CountriesStateImpl(
       {final List<CountriesEntity>? countriesList,
       final List<CitiesEntity>? citiesList})
       : _countriesList = countriesList,
         _citiesList = citiesList;
 
-  factory _$_CountriesState.fromJson(Map<String, dynamic> json) =>
-      _$$_CountriesStateFromJson(json);
+  factory _$CountriesStateImpl.fromJson(Map<String, dynamic> json) =>
+      _$$CountriesStateImplFromJson(json);
 
   final List<CountriesEntity>? _countriesList;
   @override
@@ -149,7 +149,7 @@ class _$_CountriesState implements _CountriesState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_CountriesState &&
+            other is _$CountriesStateImpl &&
             const DeepCollectionEquality()
                 .equals(other._countriesList, _countriesList) &&
             const DeepCollectionEquality()
@@ -166,12 +166,13 @@ class _$_CountriesState implements _CountriesState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_CountriesStateCopyWith<_$_CountriesState> get copyWith =>
-      __$$_CountriesStateCopyWithImpl<_$_CountriesState>(this, _$identity);
+  _$$CountriesStateImplCopyWith<_$CountriesStateImpl> get copyWith =>
+      __$$CountriesStateImplCopyWithImpl<_$CountriesStateImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CountriesStateToJson(
+    return _$$CountriesStateImplToJson(
       this,
     );
   }
@@ -180,10 +181,10 @@ class _$_CountriesState implements _CountriesState {
 abstract class _CountriesState implements CountriesState {
   factory _CountriesState(
       {final List<CountriesEntity>? countriesList,
-      final List<CitiesEntity>? citiesList}) = _$_CountriesState;
+      final List<CitiesEntity>? citiesList}) = _$CountriesStateImpl;
 
   factory _CountriesState.fromJson(Map<String, dynamic> json) =
-      _$_CountriesState.fromJson;
+      _$CountriesStateImpl.fromJson;
 
   @override
   List<CountriesEntity>? get countriesList;
@@ -191,6 +192,6 @@ abstract class _CountriesState implements CountriesState {
   List<CitiesEntity>? get citiesList;
   @override
   @JsonKey(ignore: true)
-  _$$_CountriesStateCopyWith<_$_CountriesState> get copyWith =>
+  _$$CountriesStateImplCopyWith<_$CountriesStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

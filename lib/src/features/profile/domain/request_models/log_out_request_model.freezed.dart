@@ -68,22 +68,22 @@ class _$LogOutRequestModelCopyWithImpl<$Res, $Val extends LogOutRequestModel>
 }
 
 /// @nodoc
-abstract class _$$_LogOutRequestModelCopyWith<$Res>
+abstract class _$$LogOutRequestModelImplCopyWith<$Res>
     implements $LogOutRequestModelCopyWith<$Res> {
-  factory _$$_LogOutRequestModelCopyWith(_$_LogOutRequestModel value,
-          $Res Function(_$_LogOutRequestModel) then) =
-      __$$_LogOutRequestModelCopyWithImpl<$Res>;
+  factory _$$LogOutRequestModelImplCopyWith(_$LogOutRequestModelImpl value,
+          $Res Function(_$LogOutRequestModelImpl) then) =
+      __$$LogOutRequestModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String accessToken, String refreshToken});
 }
 
 /// @nodoc
-class __$$_LogOutRequestModelCopyWithImpl<$Res>
-    extends _$LogOutRequestModelCopyWithImpl<$Res, _$_LogOutRequestModel>
-    implements _$$_LogOutRequestModelCopyWith<$Res> {
-  __$$_LogOutRequestModelCopyWithImpl(
-      _$_LogOutRequestModel _value, $Res Function(_$_LogOutRequestModel) _then)
+class __$$LogOutRequestModelImplCopyWithImpl<$Res>
+    extends _$LogOutRequestModelCopyWithImpl<$Res, _$LogOutRequestModelImpl>
+    implements _$$LogOutRequestModelImplCopyWith<$Res> {
+  __$$LogOutRequestModelImplCopyWithImpl(_$LogOutRequestModelImpl _value,
+      $Res Function(_$LogOutRequestModelImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -92,7 +92,7 @@ class __$$_LogOutRequestModelCopyWithImpl<$Res>
     Object? accessToken = null,
     Object? refreshToken = null,
   }) {
-    return _then(_$_LogOutRequestModel(
+    return _then(_$LogOutRequestModelImpl(
       accessToken: null == accessToken
           ? _value.accessToken
           : accessToken // ignore: cast_nullable_to_non_nullable
@@ -107,12 +107,12 @@ class __$$_LogOutRequestModelCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_LogOutRequestModel implements _LogOutRequestModel {
-  const _$_LogOutRequestModel(
+class _$LogOutRequestModelImpl implements _LogOutRequestModel {
+  const _$LogOutRequestModelImpl(
       {required this.accessToken, required this.refreshToken});
 
-  factory _$_LogOutRequestModel.fromJson(Map<String, dynamic> json) =>
-      _$$_LogOutRequestModelFromJson(json);
+  factory _$LogOutRequestModelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$LogOutRequestModelImplFromJson(json);
 
   @override
   final String accessToken;
@@ -128,7 +128,7 @@ class _$_LogOutRequestModel implements _LogOutRequestModel {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_LogOutRequestModel &&
+            other is _$LogOutRequestModelImpl &&
             (identical(other.accessToken, accessToken) ||
                 other.accessToken == accessToken) &&
             (identical(other.refreshToken, refreshToken) ||
@@ -142,13 +142,13 @@ class _$_LogOutRequestModel implements _LogOutRequestModel {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_LogOutRequestModelCopyWith<_$_LogOutRequestModel> get copyWith =>
-      __$$_LogOutRequestModelCopyWithImpl<_$_LogOutRequestModel>(
+  _$$LogOutRequestModelImplCopyWith<_$LogOutRequestModelImpl> get copyWith =>
+      __$$LogOutRequestModelImplCopyWithImpl<_$LogOutRequestModelImpl>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_LogOutRequestModelToJson(
+    return _$$LogOutRequestModelImplToJson(
       this,
     );
   }
@@ -157,10 +157,10 @@ class _$_LogOutRequestModel implements _LogOutRequestModel {
 abstract class _LogOutRequestModel implements LogOutRequestModel {
   const factory _LogOutRequestModel(
       {required final String accessToken,
-      required final String refreshToken}) = _$_LogOutRequestModel;
+      required final String refreshToken}) = _$LogOutRequestModelImpl;
 
   factory _LogOutRequestModel.fromJson(Map<String, dynamic> json) =
-      _$_LogOutRequestModel.fromJson;
+      _$LogOutRequestModelImpl.fromJson;
 
   @override
   String get accessToken;
@@ -168,6 +168,6 @@ abstract class _LogOutRequestModel implements LogOutRequestModel {
   String get refreshToken;
   @override
   @JsonKey(ignore: true)
-  _$$_LogOutRequestModelCopyWith<_$_LogOutRequestModel> get copyWith =>
+  _$$LogOutRequestModelImplCopyWith<_$LogOutRequestModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

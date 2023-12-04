@@ -64,22 +64,22 @@ class _$FavoritesPageStateCopyWithImpl<$Res, $Val extends FavoritesPageState>
 }
 
 /// @nodoc
-abstract class _$$_FavoritesPageStateCopyWith<$Res>
+abstract class _$$FavoritesPageStateImplCopyWith<$Res>
     implements $FavoritesPageStateCopyWith<$Res> {
-  factory _$$_FavoritesPageStateCopyWith(_$_FavoritesPageState value,
-          $Res Function(_$_FavoritesPageState) then) =
-      __$$_FavoritesPageStateCopyWithImpl<$Res>;
+  factory _$$FavoritesPageStateImplCopyWith(_$FavoritesPageStateImpl value,
+          $Res Function(_$FavoritesPageStateImpl) then) =
+      __$$FavoritesPageStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({List<ProductEntity> favoriteProducts, bool isLoading});
 }
 
 /// @nodoc
-class __$$_FavoritesPageStateCopyWithImpl<$Res>
-    extends _$FavoritesPageStateCopyWithImpl<$Res, _$_FavoritesPageState>
-    implements _$$_FavoritesPageStateCopyWith<$Res> {
-  __$$_FavoritesPageStateCopyWithImpl(
-      _$_FavoritesPageState _value, $Res Function(_$_FavoritesPageState) _then)
+class __$$FavoritesPageStateImplCopyWithImpl<$Res>
+    extends _$FavoritesPageStateCopyWithImpl<$Res, _$FavoritesPageStateImpl>
+    implements _$$FavoritesPageStateImplCopyWith<$Res> {
+  __$$FavoritesPageStateImplCopyWithImpl(_$FavoritesPageStateImpl _value,
+      $Res Function(_$FavoritesPageStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -88,7 +88,7 @@ class __$$_FavoritesPageStateCopyWithImpl<$Res>
     Object? favoriteProducts = null,
     Object? isLoading = null,
   }) {
-    return _then(_$_FavoritesPageState(
+    return _then(_$FavoritesPageStateImpl(
       favoriteProducts: null == favoriteProducts
           ? _value._favoriteProducts
           : favoriteProducts // ignore: cast_nullable_to_non_nullable
@@ -103,8 +103,8 @@ class __$$_FavoritesPageStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_FavoritesPageState implements _FavoritesPageState {
-  _$_FavoritesPageState(
+class _$FavoritesPageStateImpl implements _FavoritesPageState {
+  _$FavoritesPageStateImpl(
       {final List<ProductEntity> favoriteProducts = const [],
       this.isLoading = false})
       : _favoriteProducts = favoriteProducts;
@@ -132,7 +132,7 @@ class _$_FavoritesPageState implements _FavoritesPageState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_FavoritesPageState &&
+            other is _$FavoritesPageStateImpl &&
             const DeepCollectionEquality()
                 .equals(other._favoriteProducts, _favoriteProducts) &&
             (identical(other.isLoading, isLoading) ||
@@ -146,15 +146,15 @@ class _$_FavoritesPageState implements _FavoritesPageState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_FavoritesPageStateCopyWith<_$_FavoritesPageState> get copyWith =>
-      __$$_FavoritesPageStateCopyWithImpl<_$_FavoritesPageState>(
+  _$$FavoritesPageStateImplCopyWith<_$FavoritesPageStateImpl> get copyWith =>
+      __$$FavoritesPageStateImplCopyWithImpl<_$FavoritesPageStateImpl>(
           this, _$identity);
 }
 
 abstract class _FavoritesPageState implements FavoritesPageState {
   factory _FavoritesPageState(
       {final List<ProductEntity> favoriteProducts,
-      final bool isLoading}) = _$_FavoritesPageState;
+      final bool isLoading}) = _$FavoritesPageStateImpl;
 
   @override
   List<ProductEntity> get favoriteProducts;
@@ -162,6 +162,6 @@ abstract class _FavoritesPageState implements FavoritesPageState {
   bool get isLoading;
   @override
   @JsonKey(ignore: true)
-  _$$_FavoritesPageStateCopyWith<_$_FavoritesPageState> get copyWith =>
+  _$$FavoritesPageStateImplCopyWith<_$FavoritesPageStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

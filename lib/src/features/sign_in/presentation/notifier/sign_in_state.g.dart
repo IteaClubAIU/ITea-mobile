@@ -6,14 +6,14 @@ part of 'sign_in_state.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_SignInState _$$_SignInStateFromJson(Map<String, dynamic> json) =>
-    _$_SignInState(
+_$SignInStateImpl _$$SignInStateImplFromJson(Map<String, dynamic> json) =>
+    _$SignInStateImpl(
       username: json['username'] as String? ?? '',
       password: json['password'] as String? ?? '',
       isBtnPressed: json['isBtnPressed'] as bool? ?? false,
     );
 
-Map<String, dynamic> _$$_SignInStateToJson(_$_SignInState instance) =>
+Map<String, dynamic> _$$SignInStateImplToJson(_$SignInStateImpl instance) =>
     <String, dynamic>{
       'username': instance.username,
       'password': instance.password,

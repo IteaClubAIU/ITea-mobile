@@ -67,11 +67,11 @@ class _$ProductPageStateCopyWithImpl<$Res, $Val extends ProductPageState>
 }
 
 /// @nodoc
-abstract class _$$_ProductPageStateCopyWith<$Res>
+abstract class _$$ProductPageStateImplCopyWith<$Res>
     implements $ProductPageStateCopyWith<$Res> {
-  factory _$$_ProductPageStateCopyWith(
-          _$_ProductPageState value, $Res Function(_$_ProductPageState) then) =
-      __$$_ProductPageStateCopyWithImpl<$Res>;
+  factory _$$ProductPageStateImplCopyWith(_$ProductPageStateImpl value,
+          $Res Function(_$ProductPageStateImpl) then) =
+      __$$ProductPageStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({ProductEntity product});
@@ -81,11 +81,11 @@ abstract class _$$_ProductPageStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_ProductPageStateCopyWithImpl<$Res>
-    extends _$ProductPageStateCopyWithImpl<$Res, _$_ProductPageState>
-    implements _$$_ProductPageStateCopyWith<$Res> {
-  __$$_ProductPageStateCopyWithImpl(
-      _$_ProductPageState _value, $Res Function(_$_ProductPageState) _then)
+class __$$ProductPageStateImplCopyWithImpl<$Res>
+    extends _$ProductPageStateCopyWithImpl<$Res, _$ProductPageStateImpl>
+    implements _$$ProductPageStateImplCopyWith<$Res> {
+  __$$ProductPageStateImplCopyWithImpl(_$ProductPageStateImpl _value,
+      $Res Function(_$ProductPageStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -93,7 +93,7 @@ class __$$_ProductPageStateCopyWithImpl<$Res>
   $Res call({
     Object? product = null,
   }) {
-    return _then(_$_ProductPageState(
+    return _then(_$ProductPageStateImpl(
       product: null == product
           ? _value.product
           : product // ignore: cast_nullable_to_non_nullable
@@ -104,8 +104,8 @@ class __$$_ProductPageStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ProductPageState implements _ProductPageState {
-  _$_ProductPageState({required this.product});
+class _$ProductPageStateImpl implements _ProductPageState {
+  _$ProductPageStateImpl({required this.product});
 
   @override
   final ProductEntity product;
@@ -119,7 +119,7 @@ class _$_ProductPageState implements _ProductPageState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ProductPageState &&
+            other is _$ProductPageStateImpl &&
             (identical(other.product, product) || other.product == product));
   }
 
@@ -129,18 +129,19 @@ class _$_ProductPageState implements _ProductPageState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ProductPageStateCopyWith<_$_ProductPageState> get copyWith =>
-      __$$_ProductPageStateCopyWithImpl<_$_ProductPageState>(this, _$identity);
+  _$$ProductPageStateImplCopyWith<_$ProductPageStateImpl> get copyWith =>
+      __$$ProductPageStateImplCopyWithImpl<_$ProductPageStateImpl>(
+          this, _$identity);
 }
 
 abstract class _ProductPageState implements ProductPageState {
   factory _ProductPageState({required final ProductEntity product}) =
-      _$_ProductPageState;
+      _$ProductPageStateImpl;
 
   @override
   ProductEntity get product;
   @override
   @JsonKey(ignore: true)
-  _$$_ProductPageStateCopyWith<_$_ProductPageState> get copyWith =>
+  _$$ProductPageStateImplCopyWith<_$ProductPageStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

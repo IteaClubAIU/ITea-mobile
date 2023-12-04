@@ -80,11 +80,11 @@ class _$MainPageStateCopyWithImpl<$Res, $Val extends MainPageState>
 }
 
 /// @nodoc
-abstract class _$$_MainPageStateCopyWith<$Res>
+abstract class _$$MainPageStateImplCopyWith<$Res>
     implements $MainPageStateCopyWith<$Res> {
-  factory _$$_MainPageStateCopyWith(
-          _$_MainPageState value, $Res Function(_$_MainPageState) then) =
-      __$$_MainPageStateCopyWithImpl<$Res>;
+  factory _$$MainPageStateImplCopyWith(
+          _$MainPageStateImpl value, $Res Function(_$MainPageStateImpl) then) =
+      __$$MainPageStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -95,11 +95,11 @@ abstract class _$$_MainPageStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_MainPageStateCopyWithImpl<$Res>
-    extends _$MainPageStateCopyWithImpl<$Res, _$_MainPageState>
-    implements _$$_MainPageStateCopyWith<$Res> {
-  __$$_MainPageStateCopyWithImpl(
-      _$_MainPageState _value, $Res Function(_$_MainPageState) _then)
+class __$$MainPageStateImplCopyWithImpl<$Res>
+    extends _$MainPageStateCopyWithImpl<$Res, _$MainPageStateImpl>
+    implements _$$MainPageStateImplCopyWith<$Res> {
+  __$$MainPageStateImplCopyWithImpl(
+      _$MainPageStateImpl _value, $Res Function(_$MainPageStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -110,7 +110,7 @@ class __$$_MainPageStateCopyWithImpl<$Res>
     Object? isLoading = null,
     Object? categoryBoxesPageContext = freezed,
   }) {
-    return _then(_$_MainPageState(
+    return _then(_$MainPageStateImpl(
       pageIndex: null == pageIndex
           ? _value.pageIndex
           : pageIndex // ignore: cast_nullable_to_non_nullable
@@ -133,8 +133,8 @@ class __$$_MainPageStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_MainPageState implements _MainPageState {
-  _$_MainPageState(
+class _$MainPageStateImpl implements _MainPageState {
+  _$MainPageStateImpl(
       {this.pageIndex = 0,
       final List<ProductEntity> products = const [],
       this.isLoading = false,
@@ -168,7 +168,7 @@ class _$_MainPageState implements _MainPageState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_MainPageState &&
+            other is _$MainPageStateImpl &&
             (identical(other.pageIndex, pageIndex) ||
                 other.pageIndex == pageIndex) &&
             const DeepCollectionEquality().equals(other._products, _products) &&
@@ -190,8 +190,8 @@ class _$_MainPageState implements _MainPageState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_MainPageStateCopyWith<_$_MainPageState> get copyWith =>
-      __$$_MainPageStateCopyWithImpl<_$_MainPageState>(this, _$identity);
+  _$$MainPageStateImplCopyWith<_$MainPageStateImpl> get copyWith =>
+      __$$MainPageStateImplCopyWithImpl<_$MainPageStateImpl>(this, _$identity);
 }
 
 abstract class _MainPageState implements MainPageState {
@@ -199,7 +199,7 @@ abstract class _MainPageState implements MainPageState {
       {final int pageIndex,
       final List<ProductEntity> products,
       final bool isLoading,
-      final BuildContext? categoryBoxesPageContext}) = _$_MainPageState;
+      final BuildContext? categoryBoxesPageContext}) = _$MainPageStateImpl;
 
   @override
   int get pageIndex;
@@ -211,6 +211,6 @@ abstract class _MainPageState implements MainPageState {
   BuildContext? get categoryBoxesPageContext;
   @override
   @JsonKey(ignore: true)
-  _$$_MainPageStateCopyWith<_$_MainPageState> get copyWith =>
+  _$$MainPageStateImplCopyWith<_$MainPageStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

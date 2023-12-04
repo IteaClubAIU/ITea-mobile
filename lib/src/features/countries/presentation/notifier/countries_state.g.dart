@@ -6,8 +6,8 @@ part of 'countries_state.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_CountriesState _$$_CountriesStateFromJson(Map<String, dynamic> json) =>
-    _$_CountriesState(
+_$CountriesStateImpl _$$CountriesStateImplFromJson(Map<String, dynamic> json) =>
+    _$CountriesStateImpl(
       countriesList: (json['countriesList'] as List<dynamic>?)
           ?.map((e) => CountriesEntity.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -16,7 +16,8 @@ _$_CountriesState _$$_CountriesStateFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$$_CountriesStateToJson(_$_CountriesState instance) =>
+Map<String, dynamic> _$$CountriesStateImplToJson(
+        _$CountriesStateImpl instance) =>
     <String, dynamic>{
       'countriesList': instance.countriesList,
       'citiesList': instance.citiesList,

@@ -6,9 +6,9 @@ part of 'create_product_state.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_CreateProductState _$$_CreateProductStateFromJson(
+_$CreateProductStateImpl _$$CreateProductStateImplFromJson(
         Map<String, dynamic> json) =>
-    _$_CreateProductState(
+    _$CreateProductStateImpl(
       isLoading: json['isLoading'] as bool? ?? false,
       product: ProductEntity.fromJson(json['product'] as Map<String, dynamic>),
       imageUrls: (json['imageUrls'] as List<dynamic>?)
@@ -31,8 +31,8 @@ _$_CreateProductState _$$_CreateProductStateFromJson(
           const [],
     );
 
-Map<String, dynamic> _$$_CreateProductStateToJson(
-        _$_CreateProductState instance) =>
+Map<String, dynamic> _$$CreateProductStateImplToJson(
+        _$CreateProductStateImpl instance) =>
     <String, dynamic>{
       'isLoading': instance.isLoading,
       'product': instance.product,

@@ -70,22 +70,24 @@ class _$UserProductsPageStateCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_UserProductsPageStateCopyWith<$Res>
+abstract class _$$UserProductsPageStateImplCopyWith<$Res>
     implements $UserProductsPageStateCopyWith<$Res> {
-  factory _$$_UserProductsPageStateCopyWith(_$_UserProductsPageState value,
-          $Res Function(_$_UserProductsPageState) then) =
-      __$$_UserProductsPageStateCopyWithImpl<$Res>;
+  factory _$$UserProductsPageStateImplCopyWith(
+          _$UserProductsPageStateImpl value,
+          $Res Function(_$UserProductsPageStateImpl) then) =
+      __$$UserProductsPageStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({List<ProductEntity> userProducts, bool isLoading});
 }
 
 /// @nodoc
-class __$$_UserProductsPageStateCopyWithImpl<$Res>
-    extends _$UserProductsPageStateCopyWithImpl<$Res, _$_UserProductsPageState>
-    implements _$$_UserProductsPageStateCopyWith<$Res> {
-  __$$_UserProductsPageStateCopyWithImpl(_$_UserProductsPageState _value,
-      $Res Function(_$_UserProductsPageState) _then)
+class __$$UserProductsPageStateImplCopyWithImpl<$Res>
+    extends _$UserProductsPageStateCopyWithImpl<$Res,
+        _$UserProductsPageStateImpl>
+    implements _$$UserProductsPageStateImplCopyWith<$Res> {
+  __$$UserProductsPageStateImplCopyWithImpl(_$UserProductsPageStateImpl _value,
+      $Res Function(_$UserProductsPageStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -94,7 +96,7 @@ class __$$_UserProductsPageStateCopyWithImpl<$Res>
     Object? userProducts = null,
     Object? isLoading = null,
   }) {
-    return _then(_$_UserProductsPageState(
+    return _then(_$UserProductsPageStateImpl(
       userProducts: null == userProducts
           ? _value._userProducts
           : userProducts // ignore: cast_nullable_to_non_nullable
@@ -109,14 +111,14 @@ class __$$_UserProductsPageStateCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UserProductsPageState implements _UserProductsPageState {
-  _$_UserProductsPageState(
+class _$UserProductsPageStateImpl implements _UserProductsPageState {
+  _$UserProductsPageStateImpl(
       {final List<ProductEntity> userProducts = const [],
       this.isLoading = false})
       : _userProducts = userProducts;
 
-  factory _$_UserProductsPageState.fromJson(Map<String, dynamic> json) =>
-      _$$_UserProductsPageStateFromJson(json);
+  factory _$UserProductsPageStateImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UserProductsPageStateImplFromJson(json);
 
   final List<ProductEntity> _userProducts;
   @override
@@ -140,7 +142,7 @@ class _$_UserProductsPageState implements _UserProductsPageState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_UserProductsPageState &&
+            other is _$UserProductsPageStateImpl &&
             const DeepCollectionEquality()
                 .equals(other._userProducts, _userProducts) &&
             (identical(other.isLoading, isLoading) ||
@@ -155,13 +157,13 @@ class _$_UserProductsPageState implements _UserProductsPageState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_UserProductsPageStateCopyWith<_$_UserProductsPageState> get copyWith =>
-      __$$_UserProductsPageStateCopyWithImpl<_$_UserProductsPageState>(
-          this, _$identity);
+  _$$UserProductsPageStateImplCopyWith<_$UserProductsPageStateImpl>
+      get copyWith => __$$UserProductsPageStateImplCopyWithImpl<
+          _$UserProductsPageStateImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UserProductsPageStateToJson(
+    return _$$UserProductsPageStateImplToJson(
       this,
     );
   }
@@ -170,10 +172,10 @@ class _$_UserProductsPageState implements _UserProductsPageState {
 abstract class _UserProductsPageState implements UserProductsPageState {
   factory _UserProductsPageState(
       {final List<ProductEntity> userProducts,
-      final bool isLoading}) = _$_UserProductsPageState;
+      final bool isLoading}) = _$UserProductsPageStateImpl;
 
   factory _UserProductsPageState.fromJson(Map<String, dynamic> json) =
-      _$_UserProductsPageState.fromJson;
+      _$UserProductsPageStateImpl.fromJson;
 
   @override
   List<ProductEntity> get userProducts;
@@ -181,6 +183,6 @@ abstract class _UserProductsPageState implements UserProductsPageState {
   bool get isLoading;
   @override
   @JsonKey(ignore: true)
-  _$$_UserProductsPageStateCopyWith<_$_UserProductsPageState> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$UserProductsPageStateImplCopyWith<_$UserProductsPageStateImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

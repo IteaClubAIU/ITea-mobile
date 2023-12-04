@@ -68,22 +68,22 @@ class _$CountriesEntityCopyWithImpl<$Res, $Val extends CountriesEntity>
 }
 
 /// @nodoc
-abstract class _$$_CountriesEntityCopyWith<$Res>
+abstract class _$$CountriesEntityImplCopyWith<$Res>
     implements $CountriesEntityCopyWith<$Res> {
-  factory _$$_CountriesEntityCopyWith(
-          _$_CountriesEntity value, $Res Function(_$_CountriesEntity) then) =
-      __$$_CountriesEntityCopyWithImpl<$Res>;
+  factory _$$CountriesEntityImplCopyWith(_$CountriesEntityImpl value,
+          $Res Function(_$CountriesEntityImpl) then) =
+      __$$CountriesEntityImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String code, String name});
 }
 
 /// @nodoc
-class __$$_CountriesEntityCopyWithImpl<$Res>
-    extends _$CountriesEntityCopyWithImpl<$Res, _$_CountriesEntity>
-    implements _$$_CountriesEntityCopyWith<$Res> {
-  __$$_CountriesEntityCopyWithImpl(
-      _$_CountriesEntity _value, $Res Function(_$_CountriesEntity) _then)
+class __$$CountriesEntityImplCopyWithImpl<$Res>
+    extends _$CountriesEntityCopyWithImpl<$Res, _$CountriesEntityImpl>
+    implements _$$CountriesEntityImplCopyWith<$Res> {
+  __$$CountriesEntityImplCopyWithImpl(
+      _$CountriesEntityImpl _value, $Res Function(_$CountriesEntityImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -92,7 +92,7 @@ class __$$_CountriesEntityCopyWithImpl<$Res>
     Object? code = null,
     Object? name = null,
   }) {
-    return _then(_$_CountriesEntity(
+    return _then(_$CountriesEntityImpl(
       code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
@@ -107,11 +107,11 @@ class __$$_CountriesEntityCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_CountriesEntity implements _CountriesEntity {
-  _$_CountriesEntity({required this.code, required this.name});
+class _$CountriesEntityImpl implements _CountriesEntity {
+  _$CountriesEntityImpl({required this.code, required this.name});
 
-  factory _$_CountriesEntity.fromJson(Map<String, dynamic> json) =>
-      _$$_CountriesEntityFromJson(json);
+  factory _$CountriesEntityImpl.fromJson(Map<String, dynamic> json) =>
+      _$$CountriesEntityImplFromJson(json);
 
   @override
   final String code;
@@ -127,7 +127,7 @@ class _$_CountriesEntity implements _CountriesEntity {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_CountriesEntity &&
+            other is _$CountriesEntityImpl &&
             (identical(other.code, code) || other.code == code) &&
             (identical(other.name, name) || other.name == name));
   }
@@ -139,12 +139,13 @@ class _$_CountriesEntity implements _CountriesEntity {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_CountriesEntityCopyWith<_$_CountriesEntity> get copyWith =>
-      __$$_CountriesEntityCopyWithImpl<_$_CountriesEntity>(this, _$identity);
+  _$$CountriesEntityImplCopyWith<_$CountriesEntityImpl> get copyWith =>
+      __$$CountriesEntityImplCopyWithImpl<_$CountriesEntityImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CountriesEntityToJson(
+    return _$$CountriesEntityImplToJson(
       this,
     );
   }
@@ -153,10 +154,10 @@ class _$_CountriesEntity implements _CountriesEntity {
 abstract class _CountriesEntity implements CountriesEntity {
   factory _CountriesEntity(
       {required final String code,
-      required final String name}) = _$_CountriesEntity;
+      required final String name}) = _$CountriesEntityImpl;
 
   factory _CountriesEntity.fromJson(Map<String, dynamic> json) =
-      _$_CountriesEntity.fromJson;
+      _$CountriesEntityImpl.fromJson;
 
   @override
   String get code;
@@ -164,6 +165,6 @@ abstract class _CountriesEntity implements CountriesEntity {
   String get name;
   @override
   @JsonKey(ignore: true)
-  _$$_CountriesEntityCopyWith<_$_CountriesEntity> get copyWith =>
+  _$$CountriesEntityImplCopyWith<_$CountriesEntityImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

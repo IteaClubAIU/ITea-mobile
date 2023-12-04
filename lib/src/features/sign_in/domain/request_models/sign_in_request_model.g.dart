@@ -6,15 +6,15 @@ part of 'sign_in_request_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_SignInRequestModel _$$_SignInRequestModelFromJson(
+_$SignInRequestModelImpl _$$SignInRequestModelImplFromJson(
         Map<String, dynamic> json) =>
-    _$_SignInRequestModel(
+    _$SignInRequestModelImpl(
       username: json['username'] as String,
       password: json['password'] as String,
     );
 
-Map<String, dynamic> _$$_SignInRequestModelToJson(
-        _$_SignInRequestModel instance) =>
+Map<String, dynamic> _$$SignInRequestModelImplToJson(
+        _$SignInRequestModelImpl instance) =>
     <String, dynamic>{
       'username': instance.username,
       'password': instance.password,

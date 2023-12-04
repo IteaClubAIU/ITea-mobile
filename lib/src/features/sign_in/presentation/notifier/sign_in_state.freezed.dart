@@ -74,22 +74,22 @@ class _$SignInStateCopyWithImpl<$Res, $Val extends SignInState>
 }
 
 /// @nodoc
-abstract class _$$_SignInStateCopyWith<$Res>
+abstract class _$$SignInStateImplCopyWith<$Res>
     implements $SignInStateCopyWith<$Res> {
-  factory _$$_SignInStateCopyWith(
-          _$_SignInState value, $Res Function(_$_SignInState) then) =
-      __$$_SignInStateCopyWithImpl<$Res>;
+  factory _$$SignInStateImplCopyWith(
+          _$SignInStateImpl value, $Res Function(_$SignInStateImpl) then) =
+      __$$SignInStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String username, String password, bool isBtnPressed});
 }
 
 /// @nodoc
-class __$$_SignInStateCopyWithImpl<$Res>
-    extends _$SignInStateCopyWithImpl<$Res, _$_SignInState>
-    implements _$$_SignInStateCopyWith<$Res> {
-  __$$_SignInStateCopyWithImpl(
-      _$_SignInState _value, $Res Function(_$_SignInState) _then)
+class __$$SignInStateImplCopyWithImpl<$Res>
+    extends _$SignInStateCopyWithImpl<$Res, _$SignInStateImpl>
+    implements _$$SignInStateImplCopyWith<$Res> {
+  __$$SignInStateImplCopyWithImpl(
+      _$SignInStateImpl _value, $Res Function(_$SignInStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -99,7 +99,7 @@ class __$$_SignInStateCopyWithImpl<$Res>
     Object? password = null,
     Object? isBtnPressed = null,
   }) {
-    return _then(_$_SignInState(
+    return _then(_$SignInStateImpl(
       username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
@@ -118,12 +118,12 @@ class __$$_SignInStateCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_SignInState implements _SignInState {
-  _$_SignInState(
+class _$SignInStateImpl implements _SignInState {
+  _$SignInStateImpl(
       {this.username = '', this.password = '', this.isBtnPressed = false});
 
-  factory _$_SignInState.fromJson(Map<String, dynamic> json) =>
-      _$$_SignInStateFromJson(json);
+  factory _$SignInStateImpl.fromJson(Map<String, dynamic> json) =>
+      _$$SignInStateImplFromJson(json);
 
   @override
   @JsonKey()
@@ -144,7 +144,7 @@ class _$_SignInState implements _SignInState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_SignInState &&
+            other is _$SignInStateImpl &&
             (identical(other.username, username) ||
                 other.username == username) &&
             (identical(other.password, password) ||
@@ -161,12 +161,12 @@ class _$_SignInState implements _SignInState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_SignInStateCopyWith<_$_SignInState> get copyWith =>
-      __$$_SignInStateCopyWithImpl<_$_SignInState>(this, _$identity);
+  _$$SignInStateImplCopyWith<_$SignInStateImpl> get copyWith =>
+      __$$SignInStateImplCopyWithImpl<_$SignInStateImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_SignInStateToJson(
+    return _$$SignInStateImplToJson(
       this,
     );
   }
@@ -176,10 +176,10 @@ abstract class _SignInState implements SignInState {
   factory _SignInState(
       {final String username,
       final String password,
-      final bool isBtnPressed}) = _$_SignInState;
+      final bool isBtnPressed}) = _$SignInStateImpl;
 
   factory _SignInState.fromJson(Map<String, dynamic> json) =
-      _$_SignInState.fromJson;
+      _$SignInStateImpl.fromJson;
 
   @override
   String get username;
@@ -189,6 +189,6 @@ abstract class _SignInState implements SignInState {
   bool get isBtnPressed;
   @override
   @JsonKey(ignore: true)
-  _$$_SignInStateCopyWith<_$_SignInState> get copyWith =>
+  _$$SignInStateImplCopyWith<_$SignInStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

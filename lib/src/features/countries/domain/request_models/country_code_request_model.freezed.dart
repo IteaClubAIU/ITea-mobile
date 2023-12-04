@@ -64,23 +64,25 @@ class _$CountryCodeRequestModelCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_CountryCodeRequestModelCopyWith<$Res>
+abstract class _$$CountryCodeRequestModelImplCopyWith<$Res>
     implements $CountryCodeRequestModelCopyWith<$Res> {
-  factory _$$_CountryCodeRequestModelCopyWith(_$_CountryCodeRequestModel value,
-          $Res Function(_$_CountryCodeRequestModel) then) =
-      __$$_CountryCodeRequestModelCopyWithImpl<$Res>;
+  factory _$$CountryCodeRequestModelImplCopyWith(
+          _$CountryCodeRequestModelImpl value,
+          $Res Function(_$CountryCodeRequestModelImpl) then) =
+      __$$CountryCodeRequestModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String code});
 }
 
 /// @nodoc
-class __$$_CountryCodeRequestModelCopyWithImpl<$Res>
+class __$$CountryCodeRequestModelImplCopyWithImpl<$Res>
     extends _$CountryCodeRequestModelCopyWithImpl<$Res,
-        _$_CountryCodeRequestModel>
-    implements _$$_CountryCodeRequestModelCopyWith<$Res> {
-  __$$_CountryCodeRequestModelCopyWithImpl(_$_CountryCodeRequestModel _value,
-      $Res Function(_$_CountryCodeRequestModel) _then)
+        _$CountryCodeRequestModelImpl>
+    implements _$$CountryCodeRequestModelImplCopyWith<$Res> {
+  __$$CountryCodeRequestModelImplCopyWithImpl(
+      _$CountryCodeRequestModelImpl _value,
+      $Res Function(_$CountryCodeRequestModelImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -88,7 +90,7 @@ class __$$_CountryCodeRequestModelCopyWithImpl<$Res>
   $Res call({
     Object? code = null,
   }) {
-    return _then(_$_CountryCodeRequestModel(
+    return _then(_$CountryCodeRequestModelImpl(
       code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
@@ -99,11 +101,11 @@ class __$$_CountryCodeRequestModelCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_CountryCodeRequestModel implements _CountryCodeRequestModel {
-  const _$_CountryCodeRequestModel({required this.code});
+class _$CountryCodeRequestModelImpl implements _CountryCodeRequestModel {
+  const _$CountryCodeRequestModelImpl({required this.code});
 
-  factory _$_CountryCodeRequestModel.fromJson(Map<String, dynamic> json) =>
-      _$$_CountryCodeRequestModelFromJson(json);
+  factory _$CountryCodeRequestModelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$CountryCodeRequestModelImplFromJson(json);
 
   @override
   final String code;
@@ -117,7 +119,7 @@ class _$_CountryCodeRequestModel implements _CountryCodeRequestModel {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_CountryCodeRequestModel &&
+            other is _$CountryCodeRequestModelImpl &&
             (identical(other.code, code) || other.code == code));
   }
 
@@ -128,14 +130,13 @@ class _$_CountryCodeRequestModel implements _CountryCodeRequestModel {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_CountryCodeRequestModelCopyWith<_$_CountryCodeRequestModel>
-      get copyWith =>
-          __$$_CountryCodeRequestModelCopyWithImpl<_$_CountryCodeRequestModel>(
-              this, _$identity);
+  _$$CountryCodeRequestModelImplCopyWith<_$CountryCodeRequestModelImpl>
+      get copyWith => __$$CountryCodeRequestModelImplCopyWithImpl<
+          _$CountryCodeRequestModelImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CountryCodeRequestModelToJson(
+    return _$$CountryCodeRequestModelImplToJson(
       this,
     );
   }
@@ -143,15 +144,15 @@ class _$_CountryCodeRequestModel implements _CountryCodeRequestModel {
 
 abstract class _CountryCodeRequestModel implements CountryCodeRequestModel {
   const factory _CountryCodeRequestModel({required final String code}) =
-      _$_CountryCodeRequestModel;
+      _$CountryCodeRequestModelImpl;
 
   factory _CountryCodeRequestModel.fromJson(Map<String, dynamic> json) =
-      _$_CountryCodeRequestModel.fromJson;
+      _$CountryCodeRequestModelImpl.fromJson;
 
   @override
   String get code;
   @override
   @JsonKey(ignore: true)
-  _$$_CountryCodeRequestModelCopyWith<_$_CountryCodeRequestModel>
+  _$$CountryCodeRequestModelImplCopyWith<_$CountryCodeRequestModelImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

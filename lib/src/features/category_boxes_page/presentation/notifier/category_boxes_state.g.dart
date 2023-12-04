@@ -6,9 +6,9 @@ part of 'category_boxes_state.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_CategoryBoxesState _$$_CategoryBoxesStateFromJson(
+_$CategoryBoxesStateImpl _$$CategoryBoxesStateImplFromJson(
         Map<String, dynamic> json) =>
-    _$_CategoryBoxesState(
+    _$CategoryBoxesStateImpl(
       isLoading: json['isLoading'] as bool? ?? false,
       products: (json['products'] as List<dynamic>?)
               ?.map((e) => ProductEntity.fromJson(e as Map<String, dynamic>))
@@ -30,8 +30,8 @@ _$_CategoryBoxesState _$$_CategoryBoxesStateFromJson(
       barTitle: json['barTitle'] as String? ?? '',
     );
 
-Map<String, dynamic> _$$_CategoryBoxesStateToJson(
-        _$_CategoryBoxesState instance) =>
+Map<String, dynamic> _$$CategoryBoxesStateImplToJson(
+        _$CategoryBoxesStateImpl instance) =>
     <String, dynamic>{
       'isLoading': instance.isLoading,
       'products': instance.products,

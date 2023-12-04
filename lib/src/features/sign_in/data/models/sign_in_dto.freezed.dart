@@ -67,21 +67,22 @@ class _$SignInDtoCopyWithImpl<$Res, $Val extends SignInDto>
 }
 
 /// @nodoc
-abstract class _$$_SignInDtoCopyWith<$Res> implements $SignInDtoCopyWith<$Res> {
-  factory _$$_SignInDtoCopyWith(
-          _$_SignInDto value, $Res Function(_$_SignInDto) then) =
-      __$$_SignInDtoCopyWithImpl<$Res>;
+abstract class _$$SignInDtoImplCopyWith<$Res>
+    implements $SignInDtoCopyWith<$Res> {
+  factory _$$SignInDtoImplCopyWith(
+          _$SignInDtoImpl value, $Res Function(_$SignInDtoImpl) then) =
+      __$$SignInDtoImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String accessToken, String refreshToken});
 }
 
 /// @nodoc
-class __$$_SignInDtoCopyWithImpl<$Res>
-    extends _$SignInDtoCopyWithImpl<$Res, _$_SignInDto>
-    implements _$$_SignInDtoCopyWith<$Res> {
-  __$$_SignInDtoCopyWithImpl(
-      _$_SignInDto _value, $Res Function(_$_SignInDto) _then)
+class __$$SignInDtoImplCopyWithImpl<$Res>
+    extends _$SignInDtoCopyWithImpl<$Res, _$SignInDtoImpl>
+    implements _$$SignInDtoImplCopyWith<$Res> {
+  __$$SignInDtoImplCopyWithImpl(
+      _$SignInDtoImpl _value, $Res Function(_$SignInDtoImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -90,7 +91,7 @@ class __$$_SignInDtoCopyWithImpl<$Res>
     Object? accessToken = null,
     Object? refreshToken = null,
   }) {
-    return _then(_$_SignInDto(
+    return _then(_$SignInDtoImpl(
       accessToken: null == accessToken
           ? _value.accessToken
           : accessToken // ignore: cast_nullable_to_non_nullable
@@ -105,11 +106,12 @@ class __$$_SignInDtoCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_SignInDto implements _SignInDto {
-  const _$_SignInDto({required this.accessToken, required this.refreshToken});
+class _$SignInDtoImpl implements _SignInDto {
+  const _$SignInDtoImpl(
+      {required this.accessToken, required this.refreshToken});
 
-  factory _$_SignInDto.fromJson(Map<String, dynamic> json) =>
-      _$$_SignInDtoFromJson(json);
+  factory _$SignInDtoImpl.fromJson(Map<String, dynamic> json) =>
+      _$$SignInDtoImplFromJson(json);
 
   @override
   final String accessToken;
@@ -125,7 +127,7 @@ class _$_SignInDto implements _SignInDto {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_SignInDto &&
+            other is _$SignInDtoImpl &&
             (identical(other.accessToken, accessToken) ||
                 other.accessToken == accessToken) &&
             (identical(other.refreshToken, refreshToken) ||
@@ -139,12 +141,12 @@ class _$_SignInDto implements _SignInDto {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_SignInDtoCopyWith<_$_SignInDto> get copyWith =>
-      __$$_SignInDtoCopyWithImpl<_$_SignInDto>(this, _$identity);
+  _$$SignInDtoImplCopyWith<_$SignInDtoImpl> get copyWith =>
+      __$$SignInDtoImplCopyWithImpl<_$SignInDtoImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_SignInDtoToJson(
+    return _$$SignInDtoImplToJson(
       this,
     );
   }
@@ -153,10 +155,10 @@ class _$_SignInDto implements _SignInDto {
 abstract class _SignInDto implements SignInDto {
   const factory _SignInDto(
       {required final String accessToken,
-      required final String refreshToken}) = _$_SignInDto;
+      required final String refreshToken}) = _$SignInDtoImpl;
 
   factory _SignInDto.fromJson(Map<String, dynamic> json) =
-      _$_SignInDto.fromJson;
+      _$SignInDtoImpl.fromJson;
 
   @override
   String get accessToken;
@@ -164,6 +166,6 @@ abstract class _SignInDto implements SignInDto {
   String get refreshToken;
   @override
   @JsonKey(ignore: true)
-  _$$_SignInDtoCopyWith<_$_SignInDto> get copyWith =>
+  _$$SignInDtoImplCopyWith<_$SignInDtoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

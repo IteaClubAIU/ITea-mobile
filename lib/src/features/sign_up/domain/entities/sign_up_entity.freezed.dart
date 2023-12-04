@@ -62,22 +62,22 @@ class _$SignUpEntityCopyWithImpl<$Res, $Val extends SignUpEntity>
 }
 
 /// @nodoc
-abstract class _$$_SignUpEntityCopyWith<$Res>
+abstract class _$$SignUpEntityImplCopyWith<$Res>
     implements $SignUpEntityCopyWith<$Res> {
-  factory _$$_SignUpEntityCopyWith(
-          _$_SignUpEntity value, $Res Function(_$_SignUpEntity) then) =
-      __$$_SignUpEntityCopyWithImpl<$Res>;
+  factory _$$SignUpEntityImplCopyWith(
+          _$SignUpEntityImpl value, $Res Function(_$SignUpEntityImpl) then) =
+      __$$SignUpEntityImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String description});
 }
 
 /// @nodoc
-class __$$_SignUpEntityCopyWithImpl<$Res>
-    extends _$SignUpEntityCopyWithImpl<$Res, _$_SignUpEntity>
-    implements _$$_SignUpEntityCopyWith<$Res> {
-  __$$_SignUpEntityCopyWithImpl(
-      _$_SignUpEntity _value, $Res Function(_$_SignUpEntity) _then)
+class __$$SignUpEntityImplCopyWithImpl<$Res>
+    extends _$SignUpEntityCopyWithImpl<$Res, _$SignUpEntityImpl>
+    implements _$$SignUpEntityImplCopyWith<$Res> {
+  __$$SignUpEntityImplCopyWithImpl(
+      _$SignUpEntityImpl _value, $Res Function(_$SignUpEntityImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -85,7 +85,7 @@ class __$$_SignUpEntityCopyWithImpl<$Res>
   $Res call({
     Object? description = null,
   }) {
-    return _then(_$_SignUpEntity(
+    return _then(_$SignUpEntityImpl(
       description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -96,11 +96,11 @@ class __$$_SignUpEntityCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_SignUpEntity implements _SignUpEntity {
-  _$_SignUpEntity({required this.description});
+class _$SignUpEntityImpl implements _SignUpEntity {
+  _$SignUpEntityImpl({required this.description});
 
-  factory _$_SignUpEntity.fromJson(Map<String, dynamic> json) =>
-      _$$_SignUpEntityFromJson(json);
+  factory _$SignUpEntityImpl.fromJson(Map<String, dynamic> json) =>
+      _$$SignUpEntityImplFromJson(json);
 
   @override
   final String description;
@@ -114,7 +114,7 @@ class _$_SignUpEntity implements _SignUpEntity {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_SignUpEntity &&
+            other is _$SignUpEntityImpl &&
             (identical(other.description, description) ||
                 other.description == description));
   }
@@ -126,27 +126,28 @@ class _$_SignUpEntity implements _SignUpEntity {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_SignUpEntityCopyWith<_$_SignUpEntity> get copyWith =>
-      __$$_SignUpEntityCopyWithImpl<_$_SignUpEntity>(this, _$identity);
+  _$$SignUpEntityImplCopyWith<_$SignUpEntityImpl> get copyWith =>
+      __$$SignUpEntityImplCopyWithImpl<_$SignUpEntityImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_SignUpEntityToJson(
+    return _$$SignUpEntityImplToJson(
       this,
     );
   }
 }
 
 abstract class _SignUpEntity implements SignUpEntity {
-  factory _SignUpEntity({required final String description}) = _$_SignUpEntity;
+  factory _SignUpEntity({required final String description}) =
+      _$SignUpEntityImpl;
 
   factory _SignUpEntity.fromJson(Map<String, dynamic> json) =
-      _$_SignUpEntity.fromJson;
+      _$SignUpEntityImpl.fromJson;
 
   @override
   String get description;
   @override
   @JsonKey(ignore: true)
-  _$$_SignUpEntityCopyWith<_$_SignUpEntity> get copyWith =>
+  _$$SignUpEntityImplCopyWith<_$SignUpEntityImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

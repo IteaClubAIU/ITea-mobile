@@ -268,11 +268,11 @@ class _$ProductEntityCopyWithImpl<$Res, $Val extends ProductEntity>
 }
 
 /// @nodoc
-abstract class _$$_ProductEntityCopyWith<$Res>
+abstract class _$$ProductEntityImplCopyWith<$Res>
     implements $ProductEntityCopyWith<$Res> {
-  factory _$$_ProductEntityCopyWith(
-          _$_ProductEntity value, $Res Function(_$_ProductEntity) then) =
-      __$$_ProductEntityCopyWithImpl<$Res>;
+  factory _$$ProductEntityImplCopyWith(
+          _$ProductEntityImpl value, $Res Function(_$ProductEntityImpl) then) =
+      __$$ProductEntityImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -310,11 +310,11 @@ abstract class _$$_ProductEntityCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_ProductEntityCopyWithImpl<$Res>
-    extends _$ProductEntityCopyWithImpl<$Res, _$_ProductEntity>
-    implements _$$_ProductEntityCopyWith<$Res> {
-  __$$_ProductEntityCopyWithImpl(
-      _$_ProductEntity _value, $Res Function(_$_ProductEntity) _then)
+class __$$ProductEntityImplCopyWithImpl<$Res>
+    extends _$ProductEntityCopyWithImpl<$Res, _$ProductEntityImpl>
+    implements _$$ProductEntityImplCopyWith<$Res> {
+  __$$ProductEntityImplCopyWithImpl(
+      _$ProductEntityImpl _value, $Res Function(_$ProductEntityImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -349,7 +349,7 @@ class __$$_ProductEntityCopyWithImpl<$Res>
     Object? additionalService = freezed,
     Object? specialization = freezed,
   }) {
-    return _then(_$_ProductEntity(
+    return _then(_$ProductEntityImpl(
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -468,8 +468,8 @@ class __$$_ProductEntityCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ProductEntity implements _ProductEntity {
-  _$_ProductEntity(
+class _$ProductEntityImpl implements _ProductEntity {
+  _$ProductEntityImpl(
       {required this.id,
       required this.title,
       required this.description,
@@ -500,8 +500,8 @@ class _$_ProductEntity implements _ProductEntity {
       this.specialization})
       : _photoLinks = photoLinks;
 
-  factory _$_ProductEntity.fromJson(Map<String, dynamic> json) =>
-      _$$_ProductEntityFromJson(json);
+  factory _$ProductEntityImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ProductEntityImplFromJson(json);
 
   @override
   final String id;
@@ -589,7 +589,7 @@ class _$_ProductEntity implements _ProductEntity {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ProductEntity &&
+            other is _$ProductEntityImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.title, title) || other.title == title) &&
             (identical(other.description, description) ||
@@ -675,12 +675,12 @@ class _$_ProductEntity implements _ProductEntity {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ProductEntityCopyWith<_$_ProductEntity> get copyWith =>
-      __$$_ProductEntityCopyWithImpl<_$_ProductEntity>(this, _$identity);
+  _$$ProductEntityImplCopyWith<_$ProductEntityImpl> get copyWith =>
+      __$$ProductEntityImplCopyWithImpl<_$ProductEntityImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ProductEntityToJson(
+    return _$$ProductEntityImplToJson(
       this,
     );
   }
@@ -715,10 +715,10 @@ abstract class _ProductEntity implements ProductEntity {
       final ProductCategory? productCategory,
       final ProductSubCategory? productSubCategory,
       final AdditionalService? additionalService,
-      final Specialization? specialization}) = _$_ProductEntity;
+      final Specialization? specialization}) = _$ProductEntityImpl;
 
   factory _ProductEntity.fromJson(Map<String, dynamic> json) =
-      _$_ProductEntity.fromJson;
+      _$ProductEntityImpl.fromJson;
 
   @override
   String get id;
@@ -778,6 +778,6 @@ abstract class _ProductEntity implements ProductEntity {
   Specialization? get specialization;
   @override
   @JsonKey(ignore: true)
-  _$$_ProductEntityCopyWith<_$_ProductEntity> get copyWith =>
+  _$$ProductEntityImplCopyWith<_$ProductEntityImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -6,9 +6,9 @@ part of 'update_product_request_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UpdateProductRequestModel _$$_UpdateProductRequestModelFromJson(
+_$UpdateProductRequestModelImpl _$$UpdateProductRequestModelImplFromJson(
         Map<String, dynamic> json) =>
-    _$_UpdateProductRequestModel(
+    _$UpdateProductRequestModelImpl(
       id: json['id'] as String,
       title: json['title'] as String,
       description: json['description'] as String,
@@ -39,8 +39,8 @@ _$_UpdateProductRequestModel _$$_UpdateProductRequestModelFromJson(
           $enumDecodeNullable(_$SpecializationEnumMap, json['specialization']),
     );
 
-Map<String, dynamic> _$$_UpdateProductRequestModelToJson(
-        _$_UpdateProductRequestModel instance) =>
+Map<String, dynamic> _$$UpdateProductRequestModelImplToJson(
+        _$UpdateProductRequestModelImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'title': instance.title,

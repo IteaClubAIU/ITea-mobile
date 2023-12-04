@@ -72,19 +72,21 @@ class _$FaqDtoCopyWithImpl<$Res, $Val extends FaqDto>
 }
 
 /// @nodoc
-abstract class _$$_FaqDtoCopyWith<$Res> implements $FaqDtoCopyWith<$Res> {
-  factory _$$_FaqDtoCopyWith(_$_FaqDto value, $Res Function(_$_FaqDto) then) =
-      __$$_FaqDtoCopyWithImpl<$Res>;
+abstract class _$$FaqDtoImplCopyWith<$Res> implements $FaqDtoCopyWith<$Res> {
+  factory _$$FaqDtoImplCopyWith(
+          _$FaqDtoImpl value, $Res Function(_$FaqDtoImpl) then) =
+      __$$FaqDtoImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({int id, String question, String answer});
 }
 
 /// @nodoc
-class __$$_FaqDtoCopyWithImpl<$Res>
-    extends _$FaqDtoCopyWithImpl<$Res, _$_FaqDto>
-    implements _$$_FaqDtoCopyWith<$Res> {
-  __$$_FaqDtoCopyWithImpl(_$_FaqDto _value, $Res Function(_$_FaqDto) _then)
+class __$$FaqDtoImplCopyWithImpl<$Res>
+    extends _$FaqDtoCopyWithImpl<$Res, _$FaqDtoImpl>
+    implements _$$FaqDtoImplCopyWith<$Res> {
+  __$$FaqDtoImplCopyWithImpl(
+      _$FaqDtoImpl _value, $Res Function(_$FaqDtoImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -94,7 +96,7 @@ class __$$_FaqDtoCopyWithImpl<$Res>
     Object? question = null,
     Object? answer = null,
   }) {
-    return _then(_$_FaqDto(
+    return _then(_$FaqDtoImpl(
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -113,11 +115,12 @@ class __$$_FaqDtoCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_FaqDto implements _FaqDto {
-  _$_FaqDto({required this.id, required this.question, required this.answer});
+class _$FaqDtoImpl implements _FaqDto {
+  _$FaqDtoImpl(
+      {required this.id, required this.question, required this.answer});
 
-  factory _$_FaqDto.fromJson(Map<String, dynamic> json) =>
-      _$$_FaqDtoFromJson(json);
+  factory _$FaqDtoImpl.fromJson(Map<String, dynamic> json) =>
+      _$$FaqDtoImplFromJson(json);
 
   @override
   final int id;
@@ -135,7 +138,7 @@ class _$_FaqDto implements _FaqDto {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_FaqDto &&
+            other is _$FaqDtoImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.question, question) ||
                 other.question == question) &&
@@ -149,12 +152,12 @@ class _$_FaqDto implements _FaqDto {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_FaqDtoCopyWith<_$_FaqDto> get copyWith =>
-      __$$_FaqDtoCopyWithImpl<_$_FaqDto>(this, _$identity);
+  _$$FaqDtoImplCopyWith<_$FaqDtoImpl> get copyWith =>
+      __$$FaqDtoImplCopyWithImpl<_$FaqDtoImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FaqDtoToJson(
+    return _$$FaqDtoImplToJson(
       this,
     );
   }
@@ -164,9 +167,9 @@ abstract class _FaqDto implements FaqDto {
   factory _FaqDto(
       {required final int id,
       required final String question,
-      required final String answer}) = _$_FaqDto;
+      required final String answer}) = _$FaqDtoImpl;
 
-  factory _FaqDto.fromJson(Map<String, dynamic> json) = _$_FaqDto.fromJson;
+  factory _FaqDto.fromJson(Map<String, dynamic> json) = _$FaqDtoImpl.fromJson;
 
   @override
   int get id;
@@ -176,6 +179,6 @@ abstract class _FaqDto implements FaqDto {
   String get answer;
   @override
   @JsonKey(ignore: true)
-  _$$_FaqDtoCopyWith<_$_FaqDto> get copyWith =>
+  _$$FaqDtoImplCopyWith<_$FaqDtoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

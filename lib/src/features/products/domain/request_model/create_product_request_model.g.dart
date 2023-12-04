@@ -6,9 +6,9 @@ part of 'create_product_request_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_CreateProductRequestModel _$$_CreateProductRequestModelFromJson(
+_$CreateProductRequestModelImpl _$$CreateProductRequestModelImplFromJson(
         Map<String, dynamic> json) =>
-    _$_CreateProductRequestModel(
+    _$CreateProductRequestModelImpl(
       title: json['title'] as String,
       description: json['description'] as String,
       type: $enumDecodeNullable(_$ProductTypeEnumMap, json['type']) ??
@@ -38,8 +38,8 @@ _$_CreateProductRequestModel _$$_CreateProductRequestModelFromJson(
           $enumDecodeNullable(_$SpecializationEnumMap, json['specialization']),
     );
 
-Map<String, dynamic> _$$_CreateProductRequestModelToJson(
-        _$_CreateProductRequestModel instance) =>
+Map<String, dynamic> _$$CreateProductRequestModelImplToJson(
+        _$CreateProductRequestModelImpl instance) =>
     <String, dynamic>{
       'title': instance.title,
       'description': instance.description,

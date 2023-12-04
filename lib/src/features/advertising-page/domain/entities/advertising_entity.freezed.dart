@@ -139,11 +139,11 @@ class _$AdvertisingEntityCopyWithImpl<$Res, $Val extends AdvertisingEntity>
 }
 
 /// @nodoc
-abstract class _$$_AdvertisingEntityCopyWith<$Res>
+abstract class _$$AdvertisingEntityImplCopyWith<$Res>
     implements $AdvertisingEntityCopyWith<$Res> {
-  factory _$$_AdvertisingEntityCopyWith(_$_AdvertisingEntity value,
-          $Res Function(_$_AdvertisingEntity) then) =
-      __$$_AdvertisingEntityCopyWithImpl<$Res>;
+  factory _$$AdvertisingEntityImplCopyWith(_$AdvertisingEntityImpl value,
+          $Res Function(_$AdvertisingEntityImpl) then) =
+      __$$AdvertisingEntityImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -155,11 +155,11 @@ abstract class _$$_AdvertisingEntityCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_AdvertisingEntityCopyWithImpl<$Res>
-    extends _$AdvertisingEntityCopyWithImpl<$Res, _$_AdvertisingEntity>
-    implements _$$_AdvertisingEntityCopyWith<$Res> {
-  __$$_AdvertisingEntityCopyWithImpl(
-      _$_AdvertisingEntity _value, $Res Function(_$_AdvertisingEntity) _then)
+class __$$AdvertisingEntityImplCopyWithImpl<$Res>
+    extends _$AdvertisingEntityCopyWithImpl<$Res, _$AdvertisingEntityImpl>
+    implements _$$AdvertisingEntityImplCopyWith<$Res> {
+  __$$AdvertisingEntityImplCopyWithImpl(_$AdvertisingEntityImpl _value,
+      $Res Function(_$AdvertisingEntityImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -171,7 +171,7 @@ class __$$_AdvertisingEntityCopyWithImpl<$Res>
     Object? price = null,
     Object? selected = null,
   }) {
-    return _then(_$_AdvertisingEntity(
+    return _then(_$AdvertisingEntityImpl(
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -198,8 +198,8 @@ class __$$_AdvertisingEntityCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_AdvertisingEntity implements _AdvertisingEntity {
-  const _$_AdvertisingEntity(
+class _$AdvertisingEntityImpl implements _AdvertisingEntity {
+  const _$AdvertisingEntityImpl(
       {required this.id,
       required this.title,
       required this.description,
@@ -208,8 +208,8 @@ class _$_AdvertisingEntity implements _AdvertisingEntity {
       final String? $type})
       : $type = $type ?? 'default';
 
-  factory _$_AdvertisingEntity.fromJson(Map<String, dynamic> json) =>
-      _$$_AdvertisingEntityFromJson(json);
+  factory _$AdvertisingEntityImpl.fromJson(Map<String, dynamic> json) =>
+      _$$AdvertisingEntityImplFromJson(json);
 
   @override
   final String id;
@@ -235,7 +235,7 @@ class _$_AdvertisingEntity implements _AdvertisingEntity {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_AdvertisingEntity &&
+            other is _$AdvertisingEntityImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.title, title) || other.title == title) &&
             (identical(other.description, description) ||
@@ -253,8 +253,8 @@ class _$_AdvertisingEntity implements _AdvertisingEntity {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_AdvertisingEntityCopyWith<_$_AdvertisingEntity> get copyWith =>
-      __$$_AdvertisingEntityCopyWithImpl<_$_AdvertisingEntity>(
+  _$$AdvertisingEntityImplCopyWith<_$AdvertisingEntityImpl> get copyWith =>
+      __$$AdvertisingEntityImplCopyWithImpl<_$AdvertisingEntityImpl>(
           this, _$identity);
 
   @override
@@ -333,7 +333,7 @@ class _$_AdvertisingEntity implements _AdvertisingEntity {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_AdvertisingEntityToJson(
+    return _$$AdvertisingEntityImplToJson(
       this,
     );
   }
@@ -345,10 +345,10 @@ abstract class _AdvertisingEntity implements AdvertisingEntity {
       required final String title,
       required final String description,
       required final String price,
-      final bool selected}) = _$_AdvertisingEntity;
+      final bool selected}) = _$AdvertisingEntityImpl;
 
   factory _AdvertisingEntity.fromJson(Map<String, dynamic> json) =
-      _$_AdvertisingEntity.fromJson;
+      _$AdvertisingEntityImpl.fromJson;
 
   @override
   String get id;
@@ -362,16 +362,17 @@ abstract class _AdvertisingEntity implements AdvertisingEntity {
   bool get selected;
   @override
   @JsonKey(ignore: true)
-  _$$_AdvertisingEntityCopyWith<_$_AdvertisingEntity> get copyWith =>
+  _$$AdvertisingEntityImplCopyWith<_$AdvertisingEntityImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_AdvertisingEntityEmptyCopyWith<$Res>
+abstract class _$$AdvertisingEntityEmptyImplCopyWith<$Res>
     implements $AdvertisingEntityCopyWith<$Res> {
-  factory _$$_AdvertisingEntityEmptyCopyWith(_$_AdvertisingEntityEmpty value,
-          $Res Function(_$_AdvertisingEntityEmpty) then) =
-      __$$_AdvertisingEntityEmptyCopyWithImpl<$Res>;
+  factory _$$AdvertisingEntityEmptyImplCopyWith(
+          _$AdvertisingEntityEmptyImpl value,
+          $Res Function(_$AdvertisingEntityEmptyImpl) then) =
+      __$$AdvertisingEntityEmptyImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -383,11 +384,12 @@ abstract class _$$_AdvertisingEntityEmptyCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_AdvertisingEntityEmptyCopyWithImpl<$Res>
-    extends _$AdvertisingEntityCopyWithImpl<$Res, _$_AdvertisingEntityEmpty>
-    implements _$$_AdvertisingEntityEmptyCopyWith<$Res> {
-  __$$_AdvertisingEntityEmptyCopyWithImpl(_$_AdvertisingEntityEmpty _value,
-      $Res Function(_$_AdvertisingEntityEmpty) _then)
+class __$$AdvertisingEntityEmptyImplCopyWithImpl<$Res>
+    extends _$AdvertisingEntityCopyWithImpl<$Res, _$AdvertisingEntityEmptyImpl>
+    implements _$$AdvertisingEntityEmptyImplCopyWith<$Res> {
+  __$$AdvertisingEntityEmptyImplCopyWithImpl(
+      _$AdvertisingEntityEmptyImpl _value,
+      $Res Function(_$AdvertisingEntityEmptyImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -399,7 +401,7 @@ class __$$_AdvertisingEntityEmptyCopyWithImpl<$Res>
     Object? price = null,
     Object? selected = null,
   }) {
-    return _then(_$_AdvertisingEntityEmpty(
+    return _then(_$AdvertisingEntityEmptyImpl(
       id: freezed == id ? _value.id! : id,
       title: null == title
           ? _value.title
@@ -423,8 +425,8 @@ class __$$_AdvertisingEntityEmptyCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_AdvertisingEntityEmpty implements _AdvertisingEntityEmpty {
-  const _$_AdvertisingEntityEmpty(
+class _$AdvertisingEntityEmptyImpl implements _AdvertisingEntityEmpty {
+  const _$AdvertisingEntityEmptyImpl(
       {this.id = '',
       this.title = '5',
       this.description = '5',
@@ -433,8 +435,8 @@ class _$_AdvertisingEntityEmpty implements _AdvertisingEntityEmpty {
       final String? $type})
       : $type = $type ?? 'empty';
 
-  factory _$_AdvertisingEntityEmpty.fromJson(Map<String, dynamic> json) =>
-      _$$_AdvertisingEntityEmptyFromJson(json);
+  factory _$AdvertisingEntityEmptyImpl.fromJson(Map<String, dynamic> json) =>
+      _$$AdvertisingEntityEmptyImplFromJson(json);
 
   @override
   @JsonKey()
@@ -464,7 +466,7 @@ class _$_AdvertisingEntityEmpty implements _AdvertisingEntityEmpty {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_AdvertisingEntityEmpty &&
+            other is _$AdvertisingEntityEmptyImpl &&
             const DeepCollectionEquality().equals(other.id, id) &&
             (identical(other.title, title) || other.title == title) &&
             (identical(other.description, description) ||
@@ -487,9 +489,9 @@ class _$_AdvertisingEntityEmpty implements _AdvertisingEntityEmpty {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_AdvertisingEntityEmptyCopyWith<_$_AdvertisingEntityEmpty> get copyWith =>
-      __$$_AdvertisingEntityEmptyCopyWithImpl<_$_AdvertisingEntityEmpty>(
-          this, _$identity);
+  _$$AdvertisingEntityEmptyImplCopyWith<_$AdvertisingEntityEmptyImpl>
+      get copyWith => __$$AdvertisingEntityEmptyImplCopyWithImpl<
+          _$AdvertisingEntityEmptyImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -567,7 +569,7 @@ class _$_AdvertisingEntityEmpty implements _AdvertisingEntityEmpty {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_AdvertisingEntityEmptyToJson(
+    return _$$AdvertisingEntityEmptyImplToJson(
       this,
     );
   }
@@ -579,10 +581,10 @@ abstract class _AdvertisingEntityEmpty implements AdvertisingEntity {
       final String title,
       final String description,
       final String price,
-      final bool selected}) = _$_AdvertisingEntityEmpty;
+      final bool selected}) = _$AdvertisingEntityEmptyImpl;
 
   factory _AdvertisingEntityEmpty.fromJson(Map<String, dynamic> json) =
-      _$_AdvertisingEntityEmpty.fromJson;
+      _$AdvertisingEntityEmptyImpl.fromJson;
 
   @override
   dynamic get id;
@@ -596,6 +598,6 @@ abstract class _AdvertisingEntityEmpty implements AdvertisingEntity {
   bool get selected;
   @override
   @JsonKey(ignore: true)
-  _$$_AdvertisingEntityEmptyCopyWith<_$_AdvertisingEntityEmpty> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$AdvertisingEntityEmptyImplCopyWith<_$AdvertisingEntityEmptyImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

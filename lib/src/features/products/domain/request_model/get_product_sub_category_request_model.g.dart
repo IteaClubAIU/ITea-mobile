@@ -6,15 +6,16 @@ part of 'get_product_sub_category_request_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_GetProductSubCategoryRequestModel
-    _$$_GetProductSubCategoryRequestModelFromJson(Map<String, dynamic> json) =>
-        _$_GetProductSubCategoryRequestModel(
+_$GetProductSubCategoryRequestModelImpl
+    _$$GetProductSubCategoryRequestModelImplFromJson(
+            Map<String, dynamic> json) =>
+        _$GetProductSubCategoryRequestModelImpl(
           productCategory:
               $enumDecode(_$ProductCategoryEnumMap, json['productCategory']),
         );
 
-Map<String, dynamic> _$$_GetProductSubCategoryRequestModelToJson(
-        _$_GetProductSubCategoryRequestModel instance) =>
+Map<String, dynamic> _$$GetProductSubCategoryRequestModelImplToJson(
+        _$GetProductSubCategoryRequestModelImpl instance) =>
     <String, dynamic>{
       'productCategory': _$ProductCategoryEnumMap[instance.productCategory]!,
     };

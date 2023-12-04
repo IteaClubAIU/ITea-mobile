@@ -6,16 +6,16 @@ part of 'product_sub_categories_entity.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ProductSubCategoriesEntity _$$_ProductSubCategoriesEntityFromJson(
+_$ProductSubCategoriesEntityImpl _$$ProductSubCategoriesEntityImplFromJson(
         Map<String, dynamic> json) =>
-    _$_ProductSubCategoriesEntity(
+    _$ProductSubCategoriesEntityImpl(
       productSubCategories: (json['productSubCategories'] as List<dynamic>)
           .map((e) => $enumDecode(_$ProductSubCategoryEnumMap, e))
           .toList(),
     );
 
-Map<String, dynamic> _$$_ProductSubCategoriesEntityToJson(
-        _$_ProductSubCategoriesEntity instance) =>
+Map<String, dynamic> _$$ProductSubCategoriesEntityImplToJson(
+        _$ProductSubCategoriesEntityImpl instance) =>
     <String, dynamic>{
       'productSubCategories': instance.productSubCategories
           .map((e) => _$ProductSubCategoryEnumMap[e]!)

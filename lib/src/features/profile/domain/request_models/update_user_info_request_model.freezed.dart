@@ -136,12 +136,12 @@ class _$UpdateUserInfoRequestModelCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_UpdateUserInfoRequestModelCopyWith<$Res>
+abstract class _$$UpdateUserInfoRequestModelImplCopyWith<$Res>
     implements $UpdateUserInfoRequestModelCopyWith<$Res> {
-  factory _$$_UpdateUserInfoRequestModelCopyWith(
-          _$_UpdateUserInfoRequestModel value,
-          $Res Function(_$_UpdateUserInfoRequestModel) then) =
-      __$$_UpdateUserInfoRequestModelCopyWithImpl<$Res>;
+  factory _$$UpdateUserInfoRequestModelImplCopyWith(
+          _$UpdateUserInfoRequestModelImpl value,
+          $Res Function(_$UpdateUserInfoRequestModelImpl) then) =
+      __$$UpdateUserInfoRequestModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -159,13 +159,13 @@ abstract class _$$_UpdateUserInfoRequestModelCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_UpdateUserInfoRequestModelCopyWithImpl<$Res>
+class __$$UpdateUserInfoRequestModelImplCopyWithImpl<$Res>
     extends _$UpdateUserInfoRequestModelCopyWithImpl<$Res,
-        _$_UpdateUserInfoRequestModel>
-    implements _$$_UpdateUserInfoRequestModelCopyWith<$Res> {
-  __$$_UpdateUserInfoRequestModelCopyWithImpl(
-      _$_UpdateUserInfoRequestModel _value,
-      $Res Function(_$_UpdateUserInfoRequestModel) _then)
+        _$UpdateUserInfoRequestModelImpl>
+    implements _$$UpdateUserInfoRequestModelImplCopyWith<$Res> {
+  __$$UpdateUserInfoRequestModelImplCopyWithImpl(
+      _$UpdateUserInfoRequestModelImpl _value,
+      $Res Function(_$UpdateUserInfoRequestModelImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -183,7 +183,7 @@ class __$$_UpdateUserInfoRequestModelCopyWithImpl<$Res>
     Object? bin = freezed,
     Object? photoLink = freezed,
   }) {
-    return _then(_$_UpdateUserInfoRequestModel(
+    return _then(_$UpdateUserInfoRequestModelImpl(
       id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -234,8 +234,8 @@ class __$$_UpdateUserInfoRequestModelCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UpdateUserInfoRequestModel implements _UpdateUserInfoRequestModel {
-  const _$_UpdateUserInfoRequestModel(
+class _$UpdateUserInfoRequestModelImpl implements _UpdateUserInfoRequestModel {
+  const _$UpdateUserInfoRequestModelImpl(
       {this.id,
       this.email,
       this.username,
@@ -248,8 +248,9 @@ class _$_UpdateUserInfoRequestModel implements _UpdateUserInfoRequestModel {
       this.bin,
       this.photoLink});
 
-  factory _$_UpdateUserInfoRequestModel.fromJson(Map<String, dynamic> json) =>
-      _$$_UpdateUserInfoRequestModelFromJson(json);
+  factory _$UpdateUserInfoRequestModelImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$UpdateUserInfoRequestModelImplFromJson(json);
 
   @override
   final String? id;
@@ -283,7 +284,7 @@ class _$_UpdateUserInfoRequestModel implements _UpdateUserInfoRequestModel {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_UpdateUserInfoRequestModel &&
+            other is _$UpdateUserInfoRequestModelImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.email, email) || other.email == email) &&
             (identical(other.username, username) ||
@@ -308,13 +309,13 @@ class _$_UpdateUserInfoRequestModel implements _UpdateUserInfoRequestModel {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_UpdateUserInfoRequestModelCopyWith<_$_UpdateUserInfoRequestModel>
-      get copyWith => __$$_UpdateUserInfoRequestModelCopyWithImpl<
-          _$_UpdateUserInfoRequestModel>(this, _$identity);
+  _$$UpdateUserInfoRequestModelImplCopyWith<_$UpdateUserInfoRequestModelImpl>
+      get copyWith => __$$UpdateUserInfoRequestModelImplCopyWithImpl<
+          _$UpdateUserInfoRequestModelImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UpdateUserInfoRequestModelToJson(
+    return _$$UpdateUserInfoRequestModelImplToJson(
       this,
     );
   }
@@ -333,10 +334,10 @@ abstract class _UpdateUserInfoRequestModel
       final String? city,
       final String? country,
       final String? bin,
-      final String? photoLink}) = _$_UpdateUserInfoRequestModel;
+      final String? photoLink}) = _$UpdateUserInfoRequestModelImpl;
 
   factory _UpdateUserInfoRequestModel.fromJson(Map<String, dynamic> json) =
-      _$_UpdateUserInfoRequestModel.fromJson;
+      _$UpdateUserInfoRequestModelImpl.fromJson;
 
   @override
   String? get id;
@@ -362,6 +363,6 @@ abstract class _UpdateUserInfoRequestModel
   String? get photoLink;
   @override
   @JsonKey(ignore: true)
-  _$$_UpdateUserInfoRequestModelCopyWith<_$_UpdateUserInfoRequestModel>
+  _$$UpdateUserInfoRequestModelImplCopyWith<_$UpdateUserInfoRequestModelImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

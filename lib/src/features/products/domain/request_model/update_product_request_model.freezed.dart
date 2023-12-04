@@ -200,12 +200,12 @@ class _$UpdateProductRequestModelCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_UpdateProductRequestModelCopyWith<$Res>
+abstract class _$$UpdateProductRequestModelImplCopyWith<$Res>
     implements $UpdateProductRequestModelCopyWith<$Res> {
-  factory _$$_UpdateProductRequestModelCopyWith(
-          _$_UpdateProductRequestModel value,
-          $Res Function(_$_UpdateProductRequestModel) then) =
-      __$$_UpdateProductRequestModelCopyWithImpl<$Res>;
+  factory _$$UpdateProductRequestModelImplCopyWith(
+          _$UpdateProductRequestModelImpl value,
+          $Res Function(_$UpdateProductRequestModelImpl) then) =
+      __$$UpdateProductRequestModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -232,13 +232,13 @@ abstract class _$$_UpdateProductRequestModelCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_UpdateProductRequestModelCopyWithImpl<$Res>
+class __$$UpdateProductRequestModelImplCopyWithImpl<$Res>
     extends _$UpdateProductRequestModelCopyWithImpl<$Res,
-        _$_UpdateProductRequestModel>
-    implements _$$_UpdateProductRequestModelCopyWith<$Res> {
-  __$$_UpdateProductRequestModelCopyWithImpl(
-      _$_UpdateProductRequestModel _value,
-      $Res Function(_$_UpdateProductRequestModel) _then)
+        _$UpdateProductRequestModelImpl>
+    implements _$$UpdateProductRequestModelImplCopyWith<$Res> {
+  __$$UpdateProductRequestModelImplCopyWithImpl(
+      _$UpdateProductRequestModelImpl _value,
+      $Res Function(_$UpdateProductRequestModelImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -265,7 +265,7 @@ class __$$_UpdateProductRequestModelCopyWithImpl<$Res>
     Object? additionalService = freezed,
     Object? specialization = freezed,
   }) {
-    return _then(_$_UpdateProductRequestModel(
+    return _then(_$UpdateProductRequestModelImpl(
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -352,8 +352,8 @@ class __$$_UpdateProductRequestModelCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UpdateProductRequestModel extends _UpdateProductRequestModel {
-  _$_UpdateProductRequestModel(
+class _$UpdateProductRequestModelImpl extends _UpdateProductRequestModel {
+  _$UpdateProductRequestModelImpl(
       {required this.id,
       required this.title,
       required this.description,
@@ -377,8 +377,8 @@ class _$_UpdateProductRequestModel extends _UpdateProductRequestModel {
       : _photoLinks = photoLinks,
         super._();
 
-  factory _$_UpdateProductRequestModel.fromJson(Map<String, dynamic> json) =>
-      _$$_UpdateProductRequestModelFromJson(json);
+  factory _$UpdateProductRequestModelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UpdateProductRequestModelImplFromJson(json);
 
   @override
   final String id;
@@ -448,7 +448,7 @@ class _$_UpdateProductRequestModel extends _UpdateProductRequestModel {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_UpdateProductRequestModel &&
+            other is _$UpdateProductRequestModelImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.title, title) || other.title == title) &&
             (identical(other.description, description) ||
@@ -513,13 +513,13 @@ class _$_UpdateProductRequestModel extends _UpdateProductRequestModel {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_UpdateProductRequestModelCopyWith<_$_UpdateProductRequestModel>
-      get copyWith => __$$_UpdateProductRequestModelCopyWithImpl<
-          _$_UpdateProductRequestModel>(this, _$identity);
+  _$$UpdateProductRequestModelImplCopyWith<_$UpdateProductRequestModelImpl>
+      get copyWith => __$$UpdateProductRequestModelImplCopyWithImpl<
+          _$UpdateProductRequestModelImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UpdateProductRequestModelToJson(
+    return _$$UpdateProductRequestModelImplToJson(
       this,
     );
   }
@@ -546,11 +546,11 @@ abstract class _UpdateProductRequestModel extends UpdateProductRequestModel {
       final ProductCategory? productCategory,
       final ProductSubCategory? productSubCategory,
       final AdditionalService? additionalService,
-      final Specialization? specialization}) = _$_UpdateProductRequestModel;
+      final Specialization? specialization}) = _$UpdateProductRequestModelImpl;
   _UpdateProductRequestModel._() : super._();
 
   factory _UpdateProductRequestModel.fromJson(Map<String, dynamic> json) =
-      _$_UpdateProductRequestModel.fromJson;
+      _$UpdateProductRequestModelImpl.fromJson;
 
   @override
   String get id;
@@ -594,6 +594,6 @@ abstract class _UpdateProductRequestModel extends UpdateProductRequestModel {
   Specialization? get specialization;
   @override
   @JsonKey(ignore: true)
-  _$$_UpdateProductRequestModelCopyWith<_$_UpdateProductRequestModel>
+  _$$UpdateProductRequestModelImplCopyWith<_$UpdateProductRequestModelImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

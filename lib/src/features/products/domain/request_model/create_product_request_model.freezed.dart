@@ -193,12 +193,12 @@ class _$CreateProductRequestModelCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_CreateProductRequestModelCopyWith<$Res>
+abstract class _$$CreateProductRequestModelImplCopyWith<$Res>
     implements $CreateProductRequestModelCopyWith<$Res> {
-  factory _$$_CreateProductRequestModelCopyWith(
-          _$_CreateProductRequestModel value,
-          $Res Function(_$_CreateProductRequestModel) then) =
-      __$$_CreateProductRequestModelCopyWithImpl<$Res>;
+  factory _$$CreateProductRequestModelImplCopyWith(
+          _$CreateProductRequestModelImpl value,
+          $Res Function(_$CreateProductRequestModelImpl) then) =
+      __$$CreateProductRequestModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -224,13 +224,13 @@ abstract class _$$_CreateProductRequestModelCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_CreateProductRequestModelCopyWithImpl<$Res>
+class __$$CreateProductRequestModelImplCopyWithImpl<$Res>
     extends _$CreateProductRequestModelCopyWithImpl<$Res,
-        _$_CreateProductRequestModel>
-    implements _$$_CreateProductRequestModelCopyWith<$Res> {
-  __$$_CreateProductRequestModelCopyWithImpl(
-      _$_CreateProductRequestModel _value,
-      $Res Function(_$_CreateProductRequestModel) _then)
+        _$CreateProductRequestModelImpl>
+    implements _$$CreateProductRequestModelImplCopyWith<$Res> {
+  __$$CreateProductRequestModelImplCopyWithImpl(
+      _$CreateProductRequestModelImpl _value,
+      $Res Function(_$CreateProductRequestModelImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -256,7 +256,7 @@ class __$$_CreateProductRequestModelCopyWithImpl<$Res>
     Object? additionalService = freezed,
     Object? specialization = freezed,
   }) {
-    return _then(_$_CreateProductRequestModel(
+    return _then(_$CreateProductRequestModelImpl(
       title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -339,8 +339,8 @@ class __$$_CreateProductRequestModelCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_CreateProductRequestModel extends _CreateProductRequestModel {
-  _$_CreateProductRequestModel(
+class _$CreateProductRequestModelImpl extends _CreateProductRequestModel {
+  _$CreateProductRequestModelImpl(
       {required this.title,
       required this.description,
       this.type = ProductType.none,
@@ -363,8 +363,8 @@ class _$_CreateProductRequestModel extends _CreateProductRequestModel {
       : _photoLinks = photoLinks,
         super._();
 
-  factory _$_CreateProductRequestModel.fromJson(Map<String, dynamic> json) =>
-      _$$_CreateProductRequestModelFromJson(json);
+  factory _$CreateProductRequestModelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$CreateProductRequestModelImplFromJson(json);
 
   @override
   final String title;
@@ -432,7 +432,7 @@ class _$_CreateProductRequestModel extends _CreateProductRequestModel {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_CreateProductRequestModel &&
+            other is _$CreateProductRequestModelImpl &&
             (identical(other.title, title) || other.title == title) &&
             (identical(other.description, description) ||
                 other.description == description) &&
@@ -495,13 +495,13 @@ class _$_CreateProductRequestModel extends _CreateProductRequestModel {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_CreateProductRequestModelCopyWith<_$_CreateProductRequestModel>
-      get copyWith => __$$_CreateProductRequestModelCopyWithImpl<
-          _$_CreateProductRequestModel>(this, _$identity);
+  _$$CreateProductRequestModelImplCopyWith<_$CreateProductRequestModelImpl>
+      get copyWith => __$$CreateProductRequestModelImplCopyWithImpl<
+          _$CreateProductRequestModelImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CreateProductRequestModelToJson(
+    return _$$CreateProductRequestModelImplToJson(
       this,
     );
   }
@@ -527,11 +527,11 @@ abstract class _CreateProductRequestModel extends CreateProductRequestModel {
       final ProductCategory? productCategory,
       final ProductSubCategory? productSubCategory,
       final AdditionalService? additionalService,
-      final Specialization? specialization}) = _$_CreateProductRequestModel;
+      final Specialization? specialization}) = _$CreateProductRequestModelImpl;
   _CreateProductRequestModel._() : super._();
 
   factory _CreateProductRequestModel.fromJson(Map<String, dynamic> json) =
-      _$_CreateProductRequestModel.fromJson;
+      _$CreateProductRequestModelImpl.fromJson;
 
   @override
   String get title;
@@ -573,6 +573,6 @@ abstract class _CreateProductRequestModel extends CreateProductRequestModel {
   Specialization? get specialization;
   @override
   @JsonKey(ignore: true)
-  _$$_CreateProductRequestModelCopyWith<_$_CreateProductRequestModel>
+  _$$CreateProductRequestModelImplCopyWith<_$CreateProductRequestModelImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

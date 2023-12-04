@@ -133,11 +133,11 @@ class _$SignUpRequestModelCopyWithImpl<$Res, $Val extends SignUpRequestModel>
 }
 
 /// @nodoc
-abstract class _$$_SignUpRequestModelCopyWith<$Res>
+abstract class _$$SignUpRequestModelImplCopyWith<$Res>
     implements $SignUpRequestModelCopyWith<$Res> {
-  factory _$$_SignUpRequestModelCopyWith(_$_SignUpRequestModel value,
-          $Res Function(_$_SignUpRequestModel) then) =
-      __$$_SignUpRequestModelCopyWithImpl<$Res>;
+  factory _$$SignUpRequestModelImplCopyWith(_$SignUpRequestModelImpl value,
+          $Res Function(_$SignUpRequestModelImpl) then) =
+      __$$SignUpRequestModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -155,11 +155,11 @@ abstract class _$$_SignUpRequestModelCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_SignUpRequestModelCopyWithImpl<$Res>
-    extends _$SignUpRequestModelCopyWithImpl<$Res, _$_SignUpRequestModel>
-    implements _$$_SignUpRequestModelCopyWith<$Res> {
-  __$$_SignUpRequestModelCopyWithImpl(
-      _$_SignUpRequestModel _value, $Res Function(_$_SignUpRequestModel) _then)
+class __$$SignUpRequestModelImplCopyWithImpl<$Res>
+    extends _$SignUpRequestModelCopyWithImpl<$Res, _$SignUpRequestModelImpl>
+    implements _$$SignUpRequestModelImplCopyWith<$Res> {
+  __$$SignUpRequestModelImplCopyWithImpl(_$SignUpRequestModelImpl _value,
+      $Res Function(_$SignUpRequestModelImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -177,7 +177,7 @@ class __$$_SignUpRequestModelCopyWithImpl<$Res>
     Object? city = null,
     Object? country = null,
   }) {
-    return _then(_$_SignUpRequestModel(
+    return _then(_$SignUpRequestModelImpl(
       email: null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
@@ -228,8 +228,8 @@ class __$$_SignUpRequestModelCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_SignUpRequestModel implements _SignUpRequestModel {
-  const _$_SignUpRequestModel(
+class _$SignUpRequestModelImpl implements _SignUpRequestModel {
+  const _$SignUpRequestModelImpl(
       {required this.email,
       this.bin,
       required this.roleType,
@@ -242,8 +242,8 @@ class _$_SignUpRequestModel implements _SignUpRequestModel {
       required this.city,
       required this.country});
 
-  factory _$_SignUpRequestModel.fromJson(Map<String, dynamic> json) =>
-      _$$_SignUpRequestModelFromJson(json);
+  factory _$SignUpRequestModelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$SignUpRequestModelImplFromJson(json);
 
   @override
   final String email;
@@ -277,7 +277,7 @@ class _$_SignUpRequestModel implements _SignUpRequestModel {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_SignUpRequestModel &&
+            other is _$SignUpRequestModelImpl &&
             (identical(other.email, email) || other.email == email) &&
             (identical(other.bin, bin) || other.bin == bin) &&
             (identical(other.roleType, roleType) ||
@@ -303,13 +303,13 @@ class _$_SignUpRequestModel implements _SignUpRequestModel {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_SignUpRequestModelCopyWith<_$_SignUpRequestModel> get copyWith =>
-      __$$_SignUpRequestModelCopyWithImpl<_$_SignUpRequestModel>(
+  _$$SignUpRequestModelImplCopyWith<_$SignUpRequestModelImpl> get copyWith =>
+      __$$SignUpRequestModelImplCopyWithImpl<_$SignUpRequestModelImpl>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_SignUpRequestModelToJson(
+    return _$$SignUpRequestModelImplToJson(
       this,
     );
   }
@@ -327,10 +327,10 @@ abstract class _SignUpRequestModel implements SignUpRequestModel {
       required final String contactPhone,
       final String? address,
       required final String city,
-      required final String country}) = _$_SignUpRequestModel;
+      required final String country}) = _$SignUpRequestModelImpl;
 
   factory _SignUpRequestModel.fromJson(Map<String, dynamic> json) =
-      _$_SignUpRequestModel.fromJson;
+      _$SignUpRequestModelImpl.fromJson;
 
   @override
   String get email;
@@ -356,6 +356,6 @@ abstract class _SignUpRequestModel implements SignUpRequestModel {
   String get country;
   @override
   @JsonKey(ignore: true)
-  _$$_SignUpRequestModelCopyWith<_$_SignUpRequestModel> get copyWith =>
+  _$$SignUpRequestModelImplCopyWith<_$SignUpRequestModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

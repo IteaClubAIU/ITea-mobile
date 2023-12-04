@@ -6,9 +6,9 @@ part of 'search_products_request_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_SearchProductsRequestModel _$$_SearchProductsRequestModelFromJson(
+_$SearchProductsRequestModelImpl _$$SearchProductsRequestModelImplFromJson(
         Map<String, dynamic> json) =>
-    _$_SearchProductsRequestModel(
+    _$SearchProductsRequestModelImpl(
       key: json['key'] as String?,
       category: $enumDecodeNullable(_$CategoryEnumMap, json['category']),
       type: $enumDecodeNullable(_$ProductTypeEnumMap, json['type']),
@@ -34,8 +34,8 @@ _$_SearchProductsRequestModel _$$_SearchProductsRequestModelFromJson(
           _$AdditionalServiceEnumMap, json['additionalService']),
     );
 
-Map<String, dynamic> _$$_SearchProductsRequestModelToJson(
-        _$_SearchProductsRequestModel instance) =>
+Map<String, dynamic> _$$SearchProductsRequestModelImplToJson(
+        _$SearchProductsRequestModelImpl instance) =>
     <String, dynamic>{
       'key': instance.key,
       'category': _$CategoryEnumMap[instance.category],

@@ -6,15 +6,15 @@ part of 'log_out_request_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_LogOutRequestModel _$$_LogOutRequestModelFromJson(
+_$LogOutRequestModelImpl _$$LogOutRequestModelImplFromJson(
         Map<String, dynamic> json) =>
-    _$_LogOutRequestModel(
+    _$LogOutRequestModelImpl(
       accessToken: json['accessToken'] as String,
       refreshToken: json['refreshToken'] as String,
     );
 
-Map<String, dynamic> _$$_LogOutRequestModelToJson(
-        _$_LogOutRequestModel instance) =>
+Map<String, dynamic> _$$LogOutRequestModelImplToJson(
+        _$LogOutRequestModelImpl instance) =>
     <String, dynamic>{
       'accessToken': instance.accessToken,
       'refreshToken': instance.refreshToken,

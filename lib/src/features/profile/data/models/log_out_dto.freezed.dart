@@ -61,21 +61,22 @@ class _$LogOutDtoCopyWithImpl<$Res, $Val extends LogOutDto>
 }
 
 /// @nodoc
-abstract class _$$_LogOutDtoCopyWith<$Res> implements $LogOutDtoCopyWith<$Res> {
-  factory _$$_LogOutDtoCopyWith(
-          _$_LogOutDto value, $Res Function(_$_LogOutDto) then) =
-      __$$_LogOutDtoCopyWithImpl<$Res>;
+abstract class _$$LogOutDtoImplCopyWith<$Res>
+    implements $LogOutDtoCopyWith<$Res> {
+  factory _$$LogOutDtoImplCopyWith(
+          _$LogOutDtoImpl value, $Res Function(_$LogOutDtoImpl) then) =
+      __$$LogOutDtoImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String description});
 }
 
 /// @nodoc
-class __$$_LogOutDtoCopyWithImpl<$Res>
-    extends _$LogOutDtoCopyWithImpl<$Res, _$_LogOutDto>
-    implements _$$_LogOutDtoCopyWith<$Res> {
-  __$$_LogOutDtoCopyWithImpl(
-      _$_LogOutDto _value, $Res Function(_$_LogOutDto) _then)
+class __$$LogOutDtoImplCopyWithImpl<$Res>
+    extends _$LogOutDtoCopyWithImpl<$Res, _$LogOutDtoImpl>
+    implements _$$LogOutDtoImplCopyWith<$Res> {
+  __$$LogOutDtoImplCopyWithImpl(
+      _$LogOutDtoImpl _value, $Res Function(_$LogOutDtoImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -83,7 +84,7 @@ class __$$_LogOutDtoCopyWithImpl<$Res>
   $Res call({
     Object? description = null,
   }) {
-    return _then(_$_LogOutDto(
+    return _then(_$LogOutDtoImpl(
       description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -94,11 +95,11 @@ class __$$_LogOutDtoCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_LogOutDto implements _LogOutDto {
-  const _$_LogOutDto({required this.description});
+class _$LogOutDtoImpl implements _LogOutDto {
+  const _$LogOutDtoImpl({required this.description});
 
-  factory _$_LogOutDto.fromJson(Map<String, dynamic> json) =>
-      _$$_LogOutDtoFromJson(json);
+  factory _$LogOutDtoImpl.fromJson(Map<String, dynamic> json) =>
+      _$$LogOutDtoImplFromJson(json);
 
   @override
   final String description;
@@ -112,7 +113,7 @@ class _$_LogOutDto implements _LogOutDto {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_LogOutDto &&
+            other is _$LogOutDtoImpl &&
             (identical(other.description, description) ||
                 other.description == description));
   }
@@ -124,27 +125,28 @@ class _$_LogOutDto implements _LogOutDto {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_LogOutDtoCopyWith<_$_LogOutDto> get copyWith =>
-      __$$_LogOutDtoCopyWithImpl<_$_LogOutDto>(this, _$identity);
+  _$$LogOutDtoImplCopyWith<_$LogOutDtoImpl> get copyWith =>
+      __$$LogOutDtoImplCopyWithImpl<_$LogOutDtoImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_LogOutDtoToJson(
+    return _$$LogOutDtoImplToJson(
       this,
     );
   }
 }
 
 abstract class _LogOutDto implements LogOutDto {
-  const factory _LogOutDto({required final String description}) = _$_LogOutDto;
+  const factory _LogOutDto({required final String description}) =
+      _$LogOutDtoImpl;
 
   factory _LogOutDto.fromJson(Map<String, dynamic> json) =
-      _$_LogOutDto.fromJson;
+      _$LogOutDtoImpl.fromJson;
 
   @override
   String get description;
   @override
   @JsonKey(ignore: true)
-  _$$_LogOutDtoCopyWith<_$_LogOutDto> get copyWith =>
+  _$$LogOutDtoImplCopyWith<_$LogOutDtoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

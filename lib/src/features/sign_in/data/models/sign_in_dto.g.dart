@@ -6,12 +6,13 @@ part of 'sign_in_dto.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_SignInDto _$$_SignInDtoFromJson(Map<String, dynamic> json) => _$_SignInDto(
+_$SignInDtoImpl _$$SignInDtoImplFromJson(Map<String, dynamic> json) =>
+    _$SignInDtoImpl(
       accessToken: json['accessToken'] as String,
       refreshToken: json['refreshToken'] as String,
     );
 
-Map<String, dynamic> _$$_SignInDtoToJson(_$_SignInDto instance) =>
+Map<String, dynamic> _$$SignInDtoImplToJson(_$SignInDtoImpl instance) =>
     <String, dynamic>{
       'accessToken': instance.accessToken,
       'refreshToken': instance.refreshToken,

@@ -62,22 +62,22 @@ class _$LogOutEntityCopyWithImpl<$Res, $Val extends LogOutEntity>
 }
 
 /// @nodoc
-abstract class _$$_LogOutEntityCopyWith<$Res>
+abstract class _$$LogOutEntityImplCopyWith<$Res>
     implements $LogOutEntityCopyWith<$Res> {
-  factory _$$_LogOutEntityCopyWith(
-          _$_LogOutEntity value, $Res Function(_$_LogOutEntity) then) =
-      __$$_LogOutEntityCopyWithImpl<$Res>;
+  factory _$$LogOutEntityImplCopyWith(
+          _$LogOutEntityImpl value, $Res Function(_$LogOutEntityImpl) then) =
+      __$$LogOutEntityImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String description});
 }
 
 /// @nodoc
-class __$$_LogOutEntityCopyWithImpl<$Res>
-    extends _$LogOutEntityCopyWithImpl<$Res, _$_LogOutEntity>
-    implements _$$_LogOutEntityCopyWith<$Res> {
-  __$$_LogOutEntityCopyWithImpl(
-      _$_LogOutEntity _value, $Res Function(_$_LogOutEntity) _then)
+class __$$LogOutEntityImplCopyWithImpl<$Res>
+    extends _$LogOutEntityCopyWithImpl<$Res, _$LogOutEntityImpl>
+    implements _$$LogOutEntityImplCopyWith<$Res> {
+  __$$LogOutEntityImplCopyWithImpl(
+      _$LogOutEntityImpl _value, $Res Function(_$LogOutEntityImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -85,7 +85,7 @@ class __$$_LogOutEntityCopyWithImpl<$Res>
   $Res call({
     Object? description = null,
   }) {
-    return _then(_$_LogOutEntity(
+    return _then(_$LogOutEntityImpl(
       description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -96,11 +96,11 @@ class __$$_LogOutEntityCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_LogOutEntity implements _LogOutEntity {
-  _$_LogOutEntity({required this.description});
+class _$LogOutEntityImpl implements _LogOutEntity {
+  _$LogOutEntityImpl({required this.description});
 
-  factory _$_LogOutEntity.fromJson(Map<String, dynamic> json) =>
-      _$$_LogOutEntityFromJson(json);
+  factory _$LogOutEntityImpl.fromJson(Map<String, dynamic> json) =>
+      _$$LogOutEntityImplFromJson(json);
 
   @override
   final String description;
@@ -114,7 +114,7 @@ class _$_LogOutEntity implements _LogOutEntity {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_LogOutEntity &&
+            other is _$LogOutEntityImpl &&
             (identical(other.description, description) ||
                 other.description == description));
   }
@@ -126,27 +126,28 @@ class _$_LogOutEntity implements _LogOutEntity {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_LogOutEntityCopyWith<_$_LogOutEntity> get copyWith =>
-      __$$_LogOutEntityCopyWithImpl<_$_LogOutEntity>(this, _$identity);
+  _$$LogOutEntityImplCopyWith<_$LogOutEntityImpl> get copyWith =>
+      __$$LogOutEntityImplCopyWithImpl<_$LogOutEntityImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_LogOutEntityToJson(
+    return _$$LogOutEntityImplToJson(
       this,
     );
   }
 }
 
 abstract class _LogOutEntity implements LogOutEntity {
-  factory _LogOutEntity({required final String description}) = _$_LogOutEntity;
+  factory _LogOutEntity({required final String description}) =
+      _$LogOutEntityImpl;
 
   factory _LogOutEntity.fromJson(Map<String, dynamic> json) =
-      _$_LogOutEntity.fromJson;
+      _$LogOutEntityImpl.fromJson;
 
   @override
   String get description;
   @override
   @JsonKey(ignore: true)
-  _$$_LogOutEntityCopyWith<_$_LogOutEntity> get copyWith =>
+  _$$LogOutEntityImplCopyWith<_$LogOutEntityImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

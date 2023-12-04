@@ -119,11 +119,11 @@ class _$PaginationDtoCopyWithImpl<$Res, $Val extends PaginationDto>
 }
 
 /// @nodoc
-abstract class _$$_PaginationDtoCopyWith<$Res>
+abstract class _$$PaginationDtoImplCopyWith<$Res>
     implements $PaginationDtoCopyWith<$Res> {
-  factory _$$_PaginationDtoCopyWith(
-          _$_PaginationDto value, $Res Function(_$_PaginationDto) then) =
-      __$$_PaginationDtoCopyWithImpl<$Res>;
+  factory _$$PaginationDtoImplCopyWith(
+          _$PaginationDtoImpl value, $Res Function(_$PaginationDtoImpl) then) =
+      __$$PaginationDtoImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -139,11 +139,11 @@ abstract class _$$_PaginationDtoCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_PaginationDtoCopyWithImpl<$Res>
-    extends _$PaginationDtoCopyWithImpl<$Res, _$_PaginationDto>
-    implements _$$_PaginationDtoCopyWith<$Res> {
-  __$$_PaginationDtoCopyWithImpl(
-      _$_PaginationDto _value, $Res Function(_$_PaginationDto) _then)
+class __$$PaginationDtoImplCopyWithImpl<$Res>
+    extends _$PaginationDtoCopyWithImpl<$Res, _$PaginationDtoImpl>
+    implements _$$PaginationDtoImplCopyWith<$Res> {
+  __$$PaginationDtoImplCopyWithImpl(
+      _$PaginationDtoImpl _value, $Res Function(_$PaginationDtoImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -159,7 +159,7 @@ class __$$_PaginationDtoCopyWithImpl<$Res>
     Object? elementsSize = null,
     Object? data = null,
   }) {
-    return _then(_$_PaginationDto(
+    return _then(_$PaginationDtoImpl(
       totalSum: freezed == totalSum
           ? _value.totalSum
           : totalSum // ignore: cast_nullable_to_non_nullable
@@ -202,8 +202,8 @@ class __$$_PaginationDtoCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_PaginationDto implements _PaginationDto {
-  _$_PaginationDto(
+class _$PaginationDtoImpl implements _PaginationDto {
+  _$PaginationDtoImpl(
       {this.totalSum,
       this.local = false,
       required this.page,
@@ -215,8 +215,8 @@ class _$_PaginationDto implements _PaginationDto {
       required final List<dynamic> data})
       : _data = data;
 
-  factory _$_PaginationDto.fromJson(Map<String, dynamic> json) =>
-      _$$_PaginationDtoFromJson(json);
+  factory _$PaginationDtoImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PaginationDtoImplFromJson(json);
 
   @override
   final int? totalSum;
@@ -252,7 +252,7 @@ class _$_PaginationDto implements _PaginationDto {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PaginationDto &&
+            other is _$PaginationDtoImpl &&
             (identical(other.totalSum, totalSum) ||
                 other.totalSum == totalSum) &&
             (identical(other.local, local) || other.local == local) &&
@@ -285,12 +285,12 @@ class _$_PaginationDto implements _PaginationDto {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_PaginationDtoCopyWith<_$_PaginationDto> get copyWith =>
-      __$$_PaginationDtoCopyWithImpl<_$_PaginationDto>(this, _$identity);
+  _$$PaginationDtoImplCopyWith<_$PaginationDtoImpl> get copyWith =>
+      __$$PaginationDtoImplCopyWithImpl<_$PaginationDtoImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaginationDtoToJson(
+    return _$$PaginationDtoImplToJson(
       this,
     );
   }
@@ -306,10 +306,10 @@ abstract class _PaginationDto implements PaginationDto {
       required final int totalPage,
       required final int totalElementsOnPage,
       required final int elementsSize,
-      required final List<dynamic> data}) = _$_PaginationDto;
+      required final List<dynamic> data}) = _$PaginationDtoImpl;
 
   factory _PaginationDto.fromJson(Map<String, dynamic> json) =
-      _$_PaginationDto.fromJson;
+      _$PaginationDtoImpl.fromJson;
 
   @override
   int? get totalSum;
@@ -331,6 +331,6 @@ abstract class _PaginationDto implements PaginationDto {
   List<dynamic> get data;
   @override
   @JsonKey(ignore: true)
-  _$$_PaginationDtoCopyWith<_$_PaginationDto> get copyWith =>
+  _$$PaginationDtoImplCopyWith<_$PaginationDtoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

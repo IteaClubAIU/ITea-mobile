@@ -147,11 +147,11 @@ class _$CreateProductStateCopyWithImpl<$Res, $Val extends CreateProductState>
 }
 
 /// @nodoc
-abstract class _$$_CreateProductStateCopyWith<$Res>
+abstract class _$$CreateProductStateImplCopyWith<$Res>
     implements $CreateProductStateCopyWith<$Res> {
-  factory _$$_CreateProductStateCopyWith(_$_CreateProductState value,
-          $Res Function(_$_CreateProductState) then) =
-      __$$_CreateProductStateCopyWithImpl<$Res>;
+  factory _$$CreateProductStateImplCopyWith(_$CreateProductStateImpl value,
+          $Res Function(_$CreateProductStateImpl) then) =
+      __$$CreateProductStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -173,11 +173,11 @@ abstract class _$$_CreateProductStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_CreateProductStateCopyWithImpl<$Res>
-    extends _$CreateProductStateCopyWithImpl<$Res, _$_CreateProductState>
-    implements _$$_CreateProductStateCopyWith<$Res> {
-  __$$_CreateProductStateCopyWithImpl(
-      _$_CreateProductState _value, $Res Function(_$_CreateProductState) _then)
+class __$$CreateProductStateImplCopyWithImpl<$Res>
+    extends _$CreateProductStateCopyWithImpl<$Res, _$CreateProductStateImpl>
+    implements _$$CreateProductStateImplCopyWith<$Res> {
+  __$$CreateProductStateImplCopyWithImpl(_$CreateProductStateImpl _value,
+      $Res Function(_$CreateProductStateImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -194,7 +194,7 @@ class __$$_CreateProductStateCopyWithImpl<$Res>
     Object? isSaveBtnPressed = null,
     Object? productSubCategories = null,
   }) {
-    return _then(_$_CreateProductState(
+    return _then(_$CreateProductStateImpl(
       isLoading: null == isLoading
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
@@ -241,8 +241,8 @@ class __$$_CreateProductStateCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_CreateProductState implements _CreateProductState {
-  _$_CreateProductState(
+class _$CreateProductStateImpl implements _CreateProductState {
+  _$CreateProductStateImpl(
       {this.isLoading = false,
       required this.product,
       final List<String> imageUrls = const [],
@@ -257,8 +257,8 @@ class _$_CreateProductState implements _CreateProductState {
         _errorFields = errorFields,
         _productSubCategories = productSubCategories;
 
-  factory _$_CreateProductState.fromJson(Map<String, dynamic> json) =>
-      _$$_CreateProductStateFromJson(json);
+  factory _$CreateProductStateImpl.fromJson(Map<String, dynamic> json) =>
+      _$$CreateProductStateImplFromJson(json);
 
   @override
   @JsonKey()
@@ -316,7 +316,7 @@ class _$_CreateProductState implements _CreateProductState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_CreateProductState &&
+            other is _$CreateProductStateImpl &&
             (identical(other.isLoading, isLoading) ||
                 other.isLoading == isLoading) &&
             (identical(other.product, product) || other.product == product) &&
@@ -356,13 +356,13 @@ class _$_CreateProductState implements _CreateProductState {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_CreateProductStateCopyWith<_$_CreateProductState> get copyWith =>
-      __$$_CreateProductStateCopyWithImpl<_$_CreateProductState>(
+  _$$CreateProductStateImplCopyWith<_$CreateProductStateImpl> get copyWith =>
+      __$$CreateProductStateImplCopyWithImpl<_$CreateProductStateImpl>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CreateProductStateToJson(
+    return _$$CreateProductStateImplToJson(
       this,
     );
   }
@@ -380,10 +380,10 @@ abstract class _CreateProductState implements CreateProductState {
           required final ProductEntity initProduct,
           final bool isSaveBtnPressed,
           final List<ProductSubCategory> productSubCategories}) =
-      _$_CreateProductState;
+      _$CreateProductStateImpl;
 
   factory _CreateProductState.fromJson(Map<String, dynamic> json) =
-      _$_CreateProductState.fromJson;
+      _$CreateProductStateImpl.fromJson;
 
   @override
   bool get isLoading;
@@ -407,6 +407,6 @@ abstract class _CreateProductState implements CreateProductState {
   List<ProductSubCategory> get productSubCategories;
   @override
   @JsonKey(ignore: true)
-  _$$_CreateProductStateCopyWith<_$_CreateProductState> get copyWith =>
+  _$$CreateProductStateImplCopyWith<_$CreateProductStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

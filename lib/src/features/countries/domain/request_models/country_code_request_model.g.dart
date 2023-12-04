@@ -6,14 +6,14 @@ part of 'country_code_request_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_CountryCodeRequestModel _$$_CountryCodeRequestModelFromJson(
+_$CountryCodeRequestModelImpl _$$CountryCodeRequestModelImplFromJson(
         Map<String, dynamic> json) =>
-    _$_CountryCodeRequestModel(
+    _$CountryCodeRequestModelImpl(
       code: json['code'] as String,
     );
 
-Map<String, dynamic> _$$_CountryCodeRequestModelToJson(
-        _$_CountryCodeRequestModel instance) =>
+Map<String, dynamic> _$$CountryCodeRequestModelImplToJson(
+        _$CountryCodeRequestModelImpl instance) =>
     <String, dynamic>{
       'code': instance.code,
     };

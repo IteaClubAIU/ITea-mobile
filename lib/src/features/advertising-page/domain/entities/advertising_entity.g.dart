@@ -6,8 +6,9 @@ part of 'advertising_entity.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_AdvertisingEntity _$$_AdvertisingEntityFromJson(Map<String, dynamic> json) =>
-    _$_AdvertisingEntity(
+_$AdvertisingEntityImpl _$$AdvertisingEntityImplFromJson(
+        Map<String, dynamic> json) =>
+    _$AdvertisingEntityImpl(
       id: json['id'] as String,
       title: json['title'] as String,
       description: json['description'] as String,
@@ -16,8 +17,8 @@ _$_AdvertisingEntity _$$_AdvertisingEntityFromJson(Map<String, dynamic> json) =>
       $type: json['runtimeType'] as String?,
     );
 
-Map<String, dynamic> _$$_AdvertisingEntityToJson(
-        _$_AdvertisingEntity instance) =>
+Map<String, dynamic> _$$AdvertisingEntityImplToJson(
+        _$AdvertisingEntityImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'title': instance.title,
@@ -27,9 +28,9 @@ Map<String, dynamic> _$$_AdvertisingEntityToJson(
       'runtimeType': instance.$type,
     };
 
-_$_AdvertisingEntityEmpty _$$_AdvertisingEntityEmptyFromJson(
+_$AdvertisingEntityEmptyImpl _$$AdvertisingEntityEmptyImplFromJson(
         Map<String, dynamic> json) =>
-    _$_AdvertisingEntityEmpty(
+    _$AdvertisingEntityEmptyImpl(
       id: json['id'] ?? '',
       title: json['title'] as String? ?? '5',
       description: json['description'] as String? ?? '5',
@@ -38,8 +39,8 @@ _$_AdvertisingEntityEmpty _$$_AdvertisingEntityEmptyFromJson(
       $type: json['runtimeType'] as String?,
     );
 
-Map<String, dynamic> _$$_AdvertisingEntityEmptyToJson(
-        _$_AdvertisingEntityEmpty instance) =>
+Map<String, dynamic> _$$AdvertisingEntityEmptyImplToJson(
+        _$AdvertisingEntityEmptyImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'title': instance.title,

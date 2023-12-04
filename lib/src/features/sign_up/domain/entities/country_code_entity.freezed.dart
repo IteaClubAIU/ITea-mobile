@@ -68,22 +68,22 @@ class _$CountryCodeEntityCopyWithImpl<$Res, $Val extends CountryCodeEntity>
 }
 
 /// @nodoc
-abstract class _$$_CountryCodeEntityCopyWith<$Res>
+abstract class _$$CountryCodeEntityImplCopyWith<$Res>
     implements $CountryCodeEntityCopyWith<$Res> {
-  factory _$$_CountryCodeEntityCopyWith(_$_CountryCodeEntity value,
-          $Res Function(_$_CountryCodeEntity) then) =
-      __$$_CountryCodeEntityCopyWithImpl<$Res>;
+  factory _$$CountryCodeEntityImplCopyWith(_$CountryCodeEntityImpl value,
+          $Res Function(_$CountryCodeEntityImpl) then) =
+      __$$CountryCodeEntityImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String countryName, String countryCode});
 }
 
 /// @nodoc
-class __$$_CountryCodeEntityCopyWithImpl<$Res>
-    extends _$CountryCodeEntityCopyWithImpl<$Res, _$_CountryCodeEntity>
-    implements _$$_CountryCodeEntityCopyWith<$Res> {
-  __$$_CountryCodeEntityCopyWithImpl(
-      _$_CountryCodeEntity _value, $Res Function(_$_CountryCodeEntity) _then)
+class __$$CountryCodeEntityImplCopyWithImpl<$Res>
+    extends _$CountryCodeEntityCopyWithImpl<$Res, _$CountryCodeEntityImpl>
+    implements _$$CountryCodeEntityImplCopyWith<$Res> {
+  __$$CountryCodeEntityImplCopyWithImpl(_$CountryCodeEntityImpl _value,
+      $Res Function(_$CountryCodeEntityImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -92,7 +92,7 @@ class __$$_CountryCodeEntityCopyWithImpl<$Res>
     Object? countryName = null,
     Object? countryCode = null,
   }) {
-    return _then(_$_CountryCodeEntity(
+    return _then(_$CountryCodeEntityImpl(
       countryName: null == countryName
           ? _value.countryName
           : countryName // ignore: cast_nullable_to_non_nullable
@@ -107,11 +107,12 @@ class __$$_CountryCodeEntityCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_CountryCodeEntity implements _CountryCodeEntity {
-  _$_CountryCodeEntity({required this.countryName, required this.countryCode});
+class _$CountryCodeEntityImpl implements _CountryCodeEntity {
+  _$CountryCodeEntityImpl(
+      {required this.countryName, required this.countryCode});
 
-  factory _$_CountryCodeEntity.fromJson(Map<String, dynamic> json) =>
-      _$$_CountryCodeEntityFromJson(json);
+  factory _$CountryCodeEntityImpl.fromJson(Map<String, dynamic> json) =>
+      _$$CountryCodeEntityImplFromJson(json);
 
   @override
   final String countryName;
@@ -127,7 +128,7 @@ class _$_CountryCodeEntity implements _CountryCodeEntity {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_CountryCodeEntity &&
+            other is _$CountryCodeEntityImpl &&
             (identical(other.countryName, countryName) ||
                 other.countryName == countryName) &&
             (identical(other.countryCode, countryCode) ||
@@ -141,13 +142,13 @@ class _$_CountryCodeEntity implements _CountryCodeEntity {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_CountryCodeEntityCopyWith<_$_CountryCodeEntity> get copyWith =>
-      __$$_CountryCodeEntityCopyWithImpl<_$_CountryCodeEntity>(
+  _$$CountryCodeEntityImplCopyWith<_$CountryCodeEntityImpl> get copyWith =>
+      __$$CountryCodeEntityImplCopyWithImpl<_$CountryCodeEntityImpl>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CountryCodeEntityToJson(
+    return _$$CountryCodeEntityImplToJson(
       this,
     );
   }
@@ -156,10 +157,10 @@ class _$_CountryCodeEntity implements _CountryCodeEntity {
 abstract class _CountryCodeEntity implements CountryCodeEntity {
   factory _CountryCodeEntity(
       {required final String countryName,
-      required final String countryCode}) = _$_CountryCodeEntity;
+      required final String countryCode}) = _$CountryCodeEntityImpl;
 
   factory _CountryCodeEntity.fromJson(Map<String, dynamic> json) =
-      _$_CountryCodeEntity.fromJson;
+      _$CountryCodeEntityImpl.fromJson;
 
   @override
   String get countryName;
@@ -167,6 +168,6 @@ abstract class _CountryCodeEntity implements CountryCodeEntity {
   String get countryCode;
   @override
   @JsonKey(ignore: true)
-  _$$_CountryCodeEntityCopyWith<_$_CountryCodeEntity> get copyWith =>
+  _$$CountryCodeEntityImplCopyWith<_$CountryCodeEntityImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

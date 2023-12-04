@@ -61,21 +61,22 @@ class _$SignUpDtoCopyWithImpl<$Res, $Val extends SignUpDto>
 }
 
 /// @nodoc
-abstract class _$$_SignUpDtoCopyWith<$Res> implements $SignUpDtoCopyWith<$Res> {
-  factory _$$_SignUpDtoCopyWith(
-          _$_SignUpDto value, $Res Function(_$_SignUpDto) then) =
-      __$$_SignUpDtoCopyWithImpl<$Res>;
+abstract class _$$SignUpDtoImplCopyWith<$Res>
+    implements $SignUpDtoCopyWith<$Res> {
+  factory _$$SignUpDtoImplCopyWith(
+          _$SignUpDtoImpl value, $Res Function(_$SignUpDtoImpl) then) =
+      __$$SignUpDtoImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String description});
 }
 
 /// @nodoc
-class __$$_SignUpDtoCopyWithImpl<$Res>
-    extends _$SignUpDtoCopyWithImpl<$Res, _$_SignUpDto>
-    implements _$$_SignUpDtoCopyWith<$Res> {
-  __$$_SignUpDtoCopyWithImpl(
-      _$_SignUpDto _value, $Res Function(_$_SignUpDto) _then)
+class __$$SignUpDtoImplCopyWithImpl<$Res>
+    extends _$SignUpDtoCopyWithImpl<$Res, _$SignUpDtoImpl>
+    implements _$$SignUpDtoImplCopyWith<$Res> {
+  __$$SignUpDtoImplCopyWithImpl(
+      _$SignUpDtoImpl _value, $Res Function(_$SignUpDtoImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -83,7 +84,7 @@ class __$$_SignUpDtoCopyWithImpl<$Res>
   $Res call({
     Object? description = null,
   }) {
-    return _then(_$_SignUpDto(
+    return _then(_$SignUpDtoImpl(
       description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -94,11 +95,11 @@ class __$$_SignUpDtoCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_SignUpDto implements _SignUpDto {
-  const _$_SignUpDto({required this.description});
+class _$SignUpDtoImpl implements _SignUpDto {
+  const _$SignUpDtoImpl({required this.description});
 
-  factory _$_SignUpDto.fromJson(Map<String, dynamic> json) =>
-      _$$_SignUpDtoFromJson(json);
+  factory _$SignUpDtoImpl.fromJson(Map<String, dynamic> json) =>
+      _$$SignUpDtoImplFromJson(json);
 
   @override
   final String description;
@@ -112,7 +113,7 @@ class _$_SignUpDto implements _SignUpDto {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_SignUpDto &&
+            other is _$SignUpDtoImpl &&
             (identical(other.description, description) ||
                 other.description == description));
   }
@@ -124,27 +125,28 @@ class _$_SignUpDto implements _SignUpDto {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_SignUpDtoCopyWith<_$_SignUpDto> get copyWith =>
-      __$$_SignUpDtoCopyWithImpl<_$_SignUpDto>(this, _$identity);
+  _$$SignUpDtoImplCopyWith<_$SignUpDtoImpl> get copyWith =>
+      __$$SignUpDtoImplCopyWithImpl<_$SignUpDtoImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_SignUpDtoToJson(
+    return _$$SignUpDtoImplToJson(
       this,
     );
   }
 }
 
 abstract class _SignUpDto implements SignUpDto {
-  const factory _SignUpDto({required final String description}) = _$_SignUpDto;
+  const factory _SignUpDto({required final String description}) =
+      _$SignUpDtoImpl;
 
   factory _SignUpDto.fromJson(Map<String, dynamic> json) =
-      _$_SignUpDto.fromJson;
+      _$SignUpDtoImpl.fromJson;
 
   @override
   String get description;
   @override
   @JsonKey(ignore: true)
-  _$$_SignUpDtoCopyWith<_$_SignUpDto> get copyWith =>
+  _$$SignUpDtoImplCopyWith<_$SignUpDtoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

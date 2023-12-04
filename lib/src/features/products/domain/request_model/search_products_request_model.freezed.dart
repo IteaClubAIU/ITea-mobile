@@ -187,12 +187,12 @@ class _$SearchProductsRequestModelCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_SearchProductsRequestModelCopyWith<$Res>
+abstract class _$$SearchProductsRequestModelImplCopyWith<$Res>
     implements $SearchProductsRequestModelCopyWith<$Res> {
-  factory _$$_SearchProductsRequestModelCopyWith(
-          _$_SearchProductsRequestModel value,
-          $Res Function(_$_SearchProductsRequestModel) then) =
-      __$$_SearchProductsRequestModelCopyWithImpl<$Res>;
+  factory _$$SearchProductsRequestModelImplCopyWith(
+          _$SearchProductsRequestModelImpl value,
+          $Res Function(_$SearchProductsRequestModelImpl) then) =
+      __$$SearchProductsRequestModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -217,13 +217,13 @@ abstract class _$$_SearchProductsRequestModelCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_SearchProductsRequestModelCopyWithImpl<$Res>
+class __$$SearchProductsRequestModelImplCopyWithImpl<$Res>
     extends _$SearchProductsRequestModelCopyWithImpl<$Res,
-        _$_SearchProductsRequestModel>
-    implements _$$_SearchProductsRequestModelCopyWith<$Res> {
-  __$$_SearchProductsRequestModelCopyWithImpl(
-      _$_SearchProductsRequestModel _value,
-      $Res Function(_$_SearchProductsRequestModel) _then)
+        _$SearchProductsRequestModelImpl>
+    implements _$$SearchProductsRequestModelImplCopyWith<$Res> {
+  __$$SearchProductsRequestModelImplCopyWithImpl(
+      _$SearchProductsRequestModelImpl _value,
+      $Res Function(_$SearchProductsRequestModelImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -248,7 +248,7 @@ class __$$_SearchProductsRequestModelCopyWithImpl<$Res>
     Object? productSubCategory = freezed,
     Object? additionalService = freezed,
   }) {
-    return _then(_$_SearchProductsRequestModel(
+    return _then(_$SearchProductsRequestModelImpl(
       key: freezed == key
           ? _value.key
           : key // ignore: cast_nullable_to_non_nullable
@@ -327,8 +327,8 @@ class __$$_SearchProductsRequestModelCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_SearchProductsRequestModel extends _SearchProductsRequestModel {
-  _$_SearchProductsRequestModel(
+class _$SearchProductsRequestModelImpl extends _SearchProductsRequestModel {
+  _$SearchProductsRequestModelImpl(
       {this.key,
       this.category,
       this.type,
@@ -349,8 +349,9 @@ class _$_SearchProductsRequestModel extends _SearchProductsRequestModel {
       this.additionalService})
       : super._();
 
-  factory _$_SearchProductsRequestModel.fromJson(Map<String, dynamic> json) =>
-      _$$_SearchProductsRequestModelFromJson(json);
+  factory _$SearchProductsRequestModelImpl.fromJson(
+          Map<String, dynamic> json) =>
+      _$$SearchProductsRequestModelImplFromJson(json);
 
   @override
   final String? key;
@@ -398,7 +399,7 @@ class _$_SearchProductsRequestModel extends _SearchProductsRequestModel {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_SearchProductsRequestModel &&
+            other is _$SearchProductsRequestModelImpl &&
             (identical(other.key, key) || other.key == key) &&
             (identical(other.category, category) ||
                 other.category == category) &&
@@ -456,13 +457,13 @@ class _$_SearchProductsRequestModel extends _SearchProductsRequestModel {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_SearchProductsRequestModelCopyWith<_$_SearchProductsRequestModel>
-      get copyWith => __$$_SearchProductsRequestModelCopyWithImpl<
-          _$_SearchProductsRequestModel>(this, _$identity);
+  _$$SearchProductsRequestModelImplCopyWith<_$SearchProductsRequestModelImpl>
+      get copyWith => __$$SearchProductsRequestModelImplCopyWithImpl<
+          _$SearchProductsRequestModelImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_SearchProductsRequestModelToJson(
+    return _$$SearchProductsRequestModelImplToJson(
       this,
     );
   }
@@ -488,11 +489,11 @@ abstract class _SearchProductsRequestModel extends SearchProductsRequestModel {
           final ProductCategory? productCategory,
           final ProductSubCategory? productSubCategory,
           final AdditionalService? additionalService}) =
-      _$_SearchProductsRequestModel;
+      _$SearchProductsRequestModelImpl;
   _SearchProductsRequestModel._() : super._();
 
   factory _SearchProductsRequestModel.fromJson(Map<String, dynamic> json) =
-      _$_SearchProductsRequestModel.fromJson;
+      _$SearchProductsRequestModelImpl.fromJson;
 
   @override
   String? get key;
@@ -532,6 +533,6 @@ abstract class _SearchProductsRequestModel extends SearchProductsRequestModel {
   AdditionalService? get additionalService;
   @override
   @JsonKey(ignore: true)
-  _$$_SearchProductsRequestModelCopyWith<_$_SearchProductsRequestModel>
+  _$$SearchProductsRequestModelImplCopyWith<_$SearchProductsRequestModelImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

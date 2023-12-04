@@ -6,8 +6,9 @@ part of 'pagination_entity.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_PaginationEntity _$$_PaginationEntityFromJson(Map<String, dynamic> json) =>
-    _$_PaginationEntity(
+_$PaginationEntityImpl _$$PaginationEntityImplFromJson(
+        Map<String, dynamic> json) =>
+    _$PaginationEntityImpl(
       totalSum: json['totalSum'] as int?,
       local: json['local'] as bool? ?? false,
       page: json['page'] as int,
@@ -19,7 +20,8 @@ _$_PaginationEntity _$$_PaginationEntityFromJson(Map<String, dynamic> json) =>
       data: json['data'] as List<dynamic>,
     );
 
-Map<String, dynamic> _$$_PaginationEntityToJson(_$_PaginationEntity instance) =>
+Map<String, dynamic> _$$PaginationEntityImplToJson(
+        _$PaginationEntityImpl instance) =>
     <String, dynamic>{
       'totalSum': instance.totalSum,
       'local': instance.local,
