@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:test_project/generated/l10n.dart';
-import 'package:test_project/src/core/widgets/custom_text_field.dart';
+import 'package:itea_mobile/generated/l10n.dart';
+import 'package:itea_mobile/src/core/widgets/custom_text_field.dart';
 
 class SignInFields extends StatelessWidget {
   final TextEditingController usernameController;

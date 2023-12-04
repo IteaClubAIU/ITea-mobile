@@ -1,6 +1,6 @@
-import 'package:test_project/generated/l10n.dart';
-import 'package:test_project/src/core/router/router_provider.dart';
-import 'package:test_project/src/core/theme/theme.dart';
+import 'package:itea_mobile/generated/l10n.dart';
+import 'package:itea_mobile/src/core/router/router_provider.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

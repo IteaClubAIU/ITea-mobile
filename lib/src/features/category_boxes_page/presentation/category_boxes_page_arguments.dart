@@ -1,4 +1,4 @@
-import 'package:test_project/src/core/enum/product_enums.dart';
+import 'package:itea_mobile/src/core/enum/product_enums.dart';
 
 class CategoryBoxesPageArguments {
   Category? category;

@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:test_project/src/features/profile/domain/entities/user_entity.dart';
+import 'package:itea_mobile/src/features/profile/domain/entities/user_entity.dart';
 
 final authProvider =
     StateNotifierProvider<AuthNotifier, bool>((ref) => AuthNotifier());

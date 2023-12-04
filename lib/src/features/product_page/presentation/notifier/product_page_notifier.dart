@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:test_project/src/core/router/auth_provider.dart';
-import 'package:test_project/src/core/service/injectable/injectable_service.dart';
-import 'package:test_project/src/features/favorites/presentation/notifier/favorites_page_notifier.dart';
-import 'package:test_project/src/features/product_page/presentation/notifier/product_page_state.dart';
-import 'package:test_project/src/features/product_page/product_page_arguments.dart';
-import 'package:test_project/src/features/products/domain/entities/product_entity.dart';
-import 'package:test_project/src/features/products/domain/request_model/add_product_to_favorite_request_model.dart';
-import 'package:test_project/src/features/products/domain/request_model/get_product_request_model.dart';
-import 'package:test_project/src/features/products/domain/request_model/remove_favorite_product_request_model.dart';
-import 'package:test_project/src/features/products/domain/usecases/add_product_to_favorite_use_case.dart';
-import 'package:test_project/src/features/products/domain/usecases/get_product_use_case.dart';
-import 'package:test_project/src/features/products/domain/usecases/remove_favorite_product_use_case.dart';
-import 'package:test_project/src/features/products/presentation/notifier/products_page_notifier.dart';
+import 'package:itea_mobile/src/core/router/auth_provider.dart';
+import 'package:itea_mobile/src/core/service/injectable/injectable_service.dart';
+import 'package:itea_mobile/src/features/favorites/presentation/notifier/favorites_page_notifier.dart';
+import 'package:itea_mobile/src/features/product_page/presentation/notifier/product_page_state.dart';
+import 'package:itea_mobile/src/features/product_page/product_page_arguments.dart';
+import 'package:itea_mobile/src/features/products/domain/entities/product_entity.dart';
+import 'package:itea_mobile/src/features/products/domain/request_model/add_product_to_favorite_request_model.dart';
+import 'package:itea_mobile/src/features/products/domain/request_model/get_product_request_model.dart';
+import 'package:itea_mobile/src/features/products/domain/request_model/remove_favorite_product_request_model.dart';
+import 'package:itea_mobile/src/features/products/domain/usecases/add_product_to_favorite_use_case.dart';
+import 'package:itea_mobile/src/features/products/domain/usecases/get_product_use_case.dart';
+import 'package:itea_mobile/src/features/products/domain/usecases/remove_favorite_product_use_case.dart';
+import 'package:itea_mobile/src/features/products/presentation/notifier/products_page_notifier.dart';
 
 final productPageNotifierProvider =
     StateNotifierProvider.autoDispose<ProductPageNotifier, ProductPageState>(

@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:test_project/generated/l10n.dart';
+import 'package:itea_mobile/generated/l10n.dart';
 
 class DioExceptions implements Exception {
   late String message;

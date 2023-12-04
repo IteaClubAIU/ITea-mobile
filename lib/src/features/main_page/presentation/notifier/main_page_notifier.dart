@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:test_project/src/core/enum/product_enums.dart';
-import 'package:test_project/src/core/router/auth_provider.dart';
-import 'package:test_project/src/core/router/router_provider.dart';
-import 'package:test_project/src/core/service/injectable/injectable_service.dart';
-import 'package:test_project/src/core/utils/helpers/popup_helper.dart';
-import 'package:test_project/src/features/category_boxes_page/presentation/category_boxes_page_arguments.dart';
-import 'package:test_project/src/features/countries/presentation/notifier/countries_notifier.dart';
-import 'package:test_project/src/features/profile/domain/usecase/get_user_info_use_case.dart';
+import 'package:itea_mobile/src/core/enum/product_enums.dart';
+import 'package:itea_mobile/src/core/router/auth_provider.dart';
+import 'package:itea_mobile/src/core/router/router_provider.dart';
+import 'package:itea_mobile/src/core/service/injectable/injectable_service.dart';
+import 'package:itea_mobile/src/core/utils/helpers/popup_helper.dart';
+import 'package:itea_mobile/src/features/category_boxes_page/presentation/category_boxes_page_arguments.dart';
+import 'package:itea_mobile/src/features/countries/presentation/notifier/countries_notifier.dart';
+import 'package:itea_mobile/src/features/profile/domain/usecase/get_user_info_use_case.dart';
 
 import '../../../profile/presentation/notifier/profile_notifier.dart';
 import 'main_page_state.dart';

@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:test_project/generated/l10n.dart';
+import 'package:itea_mobile/generated/l10n.dart';
 
 enum ProductType {
   @JsonValue('BUY')

@@ -1,8 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/features/product_page/presentation/widgets/product_image.dart';
-import 'package:test_project/src/features/products/domain/entities/product_entity.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/features/product_page/presentation/widgets/product_image.dart';
+import 'package:itea_mobile/src/features/products/domain/entities/product_entity.dart';
 
 class ProductPhotosPage extends StatefulWidget {
   final ProductEntity product;

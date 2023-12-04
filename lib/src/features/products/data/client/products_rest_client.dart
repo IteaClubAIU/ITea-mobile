@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
-import 'package:test_project/src/core/api/client/rest/dio_client.dart';
-import 'package:test_project/src/core/constants/api/api_constants.dart';
+import 'package:itea_mobile/src/core/api/client/rest/dio_client.dart';
+import 'package:itea_mobile/src/core/constants/api/api_constants.dart';
 
 @named
 @Injectable(as: DioRestClient)

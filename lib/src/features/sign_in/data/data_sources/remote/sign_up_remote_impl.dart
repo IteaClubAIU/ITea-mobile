@@ -1,6 +1,6 @@
 import 'package:fpdart/fpdart.dart';
 import 'package:injectable/injectable.dart';
-import 'package:test_project/src/features/sign_in/data/data_sources/remote/i_sign_up_remote.dart';
+import 'package:itea_mobile/src/features/sign_in/data/data_sources/remote/i_sign_up_remote.dart';
 
 import '../../../../../core/api/client/rest/dio_client.dart';
 import '../../../../../core/api/client/rest/endpoints.dart';

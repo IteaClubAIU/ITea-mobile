@@ -1,8 +1,8 @@
 import 'dart:convert';
 
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:test_project/src/core/base/base_request_model.dart';
-import 'package:test_project/src/core/enum/product_enums.dart';
+import 'package:itea_mobile/src/core/base/base_request_model.dart';
+import 'package:itea_mobile/src/core/enum/product_enums.dart';
 
 part 'search_products_request_model.freezed.dart';
 part 'search_products_request_model.g.dart';

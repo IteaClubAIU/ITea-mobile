@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:test_project/src/core/enum/product_enums.dart';
-import 'package:test_project/src/features/profile/domain/entities/user_entity.dart';
+import 'package:itea_mobile/src/core/enum/product_enums.dart';
+import 'package:itea_mobile/src/features/profile/domain/entities/user_entity.dart';
 
 part 'product_entity.freezed.dart';
 part 'product_entity.g.dart';

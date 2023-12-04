@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:test_project/src/features/countries/presentation/notifier/countries_state.dart';
+import 'package:itea_mobile/src/features/countries/presentation/notifier/countries_state.dart';
 
 import '../../../../core/service/injectable/injectable_service.dart';
 import '../../domain/request_models/country_code_request_model.dart';

@@ -1,5 +1,5 @@
-import 'package:test_project/src/features/profile/data/models/user_dto.dart';
-import 'package:test_project/src/features/profile/domain/entities/user_entity.dart';
+import 'package:itea_mobile/src/features/profile/data/models/user_dto.dart';
+import 'package:itea_mobile/src/features/profile/domain/entities/user_entity.dart';
 
 class UserDtoMapper {
   UserEntity map(UserDto dto) {

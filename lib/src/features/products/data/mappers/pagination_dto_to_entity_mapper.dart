@@ -1,5 +1,5 @@
-import 'package:test_project/src/features/products/data/models/dto/pagination_dto.dart';
-import 'package:test_project/src/features/products/domain/entities/pagination_entity.dart';
+import 'package:itea_mobile/src/features/products/data/models/dto/pagination_dto.dart';
+import 'package:itea_mobile/src/features/products/domain/entities/pagination_entity.dart';
 
 class PaginationDtoMapper {
   PaginationEntity map(PaginationDto dto) {

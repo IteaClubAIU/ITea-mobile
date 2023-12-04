@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:test_project/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
 
 import '../../../../../generated/l10n.dart';
 

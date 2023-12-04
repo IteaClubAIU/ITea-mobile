@@ -1,4 +1,4 @@
-import 'package:test_project/src/core/base/base_request_model.dart';
+import 'package:itea_mobile/src/core/base/base_request_model.dart';
 
 class RemoveFavoriteProductRequestModel extends BaseRequestModel {
   final String id;

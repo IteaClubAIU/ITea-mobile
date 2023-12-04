@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:test_project/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
 
 import 'notifier/user_products_page_notifier.dart';
 import 'widgets/user_products_app_bar.dart';

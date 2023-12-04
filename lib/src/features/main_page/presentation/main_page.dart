@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:test_project/src/core/enum/main_screen_tabs.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/features/category_boxes_page/presentation/category_boxes_page.dart';
-import 'package:test_project/src/features/category_boxes_page/presentation/category_boxes_page_arguments.dart';
-import 'package:test_project/src/features/chat/presentation/chat_page.dart';
-import 'package:test_project/src/features/favorites/presentation/favorites_page.dart';
-import 'package:test_project/src/features/products/presentation/products_page.dart';
-import 'package:test_project/src/features/profile/presentation/screens/profile_page.dart';
+import 'package:itea_mobile/src/core/enum/main_screen_tabs.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/features/category_boxes_page/presentation/category_boxes_page.dart';
+import 'package:itea_mobile/src/features/category_boxes_page/presentation/category_boxes_page_arguments.dart';
+import 'package:itea_mobile/src/features/chat/presentation/chat_page.dart';
+import 'package:itea_mobile/src/features/favorites/presentation/favorites_page.dart';
+import 'package:itea_mobile/src/features/products/presentation/products_page.dart';
+import 'package:itea_mobile/src/features/profile/presentation/screens/profile_page.dart';
 
 import 'notifier/main_page_notifier.dart';
 import 'widgets/bottom_nav_bar/bottom_navigation_bar.dart';

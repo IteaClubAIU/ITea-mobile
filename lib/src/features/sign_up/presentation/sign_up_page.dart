@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:test_project/generated/l10n.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/core/widgets/custom_app_bar.dart';
-import 'package:test_project/src/core/widgets/toggle_switcher_widget.dart';
-import 'package:test_project/src/features/sign_in/presentation/widgets/logo.dart';
-import 'package:test_project/src/features/sign_up/presentation/widgets/sign_up_fields_for_individuals.dart';
+import 'package:itea_mobile/generated/l10n.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/core/widgets/custom_app_bar.dart';
+import 'package:itea_mobile/src/core/widgets/toggle_switcher_widget.dart';
+import 'package:itea_mobile/src/features/sign_in/presentation/widgets/logo.dart';
+import 'package:itea_mobile/src/features/sign_up/presentation/widgets/sign_up_fields_for_individuals.dart';
 
 import '../../../core/widgets/custom_button.dart';
 import '../../countries/domain/entities/cities_entity.dart';

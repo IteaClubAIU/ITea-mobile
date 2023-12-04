@@ -1,5 +1,5 @@
 import 'package:fpdart/fpdart.dart';
-import 'package:test_project/src/features/profile/data/models/user_dto.dart';
+import 'package:itea_mobile/src/features/profile/data/models/user_dto.dart';
 
 import '../../../../../core/exception/domain_exception.dart';
 import '../../../domain/request_models/log_out_request_model.dart';

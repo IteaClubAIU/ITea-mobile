@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/features/advertising-page/presentation/notifier/advertising_notifier.dart';
-import 'package:test_project/src/features/advertising-page/presentation/widgets/advertising_buttons.dart';
-import 'package:test_project/src/features/advertising-page/presentation/widgets/type_of_ads.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/features/advertising-page/presentation/notifier/advertising_notifier.dart';
+import 'package:itea_mobile/src/features/advertising-page/presentation/widgets/advertising_buttons.dart';
+import 'package:itea_mobile/src/features/advertising-page/presentation/widgets/type_of_ads.dart';
 
 class AdvertisingPage extends ConsumerStatefulWidget {
   const AdvertisingPage({super.key});

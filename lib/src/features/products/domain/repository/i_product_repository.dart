@@ -1,17 +1,17 @@
 import 'package:fpdart/fpdart.dart';
-import 'package:test_project/src/core/exception/domain_exception.dart';
-import 'package:test_project/src/features/products/domain/entities/faq_entity.dart';
-import 'package:test_project/src/features/products/domain/entities/pagination_entity.dart';
-import 'package:test_project/src/features/products/domain/entities/product_entity.dart';
-import 'package:test_project/src/features/products/domain/entities/product_sub_categories_entity.dart';
-import 'package:test_project/src/features/products/domain/request_model/add_product_to_favorite_request_model.dart';
-import 'package:test_project/src/features/products/domain/request_model/create_product_request_model.dart';
-import 'package:test_project/src/features/products/domain/request_model/delete_product_request_model.dart';
-import 'package:test_project/src/features/products/domain/request_model/get_product_request_model.dart';
-import 'package:test_project/src/features/products/domain/request_model/get_product_sub_category_request_model.dart';
-import 'package:test_project/src/features/products/domain/request_model/remove_favorite_product_request_model.dart';
-import 'package:test_project/src/features/products/domain/request_model/search_products_request_model.dart';
-import 'package:test_project/src/features/products/domain/request_model/update_product_request_model.dart';
+import 'package:itea_mobile/src/core/exception/domain_exception.dart';
+import 'package:itea_mobile/src/features/products/domain/entities/faq_entity.dart';
+import 'package:itea_mobile/src/features/products/domain/entities/pagination_entity.dart';
+import 'package:itea_mobile/src/features/products/domain/entities/product_entity.dart';
+import 'package:itea_mobile/src/features/products/domain/entities/product_sub_categories_entity.dart';
+import 'package:itea_mobile/src/features/products/domain/request_model/add_product_to_favorite_request_model.dart';
+import 'package:itea_mobile/src/features/products/domain/request_model/create_product_request_model.dart';
+import 'package:itea_mobile/src/features/products/domain/request_model/delete_product_request_model.dart';
+import 'package:itea_mobile/src/features/products/domain/request_model/get_product_request_model.dart';
+import 'package:itea_mobile/src/features/products/domain/request_model/get_product_sub_category_request_model.dart';
+import 'package:itea_mobile/src/features/products/domain/request_model/remove_favorite_product_request_model.dart';
+import 'package:itea_mobile/src/features/products/domain/request_model/search_products_request_model.dart';
+import 'package:itea_mobile/src/features/products/domain/request_model/update_product_request_model.dart';
 
 abstract class IProductRepository {
   Future<Either<DomainException, PaginationEntity>> getAllProducts();

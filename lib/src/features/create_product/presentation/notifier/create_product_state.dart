@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:test_project/src/core/enum/product_enums.dart';
-import 'package:test_project/src/features/create_product/presentation/widgets/create_product_fields_enum.dart';
-import 'package:test_project/src/features/products/domain/entities/product_entity.dart';
+import 'package:itea_mobile/src/core/enum/product_enums.dart';
+import 'package:itea_mobile/src/features/create_product/presentation/widgets/create_product_fields_enum.dart';
+import 'package:itea_mobile/src/features/products/domain/entities/product_entity.dart';
 
 part 'create_product_state.freezed.dart';
 part 'create_product_state.g.dart';

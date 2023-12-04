@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:test_project/src/core/base/base_dto.dart';
-import 'package:test_project/src/core/enum/product_enums.dart';
-import 'package:test_project/src/features/profile/data/models/user_dto.dart';
+import 'package:itea_mobile/src/core/base/base_dto.dart';
+import 'package:itea_mobile/src/core/enum/product_enums.dart';
+import 'package:itea_mobile/src/features/profile/data/models/user_dto.dart';
 
 part 'product_dto.freezed.dart';
 part 'product_dto.g.dart';

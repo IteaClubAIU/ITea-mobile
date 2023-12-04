@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/core/widgets/custom_widget_with_loader.dart';
-import 'package:test_project/src/features/category_boxes_page/presentation/category_boxes_page_arguments.dart';
-import 'package:test_project/src/features/products/presentation/widgets/category_box_list.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/core/widgets/custom_widget_with_loader.dart';
+import 'package:itea_mobile/src/features/category_boxes_page/presentation/category_boxes_page_arguments.dart';
+import 'package:itea_mobile/src/features/products/presentation/widgets/category_box_list.dart';
 
 import 'notifier/category_boxes_notifier.dart';
 import 'widgets/category_boxes_products_list.dart';

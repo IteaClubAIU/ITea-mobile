@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:test_project/src/core/enum/main_screen_tabs.dart';
-import 'package:test_project/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/core/enum/main_screen_tabs.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
 
 import 'bottom_tab_button.dart';
 

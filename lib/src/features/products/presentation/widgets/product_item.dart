@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:test_project/generated/l10n.dart';
-import 'package:test_project/src/core/enum/product_enums.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/core/utils/helpers/popup_helper.dart';
-import 'package:test_project/src/features/product_page/presentation/widgets/product_image.dart';
-import 'package:test_project/src/features/products/domain/entities/product_entity.dart';
-import 'package:test_project/src/features/products/presentation/widgets/product_photos_page.dart';
+import 'package:itea_mobile/generated/l10n.dart';
+import 'package:itea_mobile/src/core/enum/product_enums.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/core/utils/helpers/popup_helper.dart';
+import 'package:itea_mobile/src/features/product_page/presentation/widgets/product_image.dart';
+import 'package:itea_mobile/src/features/products/domain/entities/product_entity.dart';
+import 'package:itea_mobile/src/features/products/presentation/widgets/product_photos_page.dart';
 
 class ProductItem extends StatelessWidget {
   final ProductEntity product;

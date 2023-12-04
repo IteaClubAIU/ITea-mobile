@@ -1,14 +1,14 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:test_project/generated/l10n.dart';
-import 'package:test_project/src/core/enum/product_enums.dart';
-import 'package:test_project/src/core/router/auth_provider.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/core/utils/helpers/popup_helper.dart';
-import 'package:test_project/src/features/product_page/presentation/notifier/product_page_notifier.dart';
-import 'package:test_project/src/features/product_page/presentation/widgets/product_image.dart';
-import 'package:test_project/src/features/products/domain/entities/product_entity.dart';
+import 'package:itea_mobile/generated/l10n.dart';
+import 'package:itea_mobile/src/core/enum/product_enums.dart';
+import 'package:itea_mobile/src/core/router/auth_provider.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/core/utils/helpers/popup_helper.dart';
+import 'package:itea_mobile/src/features/product_page/presentation/notifier/product_page_notifier.dart';
+import 'package:itea_mobile/src/features/product_page/presentation/widgets/product_image.dart';
+import 'package:itea_mobile/src/features/products/domain/entities/product_entity.dart';
 
 class ProductTile extends ConsumerStatefulWidget {
   const ProductTile({super.key});

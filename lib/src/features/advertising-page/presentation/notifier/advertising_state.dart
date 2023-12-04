@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:test_project/src/features/advertising-page/domain/entities/advertising_entity.dart';
+import 'package:itea_mobile/src/features/advertising-page/domain/entities/advertising_entity.dart';
 
 part 'advertising_state.freezed.dart';
 

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/features/product_page/presentation/notifier/product_page_notifier.dart';
-import 'package:test_project/src/features/product_page/presentation/widgets/product_app_bar.dart';
-import 'package:test_project/src/features/product_page/presentation/widgets/product_details.dart';
-import 'package:test_project/src/features/product_page/product_page_arguments.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/features/product_page/presentation/notifier/product_page_notifier.dart';
+import 'package:itea_mobile/src/features/product_page/presentation/widgets/product_app_bar.dart';
+import 'package:itea_mobile/src/features/product_page/presentation/widgets/product_details.dart';
+import 'package:itea_mobile/src/features/product_page/product_page_arguments.dart';
 
 class ProductPage extends ConsumerStatefulWidget {
   final ProductPageArgument productArguments;

@@ -3,8 +3,8 @@ import 'dart:io';
 import 'package:app_settings/app_settings.dart';
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:test_project/generated/l10n.dart';
-import 'package:test_project/src/core/utils/helpers/popup_helper.dart';
+import 'package:itea_mobile/generated/l10n.dart';
+import 'package:itea_mobile/src/core/utils/helpers/popup_helper.dart';
 
 class PermissionsHelper {
   final BuildContext context;

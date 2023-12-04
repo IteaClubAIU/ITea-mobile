@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:test_project/src/core/router/auth_provider.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/features/main_page/presentation/notifier/main_page_notifier.dart';
-import 'package:test_project/src/features/products/presentation/notifier/products_page_notifier.dart';
+import 'package:itea_mobile/src/core/router/auth_provider.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/features/main_page/presentation/notifier/main_page_notifier.dart';
+import 'package:itea_mobile/src/features/products/presentation/notifier/products_page_notifier.dart';
 
 import '../../../../../generated/l10n.dart';
 import '../../../../core/service/injectable/injectable_service.dart';

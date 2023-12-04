@@ -1,9 +1,9 @@
 import 'package:email_validator/email_validator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:test_project/generated/l10n.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/core/utils/helpers/popup_helper.dart';
+import 'package:itea_mobile/generated/l10n.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/core/utils/helpers/popup_helper.dart';
 
 import '../../../../../core/service/injectable/injectable_service.dart';
 import '../../../domain/request_models/sign_up_request_model.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/features/product_page/presentation/widgets/product_tile.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/features/product_page/presentation/widgets/product_tile.dart';
 
 import 'similar_products.dart';
 

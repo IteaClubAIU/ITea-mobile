@@ -3,9 +3,9 @@ import 'package:intl/intl.dart';
 import 'package:intl_phone_field/countries.dart';
 import 'package:intl_phone_field/country_picker_dialog.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
-import 'package:test_project/generated/l10n.dart';
-import 'package:test_project/src/core/utils/helpers/formatter_helper.dart';
-import 'package:test_project/src/features/sign_up/presentation/widgets/list_of_country_codes.dart';
+import 'package:itea_mobile/generated/l10n.dart';
+import 'package:itea_mobile/src/core/utils/helpers/formatter_helper.dart';
+import 'package:itea_mobile/src/features/sign_up/presentation/widgets/list_of_country_codes.dart';
 
 class CustomIntlPhoneField extends StatelessWidget {
   final TextEditingController controller;

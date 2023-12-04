@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:test_project/generated/l10n.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/features/products/domain/entities/faq_entity.dart';
+import 'package:itea_mobile/generated/l10n.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/features/products/domain/entities/faq_entity.dart';
 
 class FaqsList extends StatelessWidget {
   final List<FaqEntity> faqs;

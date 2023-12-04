@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
-import 'package:test_project/src/core/enum/product_enums.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/core/widgets/custom_widget_with_loader.dart';
+import 'package:itea_mobile/src/core/enum/product_enums.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/core/widgets/custom_widget_with_loader.dart';
 
 import '../../../core/widgets/custom_search_app_bar.dart';
 import 'notifier/products_page_notifier.dart';

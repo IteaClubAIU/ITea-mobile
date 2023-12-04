@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:test_project/generated/l10n.dart';
-import 'package:test_project/src/core/router/router_provider.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/core/widgets/custom_button.dart';
-import 'package:test_project/src/features/create_product/presentation/create_product_page_arguments.dart';
-import 'package:test_project/src/features/products/domain/entities/product_entity.dart';
+import 'package:itea_mobile/generated/l10n.dart';
+import 'package:itea_mobile/src/core/router/router_provider.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/core/widgets/custom_button.dart';
+import 'package:itea_mobile/src/features/create_product/presentation/create_product_page_arguments.dart';
+import 'package:itea_mobile/src/features/products/domain/entities/product_entity.dart';
 
 class PopupHelper {
   Future<void> showPopup(

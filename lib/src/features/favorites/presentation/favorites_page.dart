@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/features/favorites/presentation/widgets/favorites_app_bar.dart';
-import 'package:test_project/src/features/favorites/presentation/widgets/favorites_list.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/features/favorites/presentation/widgets/favorites_app_bar.dart';
+import 'package:itea_mobile/src/features/favorites/presentation/widgets/favorites_list.dart';
 
 import 'notifier/favorites_page_notifier.dart';
 

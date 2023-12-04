@@ -1,6 +1,6 @@
 import 'package:fpdart/fpdart.dart';
-import 'package:test_project/src/core/exception/domain_exception.dart';
-import 'package:test_project/src/features/profile/domain/entities/user_entity.dart';
+import 'package:itea_mobile/src/core/exception/domain_exception.dart';
+import 'package:itea_mobile/src/features/profile/domain/entities/user_entity.dart';
 
 import '../entities/log_out_entity.dart';
 import '../request_models/log_out_request_model.dart';

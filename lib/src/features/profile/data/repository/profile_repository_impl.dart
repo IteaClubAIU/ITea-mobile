@@ -1,7 +1,7 @@
 import 'package:fpdart/fpdart.dart';
 import 'package:injectable/injectable.dart';
-import 'package:test_project/src/features/profile/data/mappers/user_dto_to_entity_mapper.dart';
-import 'package:test_project/src/features/profile/domain/entities/user_entity.dart';
+import 'package:itea_mobile/src/features/profile/data/mappers/user_dto_to_entity_mapper.dart';
+import 'package:itea_mobile/src/features/profile/domain/entities/user_entity.dart';
 
 import '../../../../core/exception/domain_exception.dart';
 import '../../../../core/utils/loggers/logger.dart';

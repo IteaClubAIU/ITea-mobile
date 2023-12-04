@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:test_project/generated/l10n.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/features/profile/presentation/widgets/button_widget.dart';
-import 'package:test_project/src/features/profile/presentation/widgets/info_list_tile_widget.dart';
+import 'package:itea_mobile/generated/l10n.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/features/profile/presentation/widgets/button_widget.dart';
+import 'package:itea_mobile/src/features/profile/presentation/widgets/info_list_tile_widget.dart';
 
 import '../../../../core/router/router_provider.dart';
 import '../../../../core/widgets/custom_app_bar.dart';

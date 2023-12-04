@@ -1,8 +1,8 @@
-import 'package:test_project/src/core/utils/helpers/date_time_helper.dart';
-import 'package:test_project/src/features/products/data/models/dto/product_dto.dart';
-import 'package:test_project/src/features/products/domain/entities/product_entity.dart';
-import 'package:test_project/src/features/profile/data/models/user_dto.dart';
-import 'package:test_project/src/features/profile/domain/entities/user_entity.dart';
+import 'package:itea_mobile/src/core/utils/helpers/date_time_helper.dart';
+import 'package:itea_mobile/src/features/products/data/models/dto/product_dto.dart';
+import 'package:itea_mobile/src/features/products/domain/entities/product_entity.dart';
+import 'package:itea_mobile/src/features/profile/data/models/user_dto.dart';
+import 'package:itea_mobile/src/features/profile/domain/entities/user_entity.dart';
 
 class ProductDtoMapper {
   ProductEntity map(ProductDto dto) {

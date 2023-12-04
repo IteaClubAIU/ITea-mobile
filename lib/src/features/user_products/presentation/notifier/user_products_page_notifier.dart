@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
-import 'package:test_project/src/core/service/injectable/injectable_service.dart';
-import 'package:test_project/src/features/products/domain/entities/product_entity.dart';
-import 'package:test_project/src/features/products/domain/request_model/delete_product_request_model.dart';
-import 'package:test_project/src/features/products/domain/usecases/delete_product_use_case.dart';
-import 'package:test_project/src/features/products/domain/usecases/get_all_user_products_use_case.dart';
+import 'package:itea_mobile/src/core/service/injectable/injectable_service.dart';
+import 'package:itea_mobile/src/features/products/domain/entities/product_entity.dart';
+import 'package:itea_mobile/src/features/products/domain/request_model/delete_product_request_model.dart';
+import 'package:itea_mobile/src/features/products/domain/usecases/delete_product_use_case.dart';
+import 'package:itea_mobile/src/features/products/domain/usecases/get_all_user_products_use_case.dart';
 
 import 'user_products_page_state.dart';
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/features/advertising-page/domain/entities/advertising_entity.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/features/advertising-page/domain/entities/advertising_entity.dart';
 
 class AdsWidget extends StatelessWidget {
   final AdvertisingEntity advertisingEntity;

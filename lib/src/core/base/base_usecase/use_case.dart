@@ -1,8 +1,8 @@
 import 'package:fpdart/fpdart.dart';
-import 'package:test_project/src/core/base/base_request_model.dart';
-import 'package:test_project/src/core/base/base_usecase/result.dart';
-import 'package:test_project/src/core/exception/domain_exception.dart';
-import 'package:test_project/src/core/utils/loggers/logger.dart';
+import 'package:itea_mobile/src/core/base/base_request_model.dart';
+import 'package:itea_mobile/src/core/base/base_usecase/result.dart';
+import 'package:itea_mobile/src/core/exception/domain_exception.dart';
+import 'package:itea_mobile/src/core/utils/loggers/logger.dart';
 
 /// How to call use case and use it:
 /// final result = await _useCase.call();

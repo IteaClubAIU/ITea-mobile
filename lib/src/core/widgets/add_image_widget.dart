@@ -1,8 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
-import 'package:test_project/generated/l10n.dart';
-import 'package:test_project/src/core/theme/theme.dart';
+import 'package:itea_mobile/generated/l10n.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
 
 import 'custom_button.dart';
 

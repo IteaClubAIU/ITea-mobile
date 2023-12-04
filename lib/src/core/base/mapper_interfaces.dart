@@ -1,6 +1,6 @@
-import 'package:test_project/src/core/base/base_dto.dart';
-import 'package:test_project/src/core/base/base_entity.dart';
-import 'package:test_project/src/core/base/base_request_model.dart';
+import 'package:itea_mobile/src/core/base/base_dto.dart';
+import 'package:itea_mobile/src/core/base/base_entity.dart';
+import 'package:itea_mobile/src/core/base/base_request_model.dart';
 
 abstract class IDtoToEntityMapper<E extends BaseEntity, D extends BaseDto> {
   E map(D dto);

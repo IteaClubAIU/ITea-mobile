@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/core/widgets/custom_app_bar.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/core/widgets/custom_app_bar.dart';
 
 import '../../../../../generated/l10n.dart';
 import '../../../../core/router/router_provider.dart';

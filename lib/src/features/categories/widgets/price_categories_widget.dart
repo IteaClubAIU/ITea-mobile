@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:test_project/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
 
 List<String> _ageCategoriesList = [
   'от 100 000тг',

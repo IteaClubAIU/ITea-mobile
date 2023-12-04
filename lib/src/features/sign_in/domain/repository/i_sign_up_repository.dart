@@ -1,5 +1,5 @@
 import 'package:fpdart/fpdart.dart';
-import 'package:test_project/src/core/exception/domain_exception.dart';
+import 'package:itea_mobile/src/core/exception/domain_exception.dart';
 
 import '../entities/sign_in_entity.dart';
 import '../request_models/sign_in_request_model.dart';

@@ -2,10 +2,10 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/features/product_page/presentation/notifier/product_page_notifier.dart';
-import 'package:test_project/src/features/products/presentation/notifier/products_page_notifier.dart';
-import 'package:test_project/src/features/products/presentation/widgets/product_item.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/features/product_page/presentation/notifier/product_page_notifier.dart';
+import 'package:itea_mobile/src/features/products/presentation/notifier/products_page_notifier.dart';
+import 'package:itea_mobile/src/features/products/presentation/widgets/product_item.dart';
 
 class SimilarProducts extends ConsumerWidget {
   const SimilarProducts({super.key});

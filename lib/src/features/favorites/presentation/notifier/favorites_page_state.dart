@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:test_project/src/features/products/domain/entities/product_entity.dart';
+import 'package:itea_mobile/src/features/products/domain/entities/product_entity.dart';
 
 part 'favorites_page_state.freezed.dart';
 

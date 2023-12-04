@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:test_project/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
 
 class AvatarPickerWidget extends StatelessWidget {
   final VoidCallback onAvatarTap;

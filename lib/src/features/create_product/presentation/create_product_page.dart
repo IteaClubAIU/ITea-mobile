@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/features/create_product/presentation/create_product_page_arguments.dart';
-import 'package:test_project/src/features/create_product/presentation/widgets/create_product_fields.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/features/create_product/presentation/create_product_page_arguments.dart';
+import 'package:itea_mobile/src/features/create_product/presentation/widgets/create_product_fields.dart';
 
 import 'notifier/create_product_notifier.dart';
 import 'widgets/create_product_app_bar.dart';

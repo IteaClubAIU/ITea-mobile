@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test_project/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
 
 class DividerWidget extends StatelessWidget {
   const DividerWidget({super.key});

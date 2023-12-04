@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:test_project/generated/l10n.dart';
-import 'package:test_project/src/core/router/auth_provider.dart';
-import 'package:test_project/src/core/router/router_provider.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/core/utils/helpers/popup_helper.dart';
-import 'package:test_project/src/features/products/presentation/notifier/products_page_notifier.dart';
-import 'package:test_project/src/features/products/presentation/widgets/product_item.dart';
+import 'package:itea_mobile/generated/l10n.dart';
+import 'package:itea_mobile/src/core/router/auth_provider.dart';
+import 'package:itea_mobile/src/core/router/router_provider.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/core/utils/helpers/popup_helper.dart';
+import 'package:itea_mobile/src/features/products/presentation/notifier/products_page_notifier.dart';
+import 'package:itea_mobile/src/features/products/presentation/widgets/product_item.dart';
 
 class ProductsList extends ConsumerWidget {
   const ProductsList({super.key});

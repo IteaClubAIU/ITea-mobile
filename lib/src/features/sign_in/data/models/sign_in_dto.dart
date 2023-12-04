@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:test_project/src/core/base/base_dto.dart';
+import 'package:itea_mobile/src/core/base/base_dto.dart';
 
 part 'sign_in_dto.freezed.dart';
 part 'sign_in_dto.g.dart';

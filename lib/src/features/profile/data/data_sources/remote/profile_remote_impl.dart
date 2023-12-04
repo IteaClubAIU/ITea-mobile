@@ -1,7 +1,7 @@
 import 'package:fpdart/fpdart.dart';
 import 'package:injectable/injectable.dart';
-import 'package:test_project/src/features/profile/data/data_sources/remote/i_profile_remote.dart';
-import 'package:test_project/src/features/profile/data/models/user_dto.dart';
+import 'package:itea_mobile/src/features/profile/data/data_sources/remote/i_profile_remote.dart';
+import 'package:itea_mobile/src/features/profile/data/models/user_dto.dart';
 
 import '../../../../../core/api/client/rest/dio_client.dart';
 import '../../../../../core/api/client/rest/endpoints.dart';

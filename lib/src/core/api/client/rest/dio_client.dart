@@ -2,10 +2,10 @@ import 'package:dio/dio.dart';
 import 'package:fpdart/fpdart.dart';
 import 'package:injectable/injectable.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:test_project/src/core/api/client/rest/dio_exceptions.dart';
-import 'package:test_project/src/core/constants/api/api_constants.dart';
-import 'package:test_project/src/core/exception/domain_exception.dart';
-import 'package:test_project/src/core/utils/loggers/logger.dart';
+import 'package:itea_mobile/src/core/api/client/rest/dio_exceptions.dart';
+import 'package:itea_mobile/src/core/constants/api/api_constants.dart';
+import 'package:itea_mobile/src/core/exception/domain_exception.dart';
+import 'package:itea_mobile/src/core/utils/loggers/logger.dart';
 
 part 'dio_config.dart';
 part 'dio_interceptor.dart';

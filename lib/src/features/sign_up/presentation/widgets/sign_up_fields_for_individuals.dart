@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:intl_phone_field/countries.dart';
-import 'package:test_project/generated/l10n.dart';
-import 'package:test_project/src/core/widgets/custom_intl_phone_field.dart';
-import 'package:test_project/src/core/widgets/custom_text_field.dart';
-import 'package:test_project/src/features/countries/domain/entities/cities_entity.dart';
+import 'package:itea_mobile/generated/l10n.dart';
+import 'package:itea_mobile/src/core/widgets/custom_intl_phone_field.dart';
+import 'package:itea_mobile/src/core/widgets/custom_text_field.dart';
+import 'package:itea_mobile/src/features/countries/domain/entities/cities_entity.dart';
 
 import '../../../../core/widgets/custom_field_group.dart';
 import '../../../../core/widgets/drop_down_widget.dart';

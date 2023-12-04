@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:test_project/src/core/base/base_dto.dart';
+import 'package:itea_mobile/src/core/base/base_dto.dart';
 
 part 'countries_dto.freezed.dart';
 part 'countries_dto.g.dart';

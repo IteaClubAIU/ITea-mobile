@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:test_project/generated/l10n.dart';
-import 'package:test_project/src/core/enum/product_enums.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/core/utils/helpers/formatter_helper.dart';
-import 'package:test_project/src/core/widgets/add_image_widget.dart';
-import 'package:test_project/src/core/widgets/custom_button.dart';
-import 'package:test_project/src/core/widgets/custom_intl_phone_field.dart';
-import 'package:test_project/src/core/widgets/custom_text_field.dart';
-import 'package:test_project/src/core/widgets/drop_down_widget.dart';
-import 'package:test_project/src/features/create_product/presentation/notifier/create_product_notifier.dart';
-import 'package:test_project/src/features/create_product/presentation/widgets/create_product_fields_enum.dart';
+import 'package:itea_mobile/generated/l10n.dart';
+import 'package:itea_mobile/src/core/enum/product_enums.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/core/utils/helpers/formatter_helper.dart';
+import 'package:itea_mobile/src/core/widgets/add_image_widget.dart';
+import 'package:itea_mobile/src/core/widgets/custom_button.dart';
+import 'package:itea_mobile/src/core/widgets/custom_intl_phone_field.dart';
+import 'package:itea_mobile/src/core/widgets/custom_text_field.dart';
+import 'package:itea_mobile/src/core/widgets/drop_down_widget.dart';
+import 'package:itea_mobile/src/features/create_product/presentation/notifier/create_product_notifier.dart';
+import 'package:itea_mobile/src/features/create_product/presentation/widgets/create_product_fields_enum.dart';
 
 import '../../../../core/utils/formatters/year_of_harvest_formatter.dart';
 import '../../../../core/widgets/custom_field_group.dart';

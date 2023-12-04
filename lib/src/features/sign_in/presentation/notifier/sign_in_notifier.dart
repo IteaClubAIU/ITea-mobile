@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:test_project/generated/l10n.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/core/utils/helpers/popup_helper.dart';
-import 'package:test_project/src/features/favorites/presentation/notifier/favorites_page_notifier.dart';
-import 'package:test_project/src/features/main_page/presentation/notifier/main_page_notifier.dart';
-import 'package:test_project/src/features/products/presentation/notifier/products_page_notifier.dart';
+import 'package:itea_mobile/generated/l10n.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/core/utils/helpers/popup_helper.dart';
+import 'package:itea_mobile/src/features/favorites/presentation/notifier/favorites_page_notifier.dart';
+import 'package:itea_mobile/src/features/main_page/presentation/notifier/main_page_notifier.dart';
+import 'package:itea_mobile/src/features/products/presentation/notifier/products_page_notifier.dart';
 
 import '../../../../core/service/injectable/injectable_service.dart';
 import '../../domain/request_models/sign_in_request_model.dart';

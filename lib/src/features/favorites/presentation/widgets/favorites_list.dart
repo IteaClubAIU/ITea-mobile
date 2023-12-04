@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
-import 'package:test_project/generated/l10n.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/features/favorites/presentation/notifier/favorites_page_notifier.dart';
-import 'package:test_project/src/features/products/presentation/widgets/product_item.dart';
+import 'package:itea_mobile/generated/l10n.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/features/favorites/presentation/notifier/favorites_page_notifier.dart';
+import 'package:itea_mobile/src/features/products/presentation/widgets/product_item.dart';
 
 class FavoritesList extends ConsumerWidget {
   const FavoritesList({super.key});

@@ -1,5 +1,5 @@
-import 'package:test_project/src/core/service/injectable/injectable_service.dart';
-import 'package:test_project/src/core/utils/helpers/ui_helpers.dart';
+import 'package:itea_mobile/src/core/service/injectable/injectable_service.dart';
+import 'package:itea_mobile/src/core/utils/helpers/ui_helpers.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 

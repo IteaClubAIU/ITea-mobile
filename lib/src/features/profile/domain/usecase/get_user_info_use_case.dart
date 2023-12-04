@@ -1,6 +1,6 @@
 import 'package:fpdart/fpdart.dart';
 import 'package:injectable/injectable.dart';
-import 'package:test_project/src/features/profile/domain/entities/user_entity.dart';
+import 'package:itea_mobile/src/features/profile/domain/entities/user_entity.dart';
 
 import '../../../../core/base/base_usecase/use_case.dart';
 import '../../../../core/exception/domain_exception.dart';

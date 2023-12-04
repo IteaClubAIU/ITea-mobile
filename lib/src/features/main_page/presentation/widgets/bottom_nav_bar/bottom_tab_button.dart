@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:test_project/src/core/theme/theme.dart';
-import 'package:test_project/src/core/utils/helpers/paddings_helper.dart';
+import 'package:itea_mobile/src/core/theme/theme.dart';
+import 'package:itea_mobile/src/core/utils/helpers/paddings_helper.dart';
 
 class BottomTabButton extends StatelessWidget {
   final IconData icon;

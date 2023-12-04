@@ -5,7 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:test_project/src/core/utils/helpers/permissions_helper.dart';
+import 'package:itea_mobile/src/core/utils/helpers/permissions_helper.dart';
 
 final imagePickService =
     StateNotifierProvider.autoDispose<ImagePickService, ImagePickState>(

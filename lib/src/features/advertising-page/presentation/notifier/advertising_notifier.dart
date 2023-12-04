@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:test_project/src/features/advertising-page/domain/entities/advertising_entity.dart';
-import 'package:test_project/src/features/advertising-page/presentation/notifier/advertising_state.dart';
+import 'package:itea_mobile/src/features/advertising-page/domain/entities/advertising_entity.dart';
+import 'package:itea_mobile/src/features/advertising-page/presentation/notifier/advertising_state.dart';
 import 'package:uuid/uuid.dart';
 
 final advertisingNotifierProvider =

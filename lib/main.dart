@@ -1,9 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter/foundation.dart';
-import 'package:test_project/src/app/application.dart';
-import 'package:test_project/src/app/runner.dart';
-import 'package:test_project/src/core/utils/loggers/logger.dart';
+import 'package:itea_mobile/src/app/application.dart';
+import 'package:itea_mobile/src/app/runner.dart';
+import 'package:itea_mobile/src/core/utils/loggers/logger.dart';
 
 Future<void> main(List<String> args) async {
   FlutterError.onError = Log.logFlutterError;
